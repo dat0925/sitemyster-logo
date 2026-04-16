@@ -780,6 +780,13 @@ function doSearch() {
   showLogo(code);
 }
 
+/* ========= ページマッピング ========= */
+const PAGE_MAP = {
+  SM: 'sitemyster30.html',
+  AZ: 'ai-zero30.html',
+  AB: 'aiboost30.html',
+};
+
 /* ========= ロゴ表示 ========= */
 function showLogo(code) {
   const logo = LOGOS[code];
@@ -794,6 +801,9 @@ function showLogo(code) {
 
   const brand = code.substring(0, 2);
   const color = BRAND_COLOR[brand].cssColor;
+  const page  = PAGE_MAP[brand];
+  const href  = `${page}#${code}`;
+
   inner.innerHTML = `
     <div class="preview-img-wrap">
       <img src="${logo.path}" alt="${code}" onerror="this.parentNode.innerHTML='<div style=\\'color:#9CA3AF;font-size:13px;\\'>SVG を読み込めませんでした</div>'">
@@ -801,6 +811,14 @@ function showLogo(code) {
     <div class="preview-meta">
       <div class="preview-code" style="color:${color}">${code}</div>
       <div class="preview-name">${logo.name}</div>
+      <a href="${href}" target="_blank"
+         style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;
+                background:${color};color:white;text-decoration:none;
+                font-size:12px;font-weight:700;padding:8px 16px;
+                border-radius:8px;white-space:nowrap;transition:opacity .15s;"
+         onmouseover="this.style.opacity='.8'" onmouseout="this.style.opacity='1'">
+        このロゴを詳細ページで見る →
+      </a>
     </div>`;
 
   area.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
