@@ -48,10 +48,7 @@
     }
 
     /* カードグリッド */
-    .grid {
-      display: grid;
-      gap: 16px;
-    }
+    .grid { display: grid; gap: 16px; }
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-2 { grid-template-columns: repeat(2, 1fr); }
     .grid-1 { grid-template-columns: 1fr; }
@@ -63,7 +60,7 @@
       color: inherit;
       background: white;
       border-radius: 14px;
-      padding: 24px 28px;
+      padding: 24px 28px 20px;
       border: 1.5px solid #E5E7EB;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
@@ -73,19 +70,57 @@
       box-shadow: 0 10px 28px rgba(0,0,0,0.1);
       border-color: #C7D0E8;
     }
-    .card-icon {
-      font-size: 36px;
+
+    /* カード上段：アイコン＋件数 */
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
       margin-bottom: 14px;
-      display: block;
     }
+    .card-icon { font-size: 32px; line-height: 1; }
+
+    /* 件数バッジ（大きく目立つ） */
+    .count-block {
+      text-align: right;
+      line-height: 1;
+    }
+    .count-num {
+      display: block;
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1;
+    }
+    .count-unit {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-top: 2px;
+    }
+
+    /* 件数カラー */
+    .color-blue  .count-num { color: #1A3580; }
+    .color-blue  .count-unit { color: #6B82C4; }
+    .color-green .count-num { color: #0D4F38; }
+    .color-green .count-unit { color: #4A8A72; }
+    .color-teal  .count-num { color: #0F766E; }
+    .color-teal  .count-unit { color: #5EADA7; }
+    .color-gray  .count-num { color: #374151; }
+    .color-gray  .count-unit { color: #9CA3AF; }
+    .color-gem   .count-num { color: #7E22CE; }
+    .color-gem   .count-unit { color: #A855F7; }
+
+    /* ラベル */
     .card-label {
       display: inline-block;
       font-size: 11px;
       font-weight: 700;
       padding: 3px 10px;
       border-radius: 20px;
-      margin-bottom: 10px;
-      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
     }
     .label-blue  { background: #EEF2FF; color: #1A3580; }
     .label-green { background: #ECFDF5; color: #0D4F38; }
@@ -93,30 +128,28 @@
     .label-gem   { background: #FDF4FF; color: #7E22CE; }
     .label-gray  { background: #F3F4F6; color: #374151; }
 
+    /* ブランド名（大きく） */
     .card h2 {
-      font-size: 17px;
-      font-weight: 800;
+      font-size: 19px;
+      font-weight: 900;
       color: #1A1A2E;
       margin-bottom: 8px;
-      line-height: 1.4;
+      line-height: 1.35;
     }
     .card p {
       font-size: 12.5px;
       color: #6B7280;
       line-height: 1.7;
     }
-    .card .count-badge {
+    .card .arrow {
       display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
+      margin-top: 12px;
+      font-size: 12px;
+      font-weight: 700;
       color: #9CA3AF;
-      margin-top: 10px;
     }
 
-    /* 区切り */
     .divider { margin-top: 40px; }
-
-    /* フッター */
     footer {
       text-align: center;
       padding: 48px 24px 32px;
@@ -128,6 +161,7 @@
     @media (max-width: 768px) {
       .grid-3, .grid-2 { grid-template-columns: 1fr; }
       .site-header h1 { font-size: 22px; }
+      .count-num { font-size: 36px; }
     }
   </style>
 </head>
@@ -143,28 +177,46 @@
   <div class="section-title">ブランド別ロゴ — 各30案</div>
   <div class="grid grid-3">
 
-    <a href="sitemyster30.html" class="card">
-      <span class="card-icon">🔷</span>
+    <a href="sitemyster30.html" class="card color-blue">
+      <div class="card-top">
+        <span class="card-icon">🔷</span>
+        <div class="count-block">
+          <span class="count-num">30</span>
+          <span class="count-unit">案</span>
+        </div>
+      </div>
       <span class="card-label label-blue">直販チャネル</span>
       <h2>サイトマイスター</h2>
       <p>ドイツ語で「達人」を意味するマイスター。AIが高品質なHPを提供するブランド。ネイビーブルー × ゴールド。</p>
-      <span class="count-badge">全30案 →</span>
+      <span class="arrow">SM-01 〜 SM-30 →</span>
     </a>
 
-    <a href="ai-zero30.html" class="card">
-      <span class="card-icon">🟢</span>
+    <a href="ai-zero30.html" class="card color-green">
+      <div class="card-top">
+        <span class="card-icon">🟢</span>
+        <div class="count-block">
+          <span class="count-num">30</span>
+          <span class="count-unit">案</span>
+        </div>
+      </div>
       <span class="card-label label-green">WEBチャネル・新規</span>
-      <h2>ホームページリメイクスタジオ AI ZERO</h2>
+      <h2>ホームページリメイクスタジオ<br>AI ZERO</h2>
       <p>「ゼロから、迷わず成果が出るホームページへ。」AIがトータルサポート。フォレストグリーン × ティール。</p>
-      <span class="count-badge">全30案 →</span>
+      <span class="arrow">AZ-01 〜 AZ-30 →</span>
     </a>
 
-    <a href="aiboost30.html" class="card">
-      <span class="card-icon">🚀</span>
+    <a href="aiboost30.html" class="card color-teal">
+      <div class="card-top">
+        <span class="card-icon">🚀</span>
+        <div class="count-block">
+          <span class="count-num">30</span>
+          <span class="count-unit">案</span>
+        </div>
+      </div>
       <span class="card-label label-teal">WEBチャネル・リプレイス</span>
-      <h2>ホームページリメイクスタジオ AIブースト</h2>
-      <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し、集客・反響を一段引き上げる。</p>
-      <span class="count-badge">全30案 →</span>
+      <h2>ホームページリメイクスタジオ<br>AIブースト</h2>
+      <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し集客を一段引き上げる。</p>
+      <span class="arrow">AB-01 〜 AB-30 →</span>
     </a>
 
   </div>
@@ -175,20 +227,32 @@
   <div class="section-title">比較・まとめ表示</div>
   <div class="grid grid-2">
 
-    <a href="aizero10-boost10.html" class="card">
-      <span class="card-icon">⚖️</span>
+    <a href="aizero10-boost10.html" class="card color-green">
+      <div class="card-top">
+        <span class="card-icon">⚖️</span>
+        <div class="count-block">
+          <span class="count-num">20</span>
+          <span class="count-unit">案</span>
+        </div>
+      </div>
       <span class="card-label label-green">AI ZERO + AIブースト</span>
       <h2>2ブランド比較ビュー</h2>
       <p>AI ZERO 10案・AIブースト 10案を並べて比較できるレイアウト。チャネル戦略の検討に。</p>
-      <span class="count-badge">10案 × 2ブランド →</span>
+      <span class="arrow">AZ-01〜10 / AB-01〜10 →</span>
     </a>
 
-    <a href="all10-3.html" class="card">
-      <span class="card-icon">🗂️</span>
+    <a href="all10-3.html" class="card color-gray">
+      <div class="card-top">
+        <span class="card-icon">🗂️</span>
+        <div class="count-block">
+          <span class="count-num">30</span>
+          <span class="count-unit">案</span>
+        </div>
+      </div>
       <span class="card-label label-gray">全ブランド</span>
       <h2>ロゴデザイン集（白背景版）</h2>
       <p>サイトマイスター・AI ZERO・AIブーストの3ブランドを一覧で確認できる白背景版まとめページ。</p>
-      <span class="count-badge">3ブランド横断 →</span>
+      <span class="arrow">SM / AZ / AB 各10案 →</span>
     </a>
 
   </div>
@@ -199,12 +263,18 @@
   <div class="section-title">フリーデザイン版</div>
   <div class="grid grid-1">
 
-    <a href="サイトマイスターロゴ（フリーデザイン）/ロゴ一覧（全90案）.html" class="card">
-      <span class="card-icon">🎨</span>
+    <a href="サイトマイスターロゴ（フリーデザイン）/ロゴ一覧（全90案）.html" class="card color-gray">
+      <div class="card-top">
+        <span class="card-icon">🎨</span>
+        <div class="count-block">
+          <span class="count-num">90</span>
+          <span class="count-unit">案</span>
+        </div>
+      </div>
       <span class="card-label label-gray">フリーデザイン</span>
       <h2>ロゴ一覧（全90案）</h2>
       <p>サイトマイスター・AI ZERO・AIブーストの3ブランド、各30案 計90案をフリーデザイン形式で収録した完全版。</p>
-      <span class="count-badge">全90案（3ブランド × 30案）→</span>
+      <span class="arrow">SM-01〜30 / AZ-01〜30 / AB-01〜30 →</span>
     </a>
 
   </div>
@@ -215,12 +285,18 @@
   <div class="section-title">AI提案</div>
   <div class="grid grid-1">
 
-    <a href="gemini.html" class="card">
-      <span class="card-icon">✨</span>
+    <a href="gemini.html" class="card color-gem">
+      <div class="card-top">
+        <span class="card-icon">✨</span>
+        <div class="count-block">
+          <span class="count-num">4</span>
+          <span class="count-unit">点</span>
+        </div>
+      </div>
       <span class="card-label label-gem">Gemini提案</span>
       <h2>Gemini によるロゴデザイン提案</h2>
       <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
-      <span class="count-badge">提案画像 4点 →</span>
+      <span class="arrow">提案画像 4点 →</span>
     </a>
 
   </div>
