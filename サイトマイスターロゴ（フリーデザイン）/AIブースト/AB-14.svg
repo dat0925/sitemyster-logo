@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab14g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1B8C3E"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<!-- Badge background -->
+<rect fill="url(#ab14g)" height="90" rx="12" width="164" x="18" y="6"></rect>
+<!-- Chart bars inside badge -->
+<rect fill="rgba(255,255,255,0.3)" height="24" rx="3" width="18" x="36" y="60"></rect>
+<rect fill="rgba(255,255,255,0.4)" height="36" rx="3" width="18" x="60" y="48"></rect>
+<rect fill="rgba(255,255,255,0.55)" height="50" rx="3" width="18" x="84" y="34"></rect>
+<rect fill="white" height="66" rx="3" width="18" x="108" y="18"></rect>
+<!-- Orange top on tallest -->
+<rect fill="#FF6D00" height="12" rx="3" width="18" x="108" y="12"></rect>
+<!-- AI label -->
+<rect fill="#FF6D00" height="18" rx="9" width="38" x="130" y="56"></rect>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="900" text-anchor="middle" x="149" y="69">AI</text>
+<!-- Baseline -->
+<line stroke="rgba(255,255,255,0.2)" stroke-width="1" x1="28" x2="172" y1="84" y2="84"></line>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="108">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

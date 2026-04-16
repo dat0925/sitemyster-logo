@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g24" x1="0%" x2="100%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#1E3A8A"></stop><stop offset="100%" stop-color="#2563EB"></stop>
+</lineargradient>
+</defs>
+<polygon fill="url(#g24)" points="100,6 165,96 35,96"></polygon>
+<polygon fill="none" points="100,16 155,88 45,88" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"></polygon>
+<text dominant-baseline="middle" fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" x="100" y="64">SM</text>
+<text fill="rgba(255,255,255,0.7)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" letter-spacing="2" text-anchor="middle" x="100" y="78">SITE MEISTER</text>
+<text fill="#888" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" text-anchor="middle" x="100" y="110">サイトマイスター</text>
+</svg>

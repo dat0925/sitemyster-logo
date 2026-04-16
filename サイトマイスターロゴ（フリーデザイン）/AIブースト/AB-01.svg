@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab01g" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2E9E52"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<path d="M100,8 L148,26 L148,62 Q148,88 100,100 Q52,88 52,62 L52,26 Z" fill="url(#ab01g)"></path>
+<path d="M100,16 L140,31 L140,62 Q140,82 100,92 Q60,82 60,62 L60,31 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"></path>
+<!-- Upward arrow -->
+<polygon fill="white" points="100,30 116,54 108,54 108,74 92,74 92,54 84,54"></polygon>
+<circle cx="100" cy="28" fill="#FF6D00" r="4"></circle>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" text-anchor="middle" x="100" y="112">AI BOOST</text>
+</svg>

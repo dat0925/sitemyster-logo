@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab30g" x1="0%" x2="100%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#0D5C2A"></stop><stop offset="100%" stop-color="#4CAF72"></stop>
+</lineargradient>
+<path d="M 30,80 A 80,80 0 0,1 170,80" id="ab30arc"></path>
+</defs>
+<!-- Arc trajectory path -->
+<path d="M 30,80 A 80,80 0 0,1 170,80" fill="none" stroke="url(#ab30g)" stroke-linecap="round" stroke-width="5"></path>
+<!-- Trail dots -->
+<circle cx="50" cy="66" fill="#4CAF72" opacity="0.5" r="3"></circle>
+<circle cx="70" cy="44" fill="#4CAF72" opacity="0.65" r="4"></circle>
+<circle cx="95" cy="28" fill="#4CAF72" opacity="0.8" r="5"></circle>
+<!-- Rocket at top -->
+<circle cx="126" cy="22" fill="#1B8C3E" r="14"></circle>
+<polygon fill="#FF6D00" points="126,6 132,18 120,18"></polygon>
+<circle cx="132" cy="14" fill="rgba(255,255,255,0.5)" r="4"></circle>
+<!-- BOOST arc text -->
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="6">
+<textpath href="#ab30arc" startoffset="10%">AI  BOOST</textpath>
+</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="108">ホームページリメイクスタジオ</text>
+</svg>

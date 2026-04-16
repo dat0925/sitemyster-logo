@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab13g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2E9E52"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<!-- B letterform -->
+<path d="M40,14 L40,92 L80,92 Q112,92 112,72 Q112,58 94,54 Q112,50 112,34 Q112,14 80,14 Z" fill="url(#ab13g)"></path>
+<path d="M54,24 L80,24 Q98,24 98,34 Q98,48 80,48 L54,48 Z" fill="rgba(255,255,255,0.18)"></path>
+<path d="M54,56 L80,56 Q102,56 102,72 Q102,84 80,84 L54,84 Z" fill="rgba(255,255,255,0.12)"></path>
+<!-- Lightning bolt overlapping B -->
+<polygon fill="#FF6D00" points="128,14 106,52 118,52 100,96 142,46 128,46"></polygon>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.5" text-anchor="middle" x="120" y="108">AI BOOST</text>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g29" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2563EB"></stop><stop offset="100%" stop-color="#1E3A8A"></stop>
+</lineargradient>
+</defs>
+<!-- Arch shape -->
+<path d="M40,88 L40,52 Q40,14 100,14 Q160,14 160,52 L160,88 Z" fill="url(#g29)"></path>
+<!-- Inner arch (cutout) -->
+<path d="M60,88 L60,54 Q60,32 100,32 Q140,32 140,54 L140,88 Z" fill="white"></path>
+<!-- SM text inside arch -->
+<text dominant-baseline="middle" fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="900" text-anchor="middle" x="100" y="75">SM</text>
+<!-- Gold keystone at arch top -->
+<polygon fill="#D4A017" points="100,14 108,30 92,30"></polygon>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="106">SITE MEISTER</text>
+</svg>

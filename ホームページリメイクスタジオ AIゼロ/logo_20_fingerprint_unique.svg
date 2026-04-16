@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+<g transform="translate(90,100)">
+    <path d="M -6 -46 Q 0 -52 6 -46" fill="none" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -16 -38 Q 0 -58 16 -38 Q 28 -24 28 0 Q 28 24 16 38" fill="none" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -26 -28 Q 0 -64 26 -28 Q 42 -12 42 0 Q 42 30 26 44" fill="none" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -36 -16 Q 0 -68 36 -16 Q 54 0 52 18 Q 50 38 36 50" fill="none" stroke="#0D4F38" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M -44 -2 Q 0 -72 44 -2 Q 60 16 58 38" fill="none" stroke="#00C9A7" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M -8 0 Q -4 -12 0 -16 Q 4 -12 8 0 Q 10 12 8 22 Q 4 32 0 36" fill="none" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="-16" r="4" fill="#00C9A7"/>
+  </g>
+  <text x="158" y="72" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="158" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="38" font-weight="700" fill="#0D4F38">AI ZERO</text>
+  <rect x="158" y="124" width="130" height="2.5" fill="#00C9A7" rx="1.25"/>
+  <text x="158" y="149" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">あなただけの唯一のHP、AI設計</text>
+</svg>

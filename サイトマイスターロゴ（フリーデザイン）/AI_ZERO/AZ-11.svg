@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Dot (start) -->
+<circle cx="36" cy="50" fill="#FFD600" r="6"></circle>
+<!-- Arrow path -->
+<line stroke="#4DB6AC" stroke-dasharray="4,4" stroke-linecap="round" stroke-width="2" x1="46" x2="84" y1="50" y2="50"></line>
+<!-- Arrow head -->
+<polygon fill="#4DB6AC" points="88,50 80,45 80,55"></polygon>
+<!-- Full circle (end) -->
+<circle cx="130" cy="50" fill="none" r="30" stroke="#00836F" stroke-width="5"></circle>
+<!-- AI text inside circle -->
+<text dominant-baseline="middle" fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="900" text-anchor="middle" x="130" y="55">AI</text>
+<text fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="99">AI ZERO</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="110">ホームページリメイクスタジオ</text>
+</svg>

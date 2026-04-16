@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab25g" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#FF6D00"></stop><stop offset="100%" stop-color="#1B8C3E"></stop>
+</lineargradient>
+</defs>
+<!-- Mountain peak B -->
+<!-- Left slope (A) -->
+<polygon fill="#1B8C3E" points="28,88 100,12 60,88"></polygon>
+<!-- Right bump (B curve) -->
+<path d="M60,88 L60,40 Q100,12 140,40 Q160,56 140,72 Q120,88 60,88 Z" fill="url(#ab25g)"></path>
+<!-- Snow cap -->
+<polygon fill="white" opacity="0.85" points="100,12 115,36 85,36"></polygon>
+<!-- AI text on mountain -->
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="900" text-anchor="middle" x="100" y="66">AI</text>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

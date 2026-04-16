@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab23g" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2E9E52"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<!-- Rounded square badge -->
+<rect fill="url(#ab23g)" height="88" rx="18" width="156" x="22" y="6"></rect>
+<!-- Ascending bars -->
+<rect fill="rgba(255,255,255,0.35)" height="18" rx="4" width="22" x="42" y="64"></rect>
+<rect fill="rgba(255,255,255,0.5)" height="32" rx="4" width="22" x="70" y="50"></rect>
+<rect fill="rgba(255,255,255,0.7)" height="48" rx="4" width="22" x="98" y="34"></rect>
+<rect fill="white" height="66" rx="4" width="22" x="126" y="16"></rect>
+<!-- Orange glow on top bar -->
+<rect fill="#FF6D00" height="12" rx="4" width="22" x="126" y="10"></rect>
+<!-- Diagonal trend arrow -->
+<line stroke="#FF6D00" stroke-dasharray="4,3" stroke-linecap="round" stroke-width="2.5" x1="42" x2="148" y1="68" y2="20"></line>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="108">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

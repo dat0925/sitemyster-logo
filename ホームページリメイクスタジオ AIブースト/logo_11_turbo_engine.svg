@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+<g transform="translate(90,100)">
+    <circle cx="0" cy="0" r="42" fill="#0D4F38"/>
+    <circle cx="0" cy="0" r="30" fill="#1A8A5E"/>
+    <circle cx="0" cy="0" r="18" fill="#0D4F38"/>
+    <path d="M -42 0 L -56 -8 L -56 8 Z" fill="#00C9A7"/>
+    <path d="M 42 0 L 56 -8 L 56 8 Z" fill="#00C9A7"/>
+    <path d="M 0 -42 L -8 -56 L 8 -56 Z" fill="#00C9A7"/>
+    <path d="M 0 42 L -8 56 L 8 56 Z" fill="#00C9A7" opacity="0.5"/>
+    <text x="0" y="6" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="900" fill="white" text-anchor="middle">BOOST</text>
+  </g>
+  <text x="158" y="72" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="158" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="#0D4F38">AIブースト</text>
+  <rect x="158" y="124" width="130" height="2.5" fill="#00C9A7" rx="1.25"/>
+  <text x="158" y="149" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">ターボエンジンのように、HPを加速する</text>
+</svg>

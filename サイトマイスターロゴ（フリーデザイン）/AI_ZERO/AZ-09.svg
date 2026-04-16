@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="az09g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00897B"></stop><stop offset="100%" stop-color="#004D40"></stop>
+</lineargradient>
+</defs>
+<!-- Flat-top hexagon: cx=100, cy=42, r=34 -->
+<polygon fill="url(#az09g)" points="134,42 117,12.6 83,12.6 66,42 83,71.4 117,71.4"></polygon>
+<text dominant-baseline="middle" fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" x="100" y="47">AI</text>
+<text fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="900" letter-spacing="3" text-anchor="middle" x="100" y="86">ZERO</text>
+<line stroke="#FFD600" stroke-linecap="round" stroke-width="2" x1="64" x2="136" y1="93" y2="93"></line>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="108">ホームページリメイクスタジオ</text>
+</svg>

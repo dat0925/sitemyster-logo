@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+<g transform="translate(90,110)">
+    <ellipse cx="0" cy="0" rx="18" ry="22" fill="#0D4F38"/>
+    <line x1="0" y1="-22" x2="0" y2="-60" stroke="#0D4F38" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0 -46 Q 20 -54 24 -38 Q 20 -30 0 -38" fill="#00C9A7"/>
+    <path d="M 0 -38 Q -20 -48 -18 -32 Q -14 -24 0 -32" fill="#00C9A7" opacity="0.7"/>
+    <line x1="-30" y1="4" x2="30" y2="4" stroke="#E5E7EB" stroke-width="1.5"/>
+    <line x1="-12" y1="4" x2="-12" y2="12" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="4" x2="12" y2="12" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="158" y="72" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="158" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="38" font-weight="700" fill="#0D4F38">AI ZERO</text>
+  <rect x="158" y="124" width="130" height="2.5" fill="#00C9A7" rx="1.25"/>
+  <text x="158" y="149" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">ゼロから芽吹く、AIが育てるHP</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+  <!-- Ultra-minimal: wordmark only with accent -->
+  <text x="40" y="90" font-family="Georgia,'Times New Roman',serif" font-size="22" font-weight="700" fill="#1A3580" letter-spacing="8">SITE</text>
+  <text x="40" y="130" font-family="Georgia,'Times New Roman',serif" font-size="36" font-weight="700" fill="#1A3580" letter-spacing="4">MEISTER</text>
+  <!-- Gold underline accent -->
+  <rect x="40" y="138" width="280" height="4" fill="#F59E0B" rx="2"/>
+  <!-- Thin rule above -->
+  <line x1="40" y1="68" x2="320" y2="68" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Japanese name -->
+  <text x="40" y="58" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="11" fill="#9CA3AF" letter-spacing="4">サイトマイスター</text>
+  <!-- Right: SM badge -->
+  <rect x="390" y="70" width="60" height="60" rx="8" fill="#1A3580"/>
+  <text x="420" y="108" font-family="Georgia,serif" font-size="24" font-weight="900" fill="white" text-anchor="middle">SM</text>
+  <text x="40" y="165" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">AIが達人として高品質なホームページを提供</text>
+</svg>

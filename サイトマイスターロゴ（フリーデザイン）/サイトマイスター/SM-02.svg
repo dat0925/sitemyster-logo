@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<rect fill="none" height="90" rx="8" stroke="#1B4FC2" stroke-width="3" width="140" x="30" y="8"></rect>
+<rect fill="#1B4FC2" height="22" rx="8" width="140" x="30" y="8"></rect>
+<rect fill="#1B4FC2" height="10" width="140" x="30" y="20"></rect>
+<circle cx="47" cy="19" fill="rgba(255,255,255,0.55)" r="4"></circle>
+<circle cx="61" cy="19" fill="rgba(255,255,255,0.35)" r="4"></circle>
+<circle cx="75" cy="19" fill="rgba(255,255,255,0.2)" r="4"></circle>
+<rect fill="#BFD0F5" height="5" rx="2.5" width="55" x="43" y="37"></rect>
+<rect fill="#E0E8FA" height="4" rx="2" width="114" x="43" y="48"></rect>
+<rect fill="#E0E8FA" height="4" rx="2" width="90" x="43" y="58"></rect>
+<rect fill="#E0E8FA" height="4" rx="2" width="104" x="43" y="68"></rect>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1" text-anchor="middle" x="100" y="111">サイトマイスター</text>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="az04g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#26A69A"></stop><stop offset="100%" stop-color="#004D40"></stop>
+</lineargradient>
+</defs>
+<!-- Aperture blades (6 blades) -->
+<g opacity="0.85">
+<path d="M100,8 L114,50 L86,50 Z" fill="url(#az04g)"></path>
+<path d="M100,8 L114,50 L86,50 Z" fill="url(#az04g)" transform="rotate(60,100,50)"></path>
+<path d="M100,8 L114,50 L86,50 Z" fill="url(#az04g)" transform="rotate(120,100,50)"></path>
+<path d="M100,8 L114,50 L86,50 Z" fill="url(#az04g)" transform="rotate(180,100,50)"></path>
+<path d="M100,8 L114,50 L86,50 Z" fill="url(#az04g)" transform="rotate(240,100,50)"></path>
+<path d="M100,8 L114,50 L86,50 Z" fill="url(#az04g)" transform="rotate(300,100,50)"></path>
+</g>
+<circle cx="100" cy="50" fill="white" r="20"></circle>
+<text dominant-baseline="middle" fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="900" text-anchor="middle" x="100" y="55">AI</text>
+<text fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="105">AI ZERO</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

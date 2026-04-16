@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Document shape with folded corner -->
+<path d="M50,10 L140,10 L140,40 L160,40 L160,100 L50,100 Z" fill="#1B4FC2"></path>
+<path d="M140,10 L160,40 L140,40 Z" fill="#0D2D7A"></path>
+<path d="M140,10 L160,40 L140,40 Z" fill="rgba(255,255,255,0.15)"></path>
+<!-- Lines on page -->
+<line stroke="rgba(255,255,255,0.4)" stroke-linecap="round" stroke-width="2.5" x1="65" x2="145" y1="52" y2="52"></line>
+<line stroke="rgba(255,255,255,0.25)" stroke-linecap="round" stroke-width="2" x1="65" x2="145" y1="62" y2="62"></line>
+<line stroke="rgba(255,255,255,0.25)" stroke-linecap="round" stroke-width="2" x1="65" x2="120" y1="72" y2="72"></line>
+<text fill="rgba(255,255,255,0.9)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="900" text-anchor="middle" x="104" y="88">サイトマイスター</text>
+<text fill="#888" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" text-anchor="middle" x="100" y="112">SITE MEISTER</text>
+</svg>

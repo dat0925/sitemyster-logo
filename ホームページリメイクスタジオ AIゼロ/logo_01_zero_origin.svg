@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D4F38;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A8A5E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C9A7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E5C3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="200" fill="white"/>
+
+  <!-- Symbol: Circle with origin dot and expanding rays -->
+  <g transform="translate(90, 100)">
+    <!-- Outer thin circle -->
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#0D4F38" stroke-width="2.5"/>
+    <!-- Inner accent ring -->
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#00C9A7" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <!-- Center origin dot -->
+    <circle cx="0" cy="0" r="6" fill="url(#grad1)"/>
+    <!-- Expanding rays (4 directions) -->
+    <line x1="0" y1="-12" x2="0" y2="-28" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="12" x2="0" y2="28" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-12" y1="0" x2="-28" y2="0" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="0" x2="28" y2="0" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+    <!-- Diagonal rays (thinner) -->
+    <line x1="8" y1="-8" x2="18" y2="-18" stroke="#00C9A7" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-8" y1="-8" x2="-18" y2="-18" stroke="#00C9A7" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="8" y1="8" x2="18" y2="18" stroke="#00C9A7" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-8" y1="8" x2="-18" y2="18" stroke="#00C9A7" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Logotype -->
+  <text x="155" y="82" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="11" font-weight="400" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="155" y="125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="#0D4F38" letter-spacing="-1">AI ZERO</text>
+  <!-- Accent underline -->
+  <rect x="155" y="133" width="130" height="3" fill="url(#accent1)" rx="1.5"/>
+  <!-- Tagline -->
+  <text x="155" y="155" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" font-weight="300" fill="#9CA3AF" letter-spacing="1">ゼロから、最短で成果が出るホームページへ。</text>
+</svg>

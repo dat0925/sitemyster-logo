@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs><path d="M 58,52 A 42,42 0 1,1 142,52" id="arc04"></path></defs>
+<circle cx="100" cy="52" fill="none" r="44" stroke="#1B4FC2" stroke-width="2.5"></circle>
+<circle cx="100" cy="52" fill="none" r="37" stroke="#1B4FC2" stroke-dasharray="3,4" stroke-width="1"></circle>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" x="100" y="44">サイト</text>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" x="100" y="66">マイスター</text>
+<text fill="#D4A017" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" letter-spacing="4">
+<textpath href="#arc04" startoffset="8%">・ SITE  MEISTER  2026 ・</textpath>
+</text>
+<line stroke="#D4A017" stroke-linecap="round" stroke-width="1.5" x1="68" x2="132" y1="110" y2="110"></line>
+</svg>

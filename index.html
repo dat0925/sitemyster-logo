@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サイトマイスター — ロゴデザイン一覧</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif;
+      background: #F0F2F5;
+      min-height: 100vh;
+    }
+
+    /* ヘッダー */
+    .site-header {
+      background: linear-gradient(135deg, #1A1A2E 0%, #1A3580 100%);
+      padding: 48px 40px 40px;
+      text-align: center;
+      color: white;
+    }
+    .site-header h1 {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+    .site-header p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.02em;
+    }
+
+    /* セクション */
+    .section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 48px 24px 0;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9CA3AF;
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+
+    /* カードグリッド */
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-1 { grid-template-columns: 1fr; }
+
+    /* カード */
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: white;
+      border-radius: 14px;
+      padding: 24px 28px;
+      border: 1.5px solid #E5E7EB;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+      border-color: #C7D0E8;
+    }
+    .card-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .card-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+    .label-blue  { background: #EEF2FF; color: #1A3580; }
+    .label-green { background: #ECFDF5; color: #0D4F38; }
+    .label-teal  { background: #F0FDFA; color: #0F766E; }
+    .label-gem   { background: #FDF4FF; color: #7E22CE; }
+    .label-gray  { background: #F3F4F6; color: #374151; }
+
+    .card h2 {
+      font-size: 17px;
+      font-weight: 800;
+      color: #1A1A2E;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card p {
+      font-size: 12.5px;
+      color: #6B7280;
+      line-height: 1.7;
+    }
+    .card .count-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #9CA3AF;
+      margin-top: 10px;
+    }
+
+    /* 区切り */
+    .divider { margin-top: 40px; }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      padding: 48px 24px 32px;
+      margin-top: 48px;
+      font-size: 12px;
+      color: #D1D5DB;
+    }
+
+    @media (max-width: 768px) {
+      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .site-header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>サイトマイスター ロゴデザイン</h1>
+  <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;|&nbsp; 全ページ一覧</p>
+</header>
+
+<!-- ===== ブランド別 30案 ===== -->
+<div class="section">
+  <div class="section-title">ブランド別ロゴ — 各30案</div>
+  <div class="grid grid-3">
+
+    <a href="sitemyster30.html" class="card">
+      <span class="card-icon">🔷</span>
+      <span class="card-label label-blue">直販チャネル</span>
+      <h2>サイトマイスター</h2>
+      <p>ドイツ語で「達人」を意味するマイスター。AIが高品質なHPを提供するブランド。ネイビーブルー × ゴールド。</p>
+      <span class="count-badge">全30案 →</span>
+    </a>
+
+    <a href="ai-zero30.html" class="card">
+      <span class="card-icon">🟢</span>
+      <span class="card-label label-green">WEBチャネル・新規</span>
+      <h2>ホームページリメイクスタジオ AI ZERO</h2>
+      <p>「ゼロから、迷わず成果が出るホームページへ。」AIがトータルサポート。フォレストグリーン × ティール。</p>
+      <span class="count-badge">全30案 →</span>
+    </a>
+
+    <a href="aiboost30.html" class="card">
+      <span class="card-icon">🚀</span>
+      <span class="card-label label-teal">WEBチャネル・リプレイス</span>
+      <h2>ホームページリメイクスタジオ AIブースト</h2>
+      <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し、集客・反響を一段引き上げる。</p>
+      <span class="count-badge">全30案 →</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ===== 比較・まとめ表示 ===== -->
+<div class="section divider">
+  <div class="section-title">比較・まとめ表示</div>
+  <div class="grid grid-2">
+
+    <a href="aizero10-boost10.html" class="card">
+      <span class="card-icon">⚖️</span>
+      <span class="card-label label-green">AI ZERO + AIブースト</span>
+      <h2>2ブランド比較ビュー</h2>
+      <p>AI ZERO 10案・AIブースト 10案を並べて比較できるレイアウト。チャネル戦略の検討に。</p>
+      <span class="count-badge">10案 × 2ブランド →</span>
+    </a>
+
+    <a href="all10-3.html" class="card">
+      <span class="card-icon">🗂️</span>
+      <span class="card-label label-gray">全ブランド</span>
+      <h2>ロゴデザイン集（白背景版）</h2>
+      <p>サイトマイスター・AI ZERO・AIブーストの3ブランドを一覧で確認できる白背景版まとめページ。</p>
+      <span class="count-badge">3ブランド横断 →</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ===== フリーデザイン ===== -->
+<div class="section divider">
+  <div class="section-title">フリーデザイン版</div>
+  <div class="grid grid-1">
+
+    <a href="サイトマイスターロゴ（フリーデザイン）/ロゴ一覧（全90案）.html" class="card">
+      <span class="card-icon">🎨</span>
+      <span class="card-label label-gray">フリーデザイン</span>
+      <h2>ロゴ一覧（全90案）</h2>
+      <p>サイトマイスター・AI ZERO・AIブーストの3ブランド、各30案 計90案をフリーデザイン形式で収録した完全版。</p>
+      <span class="count-badge">全90案（3ブランド × 30案）→</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ===== Gemini提案 ===== -->
+<div class="section divider">
+  <div class="section-title">AI提案</div>
+  <div class="grid grid-1">
+
+    <a href="gemini.html" class="card">
+      <span class="card-icon">✨</span>
+      <span class="card-label label-gem">Gemini提案</span>
+      <h2>Gemini によるロゴデザイン提案</h2>
+      <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
+      <span class="count-badge">提案画像 4点 →</span>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;—&nbsp; 各カードをクリックすると詳細ページを表示します</p>
+</footer>
+
+</body>
+</html>

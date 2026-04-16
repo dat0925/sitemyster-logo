@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<clippath id="ab29left"><rect height="88" rx="0" width="82" x="18" y="6"></rect></clippath>
+<clippath id="ab29right"><rect height="88" rx="0" width="82" x="100" y="6"></rect></clippath>
+</defs>
+<rect fill="#1B8C3E" height="88" rx="12" width="164" x="18" y="6"></rect>
+<!-- Right half: orange -->
+<rect clip-path="url(#ab29right)" fill="#FF6D00" height="88" rx="0" width="82" x="100" y="6"></rect>
+<!-- Diagonal split line -->
+<line stroke="white" stroke-width="3" x1="96" x2="104" y1="6" y2="94"></line>
+<!-- AI left -->
+<text dominant-baseline="middle" fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="59" y="57">AI</text>
+<!-- B right -->
+<text dominant-baseline="middle" fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="900" text-anchor="middle" x="141" y="57">B</text>
+<!-- Round corners applied -->
+<rect fill="none" height="88" rx="12" stroke="white" stroke-width="0" width="164" x="18" y="6"></rect>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+  <g transform="translate(88,100)">
+    <!-- Globe circle -->
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#1A3580" stroke-width="2.5"/>
+    <!-- Latitude lines -->
+    <ellipse cx="0" cy="0" rx="46" ry="18" fill="none" stroke="#2B5CE6" stroke-width="1" opacity="0.5"/>
+    <line x1="-46" y1="0" x2="46" y2="0" stroke="#2B5CE6" stroke-width="1" opacity="0.5"/>
+    <ellipse cx="0" cy="-16" rx="40" ry="10" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.4"/>
+    <ellipse cx="0" cy="16" rx="40" ry="10" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.4"/>
+    <!-- Longitude lines -->
+    <ellipse cx="0" cy="0" rx="22" ry="46" fill="none" stroke="#2B5CE6" stroke-width="1" opacity="0.4"/>
+    <ellipse cx="0" cy="0" rx="4" ry="46" fill="none" stroke="#1A3580" stroke-width="1.5" opacity="0.6"/>
+    <!-- Location pin on globe -->
+    <circle cx="14" cy="-18" r="8" fill="#F59E0B"/>
+    <circle cx="14" cy="-18" r="4" fill="white"/>
+    <!-- Signal waves from pin -->
+    <circle cx="14" cy="-18" r="14" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+  </g>
+  <text x="160" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#6B7280" letter-spacing="3">SITE MEISTER</text>
+  <text x="160" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="#1A3580">サイトマイスター</text>
+  <text x="160" y="148" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">WEB上で輝く存在感を作り出す</text>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g05" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2563EB"></stop><stop offset="100%" stop-color="#1E3A8A"></stop>
+</lineargradient>
+</defs>
+<path d="M100,8 L148,26 L148,62 Q148,88 100,100 Q52,88 52,62 L52,26 Z" fill="url(#g05)"></path>
+<path d="M100,16 L140,31 L140,62 Q140,82 100,93 Q60,82 60,62 L60,31 Z" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"></path>
+<text dominant-baseline="middle" fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="900" text-anchor="middle" x="100" y="57">SM</text>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="112">SITE MEISTER</text>
+</svg>

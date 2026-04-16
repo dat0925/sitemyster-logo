@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab19g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1B8C3E"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+<clippath id="ab19clip"><rect height="88" rx="10" width="160" x="20" y="6"></rect></clippath>
+</defs>
+<rect fill="url(#ab19g)" height="88" rx="10" width="160" x="20" y="6"></rect>
+<!-- Diagonal speed lines clipped -->
+<g clip-path="url(#ab19clip)" opacity="0.15">
+<line stroke="white" stroke-width="12" x1="0" x2="200" y1="40" y2="0"></line>
+<line stroke="white" stroke-width="8" x1="0" x2="200" y1="70" y2="30"></line>
+<line stroke="white" stroke-width="6" x1="0" x2="200" y1="100" y2="60"></line>
+</g>
+<!-- Text on top -->
+<text fill="#FF6D00" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" x="100" y="42">AI</text>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="900" letter-spacing="2" text-anchor="middle" x="100" y="70">BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="109">ホームページリメイクスタジオ</text>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Circular arrows using arcs -->
+<path d="M100,12 A40,40 0 1,1 60,52" fill="none" stroke="#1B4FC2" stroke-linecap="round" stroke-width="6"></path>
+<polygon fill="#1B4FC2" points="60,42 60,62 48,52"></polygon>
+<path d="M100,92 A40,40 0 1,1 140,52" fill="none" stroke="#4A90E8" stroke-linecap="round" stroke-width="6"></path>
+<polygon fill="#4A90E8" points="140,42 140,62 152,52"></polygon>
+<text dominant-baseline="middle" fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="900" text-anchor="middle" x="100" y="57">SM</text>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" text-anchor="middle" x="100" y="110">SITE MEISTER</text>
+</svg>

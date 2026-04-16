@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="pixelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D4F38;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C9A7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="200" fill="white"/>
+
+  <!-- Symbol: Pixel grid forming "Z" -->
+  <g transform="translate(50, 55)">
+    <!-- Grid of pixels forming a stylized Z shape -->
+    <!-- Row 1 (top bar of Z) -->
+    <rect x="0" y="0" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="17" y="0" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="34" y="0" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="51" y="0" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="68" y="0" width="14" height="14" rx="2" fill="#00C9A7"/>
+    <!-- Row 2 (diagonal step) -->
+    <rect x="51" y="17" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="34" y="17" width="14" height="14" rx="2" fill="#0D4F38" opacity="0.3"/>
+    <!-- Row 3 (middle) -->
+    <rect x="17" y="34" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="34" y="34" width="14" height="14" rx="2" fill="#00C9A7"/>
+    <rect x="51" y="34" width="14" height="14" rx="2" fill="#0D4F38" opacity="0.4"/>
+    <!-- Row 4 (diagonal step) -->
+    <rect x="17" y="51" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <!-- Row 5 (bottom bar of Z) -->
+    <rect x="0" y="68" width="14" height="14" rx="2" fill="#00C9A7"/>
+    <rect x="17" y="68" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="34" y="68" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="51" y="68" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <rect x="68" y="68" width="14" height="14" rx="2" fill="#0D4F38"/>
+    <!-- Floating pixel suggesting generation -->
+    <rect x="85" y="0" width="8" height="8" rx="2" fill="#00C9A7" opacity="0.5"/>
+    <rect x="85" y="34" width="6" height="6" rx="1.5" fill="#0D4F38" opacity="0.3"/>
+    <rect x="85" y="60" width="4" height="4" rx="1" fill="#00C9A7" opacity="0.4"/>
+  </g>
+
+  <!-- Logotype -->
+  <text x="175" y="82" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="11" font-weight="400" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="175" y="125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="#0D4F38" letter-spacing="-1">AI ZERO</text>
+  <text x="175" y="155" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" font-weight="300" fill="#9CA3AF" letter-spacing="1">AIが設計・構成・表現までをトータルサポート</text>
+  <!-- Small accent dot -->
+  <circle cx="172" cy="121" r="4" fill="#00C9A7"/>
+</svg>

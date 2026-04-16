@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab27g" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2E9E52"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<!-- Shield -->
+<path d="M100,8 L148,28 L148,64 Q148,90 100,102 Q52,90 52,64 L52,28 Z" fill="url(#ab27g)"></path>
+<path d="M100,16 L140,33 L140,64 Q140,85 100,95 Q60,85 60,64 L60,33 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"></path>
+<!-- Lightning bolt inside -->
+<polygon fill="#FF6D00" points="106,22 86,58 100,58 94,96 114,52 100,52"></polygon>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" text-anchor="middle" x="100" y="112">AI BOOST</text>
+</svg>

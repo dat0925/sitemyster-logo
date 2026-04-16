@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2E20;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D4F38;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="480" height="200" fill="url(#darkGrad)" rx="8"/>
+
+  <!-- Symbol: Minimalist "0" with spark -->
+  <g transform="translate(90, 100)">
+    <!-- Bold zero shape -->
+    <ellipse cx="0" cy="0" rx="36" ry="42" fill="none" stroke="white" stroke-width="6"/>
+    <!-- Cut top-right of zero with spark -->
+    <rect x="15" y="-48" width="30" height="20" fill="url(#darkGrad)"/>
+    <!-- Spark line replacing the cut -->
+    <path d="M 18 -38 L 28 -28 L 22 -24 L 36 -12" fill="none" stroke="#00C9A7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Dot of spark -->
+    <circle cx="36" cy="-12" r="4" fill="#00C9A7"/>
+  </g>
+
+  <!-- Logotype -->
+  <text x="155" y="75" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="rgba(255,255,255,0.5)" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="155" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="white">AI ZERO</text>
+  <!-- Teal accent under "AI" -->
+  <rect x="155" y="126" width="46" height="3" fill="#00C9A7" rx="1.5"/>
+  <text x="155" y="152" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">ゼロから成果が出るホームページへ</text>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab21g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#FF6D00"></stop><stop offset="100%" stop-color="#E65100"></stop>
+</lineargradient>
+</defs>
+<!-- Starburst (12 rays) -->
+<g fill="url(#ab21g)" opacity="0.9">
+<rect height="20" rx="4" transform="rotate(0,100,50)" width="8" x="96" y="6"></rect>
+<rect height="16" rx="4" transform="rotate(30,100,50)" width="8" x="96" y="6"></rect>
+<rect height="20" rx="4" transform="rotate(60,100,50)" width="8" x="96" y="6"></rect>
+<rect height="16" rx="4" transform="rotate(90,100,50)" width="8" x="96" y="6"></rect>
+<rect height="20" rx="4" transform="rotate(120,100,50)" width="8" x="96" y="6"></rect>
+<rect height="16" rx="4" transform="rotate(150,100,50)" width="8" x="96" y="6"></rect>
+<rect height="20" rx="4" transform="rotate(180,100,50)" width="8" x="96" y="6"></rect>
+<rect height="16" rx="4" transform="rotate(210,100,50)" width="8" x="96" y="6"></rect>
+<rect height="20" rx="4" transform="rotate(240,100,50)" width="8" x="96" y="6"></rect>
+<rect height="16" rx="4" transform="rotate(270,100,50)" width="8" x="96" y="6"></rect>
+<rect height="20" rx="4" transform="rotate(300,100,50)" width="8" x="96" y="6"></rect>
+<rect height="16" rx="4" transform="rotate(330,100,50)" width="8" x="96" y="6"></rect>
+</g>
+<circle cx="100" cy="50" fill="#1B8C3E" r="22"></circle>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="900" text-anchor="middle" x="100" y="46">AI</text>
+<text fill="rgba(255,255,255,0.8)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="900" letter-spacing="1" text-anchor="middle" x="100" y="60">BOOST</text>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

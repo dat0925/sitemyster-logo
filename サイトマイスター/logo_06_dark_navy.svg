@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="#0F1E4A" rx="8"/>
+  <g transform="translate(88,100)">
+    <!-- Minimal "SM" monogram in circle -->
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#2B5CE6" stroke-width="2"/>
+    <circle cx="0" cy="0" r="38" fill="#1A3580"/>
+    <text x="0" y="-6" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#60A5FA" text-anchor="middle" letter-spacing="1">SITE</text>
+    <text x="0" y="14" font-family="'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="900" fill="white" text-anchor="middle">MEISTER</text>
+    <!-- Gold arc top -->
+    <path d="M -25 -38 A 46 46 0 0 1 25 -38" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="158" y="74" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10.5" fill="rgba(255,255,255,0.4)" letter-spacing="2">直販チャネル</text>
+  <text x="158" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="white">サイトマイスター</text>
+  <rect x="158" y="124" width="70" height="3" fill="#2B5CE6" rx="1.5"/>
+  <text x="158" y="150" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">AIが達人として高品質なWEBを提供</text>
+</svg>

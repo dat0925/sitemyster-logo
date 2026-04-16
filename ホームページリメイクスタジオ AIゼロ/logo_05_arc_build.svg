@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C9A7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D4F38;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="200" fill="white"/>
+
+  <!-- Symbol: Ascending arc/brackets suggesting build from zero -->
+  <g transform="translate(90, 100)">
+    <!-- Three ascending arcs suggesting growth -->
+    <path d="M -45 30 Q -45 -35 0 -35 Q 45 -35 45 30" fill="none" stroke="#0D4F38" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -32 30 Q -32 -20 0 -20 Q 32 -20 32 30" fill="none" stroke="#0D4F38" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M -18 30 Q -18 -8 0 -8 Q 18 -8 18 30" fill="none" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Base line -->
+    <line x1="-50" y1="34" x2="50" y2="34" stroke="#0D4F38" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Origin point (bottom center) -->
+    <circle cx="0" cy="34" r="5" fill="#00C9A7"/>
+
+    <!-- Small construction marks -->
+    <line x1="-45" y1="30" x2="-45" y2="38" stroke="#0D4F38" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="45" y1="30" x2="45" y2="38" stroke="#0D4F38" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Logotype -->
+  <text x="158" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+
+  <!-- Bold clean type -->
+  <text x="158" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="800" fill="#0D4F38">AI</text>
+  <!-- "ZERO" with hollow/outline style -->
+  <text x="222" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="300" fill="none" stroke="#0D4F38" stroke-width="2">ZERO</text>
+
+  <text x="158" y="152" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="#9CA3AF" letter-spacing="1">生成 / 自動化 / 信頼 / スピード</text>
+</svg>

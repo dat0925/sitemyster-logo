@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Exhaust / propulsion jets -->
+<ellipse cx="74" cy="72" fill="#FF6D00" opacity="0.7" rx="12" ry="22" transform="rotate(-20,74,72)"></ellipse>
+<ellipse cx="100" cy="78" fill="#FF6D00" opacity="0.55" rx="10" ry="18"></ellipse>
+<ellipse cx="126" cy="72" fill="#FF6D00" opacity="0.7" rx="12" ry="22" transform="rotate(20,126,72)"></ellipse>
+<!-- Inner glow -->
+<ellipse cx="74" cy="70" fill="#FFB300" opacity="0.6" rx="6" ry="12" transform="rotate(-20,74,70)"></ellipse>
+<ellipse cx="100" cy="76" fill="#FFB300" opacity="0.5" rx="5" ry="10"></ellipse>
+<ellipse cx="126" cy="70" fill="#FFB300" opacity="0.6" rx="6" ry="12" transform="rotate(20,126,70)"></ellipse>
+<!-- Main body -->
+<rect fill="#1B8C3E" height="54" rx="12" width="88" x="56" y="20"></rect>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="900" text-anchor="middle" x="100" y="42">AI</text>
+<text fill="rgba(255,255,255,0.8)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="60">BOOST</text>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

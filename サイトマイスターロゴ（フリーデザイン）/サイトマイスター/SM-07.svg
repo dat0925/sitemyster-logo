@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Crown -->
+<polygon fill="#D4A017" points="72,36 80,20 90,32 100,14 110,32 120,20 128,36 72,36"></polygon>
+<rect fill="#D4A017" height="8" rx="2" width="56" x="72" y="36"></rect>
+<!-- Bold S -->
+<text dominant-baseline="middle" fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="900" text-anchor="middle" x="100" y="82">S</text>
+<line stroke="#D4A017" stroke-linecap="round" stroke-width="2" x1="58" x2="142" y1="100" y2="100"></line>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="112">SITE MEISTER</text>
+</svg>

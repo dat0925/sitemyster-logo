@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g23" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2563EB"></stop><stop offset="100%" stop-color="#1E3A8A"></stop>
+</lineargradient>
+</defs>
+<!-- Custom M letterform (geometric) -->
+<path d="M32,88 L32,16 L66,16 L100,56 L134,16 L168,16 L168,88 L148,88 L148,42 L108,88 L92,88 L52,42 L52,88 Z" fill="url(#g23)"></path>
+<line stroke="#D4A017" stroke-linecap="round" stroke-width="2.5" x1="32" x2="168" y1="96" y2="96"></line>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="300" letter-spacing="6" text-anchor="middle" x="100" y="110">MEISTER</text>
+</svg>

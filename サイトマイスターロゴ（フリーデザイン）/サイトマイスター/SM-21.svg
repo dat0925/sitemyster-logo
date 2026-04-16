@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Lines cut to form S shape -->
+<!-- Top bar -->
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="6" x1="70" x2="130" y1="12" y2="12"></line>
+<!-- Upper fill lines (right side) -->
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="5" x1="124" x2="130" y1="20" y2="20"></line>
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="5" x1="118" x2="130" y1="28" y2="28"></line>
+<!-- Middle bar -->
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="6" x1="70" x2="130" y1="46" y2="46"></line>
+<!-- Upper left fill -->
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="5" x1="70" x2="76" y1="38" y2="38"></line>
+<!-- Lower fill lines (left side) -->
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="5" x1="70" x2="76" y1="54" y2="54"></line>
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="5" x1="70" x2="82" y1="62" y2="62"></line>
+<!-- Bottom bar -->
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="6" x1="70" x2="130" y1="80" y2="80"></line>
+<line stroke="#1B4FC2" stroke-linecap="round" stroke-width="5" x1="118" x2="130" y1="72" y2="72"></line>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="100">SITE MEISTER</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="112">サイトマイスター</text>
+</svg>

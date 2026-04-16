@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g09" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2563EB"></stop><stop offset="100%" stop-color="#1E3A8A"></stop>
+</lineargradient>
+</defs>
+<!-- M as mountain peaks -->
+<polyline fill="none" points="45,82 75,22 100,58 125,22 155,82" stroke="url(#g09)" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></polyline>
+<!-- Star at peak -->
+<polygon fill="#D4A017" points="75,14 77,20 83,20 78,24 80,30 75,26 70,30 72,24 67,20 73,20"></polygon>
+<polygon fill="#D4A017" points="125,14 127,20 133,20 128,24 130,30 125,26 120,30 122,24 117,20 123,20"></polygon>
+<line stroke="#DCE6FA" stroke-width="2" x1="40" x2="160" y1="97" y2="97"></line>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="110">SITE MEISTER</text>
+</svg>

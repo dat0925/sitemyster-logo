@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<circle cx="100" cy="50" fill="#00836F" r="8"></circle>
+<circle cx="100" cy="50" fill="none" opacity="0.7" r="18" stroke="#00836F" stroke-width="2"></circle>
+<circle cx="100" cy="50" fill="none" opacity="0.45" r="28" stroke="#00836F" stroke-width="1.5"></circle>
+<circle cx="100" cy="50" fill="none" opacity="0.25" r="38" stroke="#00836F" stroke-width="1"></circle>
+<circle cx="100" cy="50" fill="none" opacity="0.12" r="48" stroke="#00836F" stroke-width="0.7"></circle>
+<!-- AI text center -->
+<text dominant-baseline="middle" fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="900" text-anchor="middle" x="100" y="55">AI</text>
+<text fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI ZERO</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

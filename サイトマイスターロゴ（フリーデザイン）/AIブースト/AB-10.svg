@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab10g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2E9E52"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<!-- B made of 3 curved motion arcs -->
+<!-- Vertical line -->
+<line stroke="url(#ab10g)" stroke-linecap="round" stroke-width="9" x1="62" x2="62" y1="12" y2="96"></line>
+<!-- Top bump -->
+<path d="M62,12 Q112,12 112,36 Q112,56 62,56" fill="none" stroke="url(#ab10g)" stroke-linecap="round" stroke-width="9"></path>
+<!-- Bottom bump -->
+<path d="M62,56 Q120,56 120,76 Q120,96 62,96" fill="none" stroke="url(#ab10g)" stroke-linecap="round" stroke-width="9"></path>
+<!-- Speed streaks -->
+<line opacity="0.8" stroke="#FF6D00" stroke-linecap="round" stroke-width="3" x1="126" x2="160" y1="30" y2="24"></line>
+<line opacity="0.6" stroke="#FF6D00" stroke-linecap="round" stroke-width="2" x1="128" x2="168" y1="42" y2="38"></line>
+<line opacity="0.4" stroke="#FF6D00" stroke-linecap="round" stroke-width="1.5" x1="130" x2="172" y1="54" y2="52"></line>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="110">AI BOOST</text>
+</svg>

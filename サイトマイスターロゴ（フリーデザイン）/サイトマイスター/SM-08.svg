@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Layer 3 (back) -->
+<rect fill="#BFD0F5" height="52" rx="5" width="68" x="72" y="20"></rect>
+<!-- Layer 2 -->
+<rect fill="#6090E8" height="52" rx="5" width="68" x="66" y="26"></rect>
+<!-- Layer 1 (front) -->
+<rect fill="#1B4FC2" height="52" rx="5" width="68" x="60" y="32"></rect>
+<!-- Lines inside front page -->
+<line stroke="rgba(255,255,255,0.5)" stroke-linecap="round" stroke-width="2" x1="70" x2="118" y1="45" y2="45"></line>
+<line stroke="rgba(255,255,255,0.3)" stroke-linecap="round" stroke-width="2" x1="70" x2="118" y1="53" y2="53"></line>
+<line stroke="rgba(255,255,255,0.3)" stroke-linecap="round" stroke-width="2" x1="70" x2="106" y1="61" y2="61"></line>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.5" text-anchor="middle" x="100" y="101">SITE MEISTER</text>
+<text fill="#888" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="113">サイトマイスター</text>
+</svg>

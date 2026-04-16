@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g25r" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1B4FC2"></stop><stop offset="100%" stop-color="#0D2D7A"></stop>
+</lineargradient>
+</defs>
+<!-- Seal outer star/rays -->
+<polygon fill="#D4A017" opacity="0.9" points="100,6 106,32 130,20 120,44 148,44 128,60 148,76 120,74 130,98 106,86 100,112 94,86 70,98 80,74 52,76 72,60 52,44 80,44 70,20 94,32"></polygon>
+<circle cx="100" cy="59" fill="url(#g25r)" r="34"></circle>
+<circle cx="100" cy="59" fill="none" r="28" stroke="rgba(255,255,255,0.2)" stroke-width="1"></circle>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="900" text-anchor="middle" x="100" y="54">SITE</text>
+<text fill="rgba(255,255,255,0.8)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="900" letter-spacing="2" text-anchor="middle" x="100" y="70">MEISTER</text>
+</svg>

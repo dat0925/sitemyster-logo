@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Large O outline as browser -->
+<rect fill="none" height="84" rx="42" stroke="#00836F" stroke-width="6" width="148" x="26" y="8"></rect>
+<!-- AI inside -->
+<text fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="900" text-anchor="middle" x="100" y="36">AI</text>
+<!-- Mini wireframe lines -->
+<line stroke="#4DB6AC" stroke-linecap="round" stroke-width="2" x1="56" x2="144" y1="50" y2="50"></line>
+<line opacity="0.6" stroke="#4DB6AC" stroke-linecap="round" stroke-width="1.5" x1="60" x2="140" y1="60" y2="60"></line>
+<line opacity="0.4" stroke="#4DB6AC" stroke-linecap="round" stroke-width="1.5" x1="64" x2="130" y1="70" y2="70"></line>
+<text fill="#00836F" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI ZERO</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

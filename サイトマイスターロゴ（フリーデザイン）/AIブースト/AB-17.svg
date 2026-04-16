@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab17g" x1="0%" x2="0%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#4CAF72"></stop><stop offset="100%" stop-color="#1B8C3E"></stop>
+</lineargradient>
+</defs>
+<!-- Large minimal arrow -->
+<polygon fill="url(#ab17g)" points="100,8 138,56 116,56 116,84 84,84 84,56 62,56"></polygon>
+<!-- Orange accent line at base -->
+<rect fill="#FF6D00" height="6" rx="3" width="32" x="84" y="80"></rect>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="900" letter-spacing="3" text-anchor="middle" x="100" y="101">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="113">ホームページリメイクスタジオ</text>
+</svg>

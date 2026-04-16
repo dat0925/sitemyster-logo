@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab18g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2E9E52"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<!-- Diamond -->
+<polygon fill="url(#ab18g)" points="100,6 152,52 100,90 48,52"></polygon>
+<!-- Inner orange accent -->
+<polygon fill="none" opacity="0.4" points="100,16 142,52 100,82 58,52" stroke="#FF6D00" stroke-width="1.5"></polygon>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="900" text-anchor="middle" x="100" y="48">AI</text>
+<text fill="rgba(255,255,255,0.8)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="900" letter-spacing="1.5" text-anchor="middle" x="100" y="64">BOOST</text>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="108">AI BOOST</text>
+</svg>

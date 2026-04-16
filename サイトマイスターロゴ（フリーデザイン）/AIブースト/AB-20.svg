@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<path d="M 56,50 A 44,44 0 0,1 144,50" id="ab20top"></path>
+<path d="M 144,52 A 44,44 0 0,1 56,52" id="ab20bot"></path>
+</defs>
+<circle cx="100" cy="50" fill="none" r="44" stroke="#1B8C3E" stroke-width="3"></circle>
+<circle cx="100" cy="50" fill="none" r="36" stroke="#1B8C3E" stroke-dasharray="3,4" stroke-width="1"></circle>
+<!-- Arc text -->
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="5">
+<textpath href="#ab20top" startoffset="8%">AI BOOST</textpath>
+</text>
+<text fill="#888" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" letter-spacing="4">
+<textpath href="#ab20bot" startoffset="4%">HOMEPAGE REMAKE</textpath>
+</text>
+<!-- Center content -->
+<polygon fill="#FF6D00" points="100,32 108,46 104,46 104,58 96,58 96,46 92,46"></polygon>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="900" letter-spacing="1" text-anchor="middle" x="100" y="72">STUDIO</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" text-anchor="middle" x="100" y="107">ホームページリメイクスタジオ</text>
+</svg>

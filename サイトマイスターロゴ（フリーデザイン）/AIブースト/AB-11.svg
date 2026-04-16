@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab11g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1B8C3E"></stop><stop offset="100%" stop-color="#0D5C2A"></stop>
+</lineargradient>
+</defs>
+<circle cx="100" cy="50" fill="url(#ab11g)" r="44"></circle>
+<circle cx="100" cy="50" fill="none" r="36" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"></circle>
+<!-- AB text -->
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" x="92" y="48">AI</text>
+<!-- Up arrow at bottom -->
+<polygon fill="#FF6D00" points="108,62 116,72 112,72 112,80 104,80 104,72 100,72"></polygon>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

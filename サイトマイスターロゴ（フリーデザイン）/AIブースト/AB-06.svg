@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="ab06g" x1="0%" x2="0%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#0D5C2A"></stop><stop offset="100%" stop-color="#2E9E52"></stop>
+</lineargradient>
+</defs>
+<!-- B shape with arrow on right bumps -->
+<path d="M52,16 L52,94 L88,94 Q116,94 116,76 Q116,64 100,60 Q116,56 116,44 Q116,16 88,16 Z" fill="url(#ab06g)"></path>
+<path d="M64,26 L88,26 Q104,26 104,44 Q104,56 88,56 L64,56 Z" fill="rgba(255,255,255,0.2)"></path>
+<path d="M64,60 L88,60 Q108,60 108,76 Q108,88 88,88 L64,88 Z" fill="rgba(255,255,255,0.15)"></path>
+<!-- Arrow emerging from B -->
+<polygon fill="#FF6D00" points="116,52 148,28 148,40 180,40 180,64 148,64 148,76"></polygon>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="110">AI BOOST</text>
+</svg>

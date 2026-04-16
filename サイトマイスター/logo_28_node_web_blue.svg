@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+  <g transform="translate(88,100)">
+    <!-- Spider web / network pattern -->
+    <line x1="0" y1="-46" x2="44" y2="-14" stroke="#1A3580" stroke-width="1.5" opacity="0.4"/>
+    <line x1="44" y1="-14" x2="28" y2="38" stroke="#1A3580" stroke-width="1.5" opacity="0.4"/>
+    <line x1="28" y1="38" x2="-28" y2="38" stroke="#1A3580" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-28" y1="38" x2="-44" y2="-14" stroke="#1A3580" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-44" y1="-14" x2="0" y2="-46" stroke="#1A3580" stroke-width="1.5" opacity="0.4"/>
+    <!-- Diagonals to center -->
+    <line x1="0" y1="0" x2="0" y2="-46" stroke="#2B5CE6" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="44" y2="-14" stroke="#2B5CE6" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="28" y2="38" stroke="#2B5CE6" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="-28" y2="38" stroke="#60A5FA" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="-44" y2="-14" stroke="#60A5FA" stroke-width="1.5"/>
+    <!-- Outer nodes -->
+    <circle cx="0" cy="-46" r="6" fill="#1A3580"/>
+    <circle cx="44" cy="-14" r="5" fill="#1A3580"/>
+    <circle cx="28" cy="38" r="5" fill="#2B5CE6"/>
+    <circle cx="-28" cy="38" r="5" fill="#2B5CE6"/>
+    <circle cx="-44" cy="-14" r="6" fill="#1A3580"/>
+    <!-- Center master node -->
+    <circle cx="0" cy="0" r="14" fill="#1A3580"/>
+    <circle cx="0" cy="0" r="8" fill="#60A5FA"/>
+    <circle cx="0" cy="0" r="3" fill="white"/>
+  </g>
+  <text x="160" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-size="11" fill="#6B7280" letter-spacing="3">SITE MEISTER</text>
+  <text x="160" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="#1A3580">サイトマイスター</text>
+  <text x="160" y="148" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">AIがWEBの中心として全体を掌握</text>
+</svg>

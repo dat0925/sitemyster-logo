@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="az28g" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00897B"></stop><stop offset="100%" stop-color="#004D40"></stop>
+</lineargradient>
+<clippath id="az28clip">
+<polygon points="0,0 200,0 200,90 160,90 140,118 0,118"></polygon>
+</clippath>
+</defs>
+<rect clip-path="url(#az28clip)" fill="url(#az28g)" height="118" rx="12" width="200" x="0" y="0"></rect>
+<text fill="rgba(255,255,255,0.15)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="900" text-anchor="middle" x="100" y="42">ホームページリメイクスタジオ</text>
+<text fill="white" font-family="'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="900" text-anchor="middle" x="100" y="68">AI ZERO</text>
+<polygon fill="#FFD600" opacity="0.9" points="160,90 200,90 200,118 140,118"></polygon>
+<text fill="#004D40" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="700" text-anchor="middle" x="180" y="110">AI</text>
+</svg>

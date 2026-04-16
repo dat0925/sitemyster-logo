@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Spiral path going up -->
+<path d="M100,88 C122,88 136,76 136,62 C136,48 118,38 100,38 C82,38 70,46 70,56 C70,66 82,72 94,72 C106,72 114,64 114,56" fill="none" stroke="#1B8C3E" stroke-linecap="round" stroke-width="5"></path>
+<!-- Arrow at top -->
+<polygon fill="#FF6D00" points="114,40 108,54 120,54"></polygon>
+<!-- Center dot -->
+<circle cx="100" cy="88" fill="#FF6D00" r="6"></circle>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" text-anchor="middle" x="100" y="107">AI BOOST</text>
+<text fill="#aaa" font-family="'Helvetica Neue',Arial,sans-serif" font-size="7.5" text-anchor="middle" x="100" y="116">ホームページリメイクスタジオ</text>
+</svg>

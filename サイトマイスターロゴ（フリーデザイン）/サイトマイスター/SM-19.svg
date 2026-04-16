@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<defs>
+<lineargradient id="g19" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#1B4FC2"></stop><stop offset="50%" stop-color="#3B82F6"></stop><stop offset="100%" stop-color="#1B4FC2"></stop>
+</lineargradient>
+</defs>
+<path d="M22,48 C40,28 60,28 80,48 S120,68 140,48 S180,28 198,28" fill="none" stroke="url(#g19)" stroke-linecap="round" stroke-width="4"></path>
+<path d="M22,60 C40,40 60,40 80,60 S120,80 140,60 S180,40 198,40" fill="none" opacity="0.3" stroke="url(#g19)" stroke-linecap="round" stroke-width="2"></path>
+<text fill="#1B4FC2" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="900" letter-spacing="3" text-anchor="middle" x="100" y="88">SITE MEISTER</text>
+<text fill="#888" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="middle" x="100" y="103">サイトマイスター</text>
+<line stroke="#D4A017" stroke-linecap="round" stroke-width="2" x1="42" x2="158" y1="109" y2="109"></line>
+</svg>

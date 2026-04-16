@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="112" viewbox="0 0 200 118" width="190">
+<!-- Orange accent line top -->
+<rect fill="#FF6D00" height="4" rx="2" width="144" x="28" y="10"></rect>
+<text fill="#1B8C3E" font-family="'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="900" text-anchor="middle" x="100" y="44">AI</text>
+<!-- Green line separator -->
+<line opacity="0.3" stroke="#1B8C3E" stroke-width="1.5" x1="40" x2="160" y1="54" y2="54"></line>
+<text fill="#0D5C2A" font-family="'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3" text-anchor="middle" x="100" y="72">BOOST</text>
+<!-- Orange accent line bottom -->
+<rect fill="#FF6D00" height="4" rx="2" width="144" x="28" y="80"></rect>
+<text fill="#888" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" font-weight="300" letter-spacing="2" text-anchor="middle" x="100" y="97">ホームページリメイクスタジオ</text>
+<text fill="#bbb" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" letter-spacing="1" text-anchor="middle" x="100" y="110">Homepage Remake Studio</text>
+</svg>
