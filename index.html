@@ -21,6 +21,9 @@
       gap: 0;
       overflow-x: auto;
       white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 200;
     }
     .quicklinks-label {
       font-size: 10px;
@@ -357,6 +360,56 @@
     }
 
     .divider { margin-top: 40px; }
+
+    /* ===== アコーディオン検索 ===== */
+    .accordion-section {
+      max-width: 1080px;
+      margin: 48px auto 0;
+      padding: 0 24px;
+    }
+    .accordion-toggle {
+      width: 100%;
+      background: white;
+      border: 1.5px solid #E5E7EB;
+      border-radius: 14px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      color: #374151;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      text-align: left;
+    }
+    .accordion-toggle:hover {
+      border-color: #C7D0E8;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+    }
+    .accordion-toggle.open {
+      border-radius: 14px 14px 0 0;
+      border-bottom-color: transparent;
+    }
+    .accordion-arrow {
+      font-size: 12px;
+      color: #9CA3AF;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    .accordion-toggle.open .accordion-arrow { transform: rotate(180deg); }
+    .accordion-body {
+      display: none;
+      background: white;
+      border: 1.5px solid #E5E7EB;
+      border-top: none;
+      border-radius: 0 0 14px 14px;
+      padding: 28px 32px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    }
+    .accordion-body.open { display: block; }
+
     footer {
       text-align: center;
       padding: 48px 24px 32px;
@@ -395,51 +448,6 @@
   <h1>サイトマイスター ロゴデザイン</h1>
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;|&nbsp; 全ページ一覧</p>
 </header>
-
-<!-- ===== ロゴ番号検索 ===== -->
-<div class="search-section">
-  <div class="search-box">
-    <div class="search-box-title">🔍 ロゴ番号で検索</div>
-
-    <!-- Step 1 -->
-    <div class="step-label">STEP 1 — ブランドを選ぶ</div>
-    <div class="brand-btns">
-      <button class="brand-btn" id="btn-sm" onclick="selectBrand('SM')">
-        <span class="bcode">SM</span>サイトマイスター
-      </button>
-      <button class="brand-btn" id="btn-az" onclick="selectBrand('AZ')">
-        <span class="bcode">AZ</span>AI ZERO
-      </button>
-      <button class="brand-btn" id="btn-ab" onclick="selectBrand('AB')">
-        <span class="bcode">AB</span>AIブースト
-      </button>
-    </div>
-
-    <!-- Step 2 -->
-    <div class="step-label">STEP 2 — 番号を選ぶ（クリックで選択）</div>
-    <div class="num-grid" id="num-grid">
-      <!-- JS で生成 -->
-    </div>
-
-    <!-- 直接入力 -->
-    <div class="step-label">または直接入力（例: SM-01 / az-15 / ＡＢ－３０）</div>
-    <div class="search-row">
-      <div class="search-input-wrap">
-        <input type="text" class="search-input" id="search-input"
-               placeholder="SM-01" maxlength="10"
-               oninput="onInputChange()"
-               onkeydown="if(event.key==='Enter') doSearch()">
-      </div>
-      <button class="search-btn" onclick="doSearch()">表示</button>
-      <button class="search-clear" onclick="clearSearch()">クリア</button>
-    </div>
-
-    <!-- プレビュー -->
-    <div class="preview-area" id="preview-area">
-      <div class="preview-inner" id="preview-inner"></div>
-    </div>
-  </div>
-</div>
 
 <!-- ===== ブランド別 30案 ===== -->
 <div class="section" style="margin-top:40px;">
@@ -494,21 +502,7 @@
 <!-- ===== 比較・まとめ ===== -->
 <div class="section divider">
   <div class="section-title">比較・まとめ表示</div>
-  <div class="grid grid-2">
-
-    <a href="aizero10-boost10.html" class="card color-green">
-      <div class="card-top">
-        <span class="card-icon">⚖️</span>
-        <div class="count-block">
-          <span class="count-num">20</span>
-          <span class="count-unit">案</span>
-        </div>
-      </div>
-      <span class="card-label label-green">AI ZERO + AIブースト</span>
-      <h2>2ブランド比較ビュー</h2>
-      <p>AI ZERO 10案・AIブースト 10案を並べて比較できるレイアウト。チャネル戦略の検討に。</p>
-      <span class="arrow">AZ-01〜10 / AB-01〜10 →</span>
-    </a>
+  <div class="grid grid-1">
 
     <a href="all10-3.html" class="card color-gray">
       <div class="card-top">
@@ -564,6 +558,55 @@
       <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
       <span class="arrow">提案画像 4点 →</span>
     </a>
+  </div>
+</div>
+
+<!-- ===== ロゴ番号検索（アコーディオン） ===== -->
+<div class="accordion-section">
+  <button class="accordion-toggle" id="acc-toggle" onclick="toggleAccordion()">
+    <span>🔍 ロゴ番号で検索</span>
+    <span class="accordion-arrow" id="acc-arrow">▼</span>
+  </button>
+  <div class="accordion-body" id="acc-body">
+
+    <!-- Step 1 -->
+    <div class="step-label">STEP 1 — ブランドを選ぶ</div>
+    <div class="brand-btns">
+      <button class="brand-btn" id="btn-sm" onclick="selectBrand('SM')">
+        <span class="bcode">SM</span>サイトマイスター
+      </button>
+      <button class="brand-btn" id="btn-az" onclick="selectBrand('AZ')">
+        <span class="bcode">AZ</span>AI ZERO
+      </button>
+      <button class="brand-btn" id="btn-ab" onclick="selectBrand('AB')">
+        <span class="bcode">AB</span>AIブースト
+      </button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-label">STEP 2 — 番号を選ぶ（クリックで選択）</div>
+    <div class="num-grid" id="num-grid">
+      <!-- JS で生成 -->
+    </div>
+
+    <!-- 直接入力 -->
+    <div class="step-label">または直接入力（例: SM-01 / az-15 / ＡＢ－３０）</div>
+    <div class="search-row">
+      <div class="search-input-wrap">
+        <input type="text" class="search-input" id="search-input"
+               placeholder="SM-01" maxlength="10"
+               oninput="onInputChange()"
+               onkeydown="if(event.key==='Enter') doSearch()">
+      </div>
+      <button class="search-btn" onclick="doSearch()">表示</button>
+      <button class="search-clear" onclick="clearSearch()">クリア</button>
+    </div>
+
+    <!-- プレビュー -->
+    <div class="preview-area" id="preview-area">
+      <div class="preview-inner" id="preview-inner"></div>
+    </div>
+
   </div>
 </div>
 
@@ -834,6 +877,15 @@ function showError(msg) {
 function clearPreview() {
   document.getElementById('preview-area').classList.remove('visible');
   document.getElementById('preview-inner').innerHTML = '';
+}
+
+/* ========= アコーディオン ========= */
+function toggleAccordion() {
+  const toggle = document.getElementById('acc-toggle');
+  const body   = document.getElementById('acc-body');
+  const isOpen = body.classList.contains('open');
+  toggle.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
 }
 
 function clearSearch() {
