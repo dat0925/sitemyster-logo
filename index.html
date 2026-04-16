@@ -12,10 +12,50 @@
       min-height: 100vh;
     }
 
-    /* ヘッダー */
+    /* ===== クイックリンクバー ===== */
+    .quicklinks {
+      background: #1A1A2E;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .quicklinks-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+    .ql-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 10px 14px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.15s, color 0.15s;
+      flex-shrink: 0;
+    }
+    .ql-link:hover { background: rgba(255,255,255,0.08); color: white; }
+    .ql-link .ql-dot {
+      width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+    }
+    .ql-dot.green  { background: #34D399; }
+    .ql-dot.blue   { background: #60A5FA; }
+    .ql-dot.orange { background: #FB923C; }
+
+    /* ===== ヘッダー ===== */
     .site-header {
       background: linear-gradient(135deg, #1A1A2E 0%, #1A3580 100%);
-      padding: 48px 40px 40px;
+      padding: 40px 40px 36px;
       text-align: center;
       color: white;
     }
@@ -28,14 +68,199 @@
     .site-header p {
       font-size: 14px;
       color: rgba(255,255,255,0.65);
-      letter-spacing: 0.02em;
     }
 
-    /* セクション */
+    /* ===== ロゴ検索セクション ===== */
+    .search-section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+    .search-box {
+      background: white;
+      border-radius: 16px;
+      border: 1.5px solid #E5E7EB;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      padding: 28px 32px;
+    }
+    .search-box-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6B7280;
+      margin-bottom: 20px;
+    }
+
+    /* Step 1: ブランド選択 */
+    .step-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #9CA3AF;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .brand-btns {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .brand-btn {
+      padding: 8px 18px;
+      border-radius: 10px;
+      border: 2px solid #E5E7EB;
+      background: #F9FAFB;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      color: #6B7280;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .brand-btn:hover { border-color: #C7D0E8; background: #F0F4FF; color: #1A3580; }
+    .brand-btn.active-sm { border-color: #1A3580; background: #EEF2FF; color: #1A3580; }
+    .brand-btn.active-az { border-color: #0D4F38; background: #ECFDF5; color: #0D4F38; }
+    .brand-btn.active-ab { border-color: #0F766E; background: #F0FDFA; color: #0F766E; }
+    .brand-btn .bcode {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: currentColor;
+      color: white;
+    }
+    .brand-btn.active-sm .bcode { background: #1A3580; color: white; }
+    .brand-btn.active-az .bcode { background: #0D4F38; color: white; }
+    .brand-btn.active-ab .bcode { background: #0F766E; color: white; }
+
+    /* Step 2: 番号グリッド */
+    .num-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+    .num-btn {
+      width: 40px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1.5px solid #E5E7EB;
+      background: #F9FAFB;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      color: #6B7280;
+      transition: all 0.15s;
+    }
+    .num-btn:hover { border-color: #A0AEC0; background: #EDF2F7; color: #1A1A2E; }
+    .num-btn.selected { border-color: var(--brand-color, #1A3580); background: var(--brand-bg, #EEF2FF); color: var(--brand-color, #1A3580); }
+
+    /* テキスト入力 */
+    .search-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .search-input-wrap {
+      position: relative;
+      flex: 1;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px 16px;
+      border: 1.5px solid #E5E7EB;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #1A1A2E;
+      letter-spacing: 0.04em;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-input:focus { border-color: #1A3580; }
+    .search-input::placeholder { font-weight: 400; color: #CBD5E0; }
+    .search-btn {
+      padding: 10px 20px;
+      background: #1A3580;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .search-btn:hover { background: #1e43a0; }
+    .search-clear {
+      padding: 10px 14px;
+      background: #F3F4F6;
+      color: #6B7280;
+      border: none;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .search-clear:hover { background: #E5E7EB; }
+
+    /* プレビューエリア */
+    .preview-area {
+      margin-top: 24px;
+      display: none;
+    }
+    .preview-area.visible { display: block; }
+    .preview-inner {
+      border: 1.5px solid #E5E7EB;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .preview-img-wrap {
+      background: #FAFAFA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+      padding: 32px;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .preview-img-wrap img {
+      max-width: 100%;
+      max-height: 220px;
+      height: auto;
+    }
+    .preview-meta {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .preview-code {
+      font-size: 22px;
+      font-weight: 900;
+      color: #1A1A2E;
+      letter-spacing: 0.02em;
+    }
+    .preview-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #6B7280;
+    }
+    .preview-not-found {
+      padding: 32px;
+      text-align: center;
+      color: #9CA3AF;
+      font-size: 14px;
+    }
+
+    /* ===== カードセクション ===== */
     .section {
       max-width: 1080px;
       margin: 0 auto;
-      padding: 48px 24px 0;
+      padding: 40px 24px 0;
     }
     .section-title {
       font-size: 13px;
@@ -46,14 +271,11 @@
       margin-bottom: 16px;
       padding-left: 4px;
     }
-
-    /* カードグリッド */
     .grid { display: grid; gap: 16px; }
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-2 { grid-template-columns: repeat(2, 1fr); }
     .grid-1 { grid-template-columns: 1fr; }
 
-    /* カード */
     .card {
       display: block;
       text-decoration: none;
@@ -70,8 +292,6 @@
       box-shadow: 0 10px 28px rgba(0,0,0,0.1);
       border-color: #C7D0E8;
     }
-
-    /* カード上段：アイコン＋件数 */
     .card-top {
       display: flex;
       align-items: flex-start;
@@ -79,12 +299,7 @@
       margin-bottom: 14px;
     }
     .card-icon { font-size: 32px; line-height: 1; }
-
-    /* 件数バッジ（大きく目立つ） */
-    .count-block {
-      text-align: right;
-      line-height: 1;
-    }
+    .count-block { text-align: right; line-height: 1; }
     .count-num {
       display: block;
       font-size: 48px;
@@ -99,8 +314,6 @@
       letter-spacing: 0.08em;
       margin-top: 2px;
     }
-
-    /* 件数カラー */
     .color-blue  .count-num { color: #1A3580; }
     .color-blue  .count-unit { color: #6B82C4; }
     .color-green .count-num { color: #0D4F38; }
@@ -112,7 +325,6 @@
     .color-gem   .count-num { color: #7E22CE; }
     .color-gem   .count-unit { color: #A855F7; }
 
-    /* ラベル */
     .card-label {
       display: inline-block;
       font-size: 11px;
@@ -128,7 +340,6 @@
     .label-gem   { background: #FDF4FF; color: #7E22CE; }
     .label-gray  { background: #F3F4F6; color: #374151; }
 
-    /* ブランド名（大きく） */
     .card h2 {
       font-size: 19px;
       font-weight: 900;
@@ -136,11 +347,7 @@
       margin-bottom: 8px;
       line-height: 1.35;
     }
-    .card p {
-      font-size: 12.5px;
-      color: #6B7280;
-      line-height: 1.7;
-    }
+    .card p { font-size: 12.5px; color: #6B7280; line-height: 1.7; }
     .card .arrow {
       display: inline-block;
       margin-top: 12px;
@@ -162,18 +369,80 @@
       .grid-3, .grid-2 { grid-template-columns: 1fr; }
       .site-header h1 { font-size: 22px; }
       .count-num { font-size: 36px; }
+      .brand-btns { gap: 8px; }
+      .search-box { padding: 20px; }
     }
   </style>
 </head>
 <body>
 
+<!-- ===== クイックリンク ===== -->
+<nav class="quicklinks">
+  <span class="quicklinks-label">Quick Links</span>
+  <a href="https://main.dgzky1znkdoer.amplifyapp.com/" target="_blank" class="ql-link">
+    <span class="ql-dot green"></span>AIデモ生成ツール
+  </a>
+  <a href="https://main.dgzky1znkdoer.amplifyapp.com/demo-i18n/" target="_blank" class="ql-link">
+    <span class="ql-dot blue"></span>多言語対応 比較デモ
+  </a>
+  <a href="http://www.hps-intra.com/" target="_blank" class="ql-link">
+    <span class="ql-dot orange"></span>SalesKnowledgeBase（イントラサイト）
+  </a>
+</nav>
+
+<!-- ===== ヘッダー ===== -->
 <header class="site-header">
   <h1>サイトマイスター ロゴデザイン</h1>
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;|&nbsp; 全ページ一覧</p>
 </header>
 
+<!-- ===== ロゴ番号検索 ===== -->
+<div class="search-section">
+  <div class="search-box">
+    <div class="search-box-title">🔍 ロゴ番号で検索</div>
+
+    <!-- Step 1 -->
+    <div class="step-label">STEP 1 — ブランドを選ぶ</div>
+    <div class="brand-btns">
+      <button class="brand-btn" id="btn-sm" onclick="selectBrand('SM')">
+        <span class="bcode">SM</span>サイトマイスター
+      </button>
+      <button class="brand-btn" id="btn-az" onclick="selectBrand('AZ')">
+        <span class="bcode">AZ</span>AI ZERO
+      </button>
+      <button class="brand-btn" id="btn-ab" onclick="selectBrand('AB')">
+        <span class="bcode">AB</span>AIブースト
+      </button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-label">STEP 2 — 番号を選ぶ（クリックで選択）</div>
+    <div class="num-grid" id="num-grid">
+      <!-- JS で生成 -->
+    </div>
+
+    <!-- 直接入力 -->
+    <div class="step-label">または直接入力（例: SM-01 / az-15 / ＡＢ－３０）</div>
+    <div class="search-row">
+      <div class="search-input-wrap">
+        <input type="text" class="search-input" id="search-input"
+               placeholder="SM-01" maxlength="10"
+               oninput="onInputChange()"
+               onkeydown="if(event.key==='Enter') doSearch()">
+      </div>
+      <button class="search-btn" onclick="doSearch()">表示</button>
+      <button class="search-clear" onclick="clearSearch()">クリア</button>
+    </div>
+
+    <!-- プレビュー -->
+    <div class="preview-area" id="preview-area">
+      <div class="preview-inner" id="preview-inner"></div>
+    </div>
+  </div>
+</div>
+
 <!-- ===== ブランド別 30案 ===== -->
-<div class="section">
+<div class="section" style="margin-top:40px;">
   <div class="section-title">ブランド別ロゴ — 各30案</div>
   <div class="grid grid-3">
 
@@ -222,7 +491,7 @@
   </div>
 </div>
 
-<!-- ===== 比較・まとめ表示 ===== -->
+<!-- ===== 比較・まとめ ===== -->
 <div class="section divider">
   <div class="section-title">比較・まとめ表示</div>
   <div class="grid grid-2">
@@ -262,7 +531,6 @@
 <div class="section divider">
   <div class="section-title">フリーデザイン版</div>
   <div class="grid grid-1">
-
     <a href="サイトマイスターロゴ（フリーデザイン）/ロゴ一覧（全90案）.html" class="card color-gray">
       <div class="card-top">
         <span class="card-icon">🎨</span>
@@ -276,7 +544,6 @@
       <p>サイトマイスター・AI ZERO・AIブーストの3ブランド、各30案 計90案をフリーデザイン形式で収録した完全版。</p>
       <span class="arrow">SM-01〜30 / AZ-01〜30 / AB-01〜30 →</span>
     </a>
-
   </div>
 </div>
 
@@ -284,7 +551,6 @@
 <div class="section divider">
   <div class="section-title">AI提案</div>
   <div class="grid grid-1">
-
     <a href="gemini.html" class="card color-gem">
       <div class="card-top">
         <span class="card-icon">✨</span>
@@ -298,13 +564,271 @@
       <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
       <span class="arrow">提案画像 4点 →</span>
     </a>
-
   </div>
 </div>
 
 <footer>
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;—&nbsp; 各カードをクリックすると詳細ページを表示します</p>
 </footer>
+
+<script>
+/* ============================================================
+   ロゴデータ（全90案）
+   SVG パス: サイトマイスターロゴ（フリーデザイン）/ 配下
+============================================================ */
+const LOGOS = {
+  'SM-01': { name: 'Master Crown',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-01.svg' },
+  'SM-02': { name: 'Compass Meister',    path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-02.svg' },
+  'SM-03': { name: 'Shield Crest',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-03.svg' },
+  'SM-04': { name: 'Hexagon Badge',      path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-04.svg' },
+  'SM-05': { name: 'Key Master',         path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-05.svg' },
+  'SM-06': { name: 'Dark Navy',          path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-06.svg' },
+  'SM-07': { name: 'Diamond Precision',  path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-07.svg' },
+  'SM-08': { name: 'Star Quality',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-08.svg' },
+  'SM-09': { name: 'Gear Precision',     path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-09.svg' },
+  'SM-10': { name: 'Mountain Peak',      path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-10.svg' },
+  'SM-11': { name: 'Blueprint Grid',     path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-11.svg' },
+  'SM-12': { name: 'Infinity Master',    path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-12.svg' },
+  'SM-13': { name: 'Prism Light',        path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-13.svg' },
+  'SM-14': { name: 'Circuit AI',         path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-14.svg' },
+  'SM-15': { name: 'Anchor Trust',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-15.svg' },
+  'SM-16': { name: 'Target Focus',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-16.svg' },
+  'SM-17': { name: 'Bridge Connect',     path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-17.svg' },
+  'SM-18': { name: 'Ribbon Award',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-18.svg' },
+  'SM-19': { name: 'Origami Fold',       path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-19.svg' },
+  'SM-20': { name: 'Lighthouse',         path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-20.svg' },
+  'SM-21': { name: 'Monogram SM',        path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-21.svg' },
+  'SM-22': { name: 'Wave Master',        path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-22.svg' },
+  'SM-23': { name: 'Typewriter Craft',   path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-23.svg' },
+  'SM-24': { name: 'Lens Focus',         path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-24.svg' },
+  'SM-25': { name: 'Globe Web',          path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-25.svg' },
+  'SM-26': { name: 'Minimal Wordmark',   path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-26.svg' },
+  'SM-27': { name: 'Feather Precision',  path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-27.svg' },
+  'SM-28': { name: 'Node Web Blue',      path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-28.svg' },
+  'SM-29': { name: 'Book Craft',         path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-29.svg' },
+  'SM-30': { name: 'Seal Official',      path: 'サイトマイスターロゴ（フリーデザイン）/サイトマイスター/SM-30.svg' },
+
+  'AZ-01': { name: 'Zero Origin',        path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-01.svg' },
+  'AZ-02': { name: 'Pixel Build',        path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-02.svg' },
+  'AZ-03': { name: 'Node Network',       path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-03.svg' },
+  'AZ-04': { name: 'Meister Stamp',      path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-04.svg' },
+  'AZ-05': { name: 'Arc Build',          path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-05.svg' },
+  'AZ-06': { name: 'Geometric Bloom',    path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-06.svg' },
+  'AZ-07': { name: 'Dark Edition',       path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-07.svg' },
+  'AZ-08': { name: 'Minimal Mark',       path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-08.svg' },
+  'AZ-09': { name: 'Stacked Layers',     path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-09.svg' },
+  'AZ-10': { name: 'Question Arrow',     path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-10.svg' },
+  'AZ-11': { name: 'Brackets Code',      path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-11.svg' },
+  'AZ-12': { name: 'Light Bulb',         path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-12.svg' },
+  'AZ-13': { name: 'Seed Sprout',        path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-13.svg' },
+  'AZ-14': { name: 'Door Open',          path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-14.svg' },
+  'AZ-15': { name: 'Sunrise',            path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-15.svg' },
+  'AZ-16': { name: 'Pencil Draft',       path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-16.svg' },
+  'AZ-17': { name: 'Clock Start',        path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-17.svg' },
+  'AZ-18': { name: 'Puzzle First',       path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-18.svg' },
+  'AZ-19': { name: 'Fractal Expand',     path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-19.svg' },
+  'AZ-20': { name: 'Fingerprint Unique', path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-20.svg' },
+  'AZ-21': { name: 'Wave Form',          path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-21.svg' },
+  'AZ-22': { name: 'DNA Code',           path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-22.svg' },
+  'AZ-23': { name: 'Hex Grid Build',     path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-23.svg' },
+  'AZ-24': { name: 'Aperture Open',      path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-24.svg' },
+  'AZ-25': { name: 'Constellation',      path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-25.svg' },
+  'AZ-26': { name: 'Block Stack 3D',     path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-26.svg' },
+  'AZ-27': { name: 'Gradient Type',      path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-27.svg' },
+  'AZ-28': { name: 'Minimal B&W',        path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-28.svg' },
+  'AZ-29': { name: 'Circuit Zero',       path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-29.svg' },
+  'AZ-30': { name: 'Galaxy Spiral',      path: 'サイトマイスターロゴ（フリーデザイン）/AI_ZERO/AZ-30.svg' },
+
+  'AB-01': { name: 'Velocity Arrow',      path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-01.svg' },
+  'AB-02': { name: 'Lightning Bolt',      path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-02.svg' },
+  'AB-03': { name: 'Signal Amplify',      path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-03.svg' },
+  'AB-04': { name: 'Rocket Minimal',      path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-04.svg' },
+  'AB-05': { name: 'Ascending Chart',     path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-05.svg' },
+  'AB-06': { name: 'Dark Boost',          path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-06.svg' },
+  'AB-07': { name: 'Helix Spiral',        path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-07.svg' },
+  'AB-08': { name: 'Transform Arrows',    path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-08.svg' },
+  'AB-09': { name: 'Pulse Wave',          path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-09.svg' },
+  'AB-10': { name: 'Meister Boost',       path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-10.svg' },
+  'AB-11': { name: 'Turbo Engine',        path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-11.svg' },
+  'AB-12': { name: 'Flame Burst',         path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-12.svg' },
+  'AB-13': { name: 'Double Arrow Up',     path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-13.svg' },
+  'AB-14': { name: 'Speedometer Max',     path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-14.svg' },
+  'AB-15': { name: 'Phoenix Rise',        path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-15.svg' },
+  'AB-16': { name: 'Power Button',        path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-16.svg' },
+  'AB-17': { name: 'Vortex Spin',         path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-17.svg' },
+  'AB-18': { name: 'Comet Trail',         path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-18.svg' },
+  'AB-19': { name: 'Amplifier Triangle',  path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-19.svg' },
+  'AB-20': { name: 'Quantum Leap',        path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-20.svg' },
+  'AB-21': { name: 'Triangle Stack Up',   path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-21.svg' },
+  'AB-22': { name: 'Wave Surge',          path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-22.svg' },
+  'AB-23': { name: 'Orbit Boost',         path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-23.svg' },
+  'AB-24': { name: 'Cascade Improve',     path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-24.svg' },
+  'AB-25': { name: 'Electric Field',      path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-25.svg' },
+  'AB-26': { name: 'Network Boost',       path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-26.svg' },
+  'AB-27': { name: 'Horizontal Bars',     path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-27.svg' },
+  'AB-28': { name: 'Mountain Conquer',    path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-28.svg' },
+  'AB-29': { name: 'Gradient Boost Color',path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-29.svg' },
+  'AB-30': { name: 'Infinity Boost',      path: 'サイトマイスターロゴ（フリーデザイン）/AIブースト/AB-30.svg' },
+};
+
+const BRAND_COLOR = {
+  SM: { active: 'active-sm', cssColor: '#1A3580', cssBg: '#EEF2FF' },
+  AZ: { active: 'active-az', cssColor: '#0D4F38', cssBg: '#ECFDF5' },
+  AB: { active: 'active-ab', cssColor: '#0F766E', cssBg: '#F0FDFA' },
+};
+
+let currentBrand = null;
+let currentNum   = null;
+
+/* ========= 全角→半角ノーマライズ ========= */
+function normalize(str) {
+  return str
+    .replace(/[Ａ-Ｚａ-ｚ０-９－ー‐]/g, s =>
+      String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+    .replace(/[‐‑‒–—]/g, '-')
+    .toUpperCase()
+    .trim();
+}
+
+/* 例: "SM01" → "SM-01", "sm-1" → "SM-01" */
+function parseCode(raw) {
+  const s = normalize(raw).replace(/\s/g, '');
+  // SM-01, AZ-1, AB30 などのパターン
+  const m = s.match(/^(SM|AZ|AB)-?(\d{1,2})$/);
+  if (!m) return null;
+  const num = parseInt(m[2], 10);
+  if (num < 1 || num > 30) return null;
+  return `${m[1]}-${String(num).padStart(2, '0')}`;
+}
+
+/* ========= ブランド選択 ========= */
+function selectBrand(brand) {
+  currentBrand = brand;
+  currentNum   = null;
+
+  // ボタン見た目
+  ['SM','AZ','AB'].forEach(b => {
+    const el = document.getElementById('btn-'+b.toLowerCase());
+    el.className = 'brand-btn' + (b === brand ? ' '+BRAND_COLOR[b].active : '');
+  });
+
+  // CSS 変数を数字ボタンに反映
+  const { cssColor, cssBg } = BRAND_COLOR[brand];
+  document.getElementById('num-grid').style.setProperty('--brand-color', cssColor);
+  document.getElementById('num-grid').style.setProperty('--brand-bg', cssBg);
+
+  buildNumGrid(brand);
+  clearPreview();
+  document.getElementById('search-input').value = '';
+}
+
+/* ========= 番号グリッド生成 ========= */
+function buildNumGrid(brand) {
+  const grid = document.getElementById('num-grid');
+  grid.innerHTML = '';
+  for (let i = 1; i <= 30; i++) {
+    const n = String(i).padStart(2, '0');
+    const code = `${brand}-${n}`;
+    const btn = document.createElement('button');
+    btn.className = 'num-btn';
+    btn.textContent = n;
+    btn.title = LOGOS[code] ? LOGOS[code].name : code;
+    btn.onclick = () => selectNum(brand, n, btn);
+    grid.appendChild(btn);
+  }
+}
+
+/* ========= 番号選択 ========= */
+function selectNum(brand, num, btnEl) {
+  currentNum = num;
+  // 選択ハイライト
+  document.querySelectorAll('.num-btn').forEach(b => b.classList.remove('selected'));
+  btnEl.classList.add('selected');
+
+  const code = `${brand}-${num}`;
+  document.getElementById('search-input').value = code;
+  showLogo(code);
+}
+
+/* ========= テキスト入力同期 ========= */
+function onInputChange() {
+  const raw = document.getElementById('search-input').value;
+  const code = parseCode(raw);
+  if (code) {
+    // ブランドと番号を自動選択
+    const brand = code.substring(0, 2);
+    const num   = code.substring(3);
+    if (currentBrand !== brand) selectBrand(brand);
+    // 番号ボタンを選択状態に
+    const btns = document.querySelectorAll('.num-btn');
+    btns.forEach(b => {
+      b.classList.remove('selected');
+      if (b.textContent === num) b.classList.add('selected');
+    });
+    currentNum = num;
+  }
+}
+
+/* ========= 検索実行 ========= */
+function doSearch() {
+  const raw = document.getElementById('search-input').value;
+  const code = parseCode(raw);
+  if (!code) {
+    showError('番号が見つかりません。例: SM-01 / AZ-15 / AB-30');
+    return;
+  }
+  showLogo(code);
+}
+
+/* ========= ロゴ表示 ========= */
+function showLogo(code) {
+  const logo = LOGOS[code];
+  const area = document.getElementById('preview-area');
+  const inner = document.getElementById('preview-inner');
+  area.classList.add('visible');
+
+  if (!logo) {
+    inner.innerHTML = `<div class="preview-not-found">「${code}」は見つかりませんでした。</div>`;
+    return;
+  }
+
+  const brand = code.substring(0, 2);
+  const color = BRAND_COLOR[brand].cssColor;
+  inner.innerHTML = `
+    <div class="preview-img-wrap">
+      <img src="${logo.path}" alt="${code}" onerror="this.parentNode.innerHTML='<div style=\\'color:#9CA3AF;font-size:13px;\\'>SVG を読み込めませんでした</div>'">
+    </div>
+    <div class="preview-meta">
+      <div class="preview-code" style="color:${color}">${code}</div>
+      <div class="preview-name">${logo.name}</div>
+    </div>`;
+
+  area.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function showError(msg) {
+  const area = document.getElementById('preview-area');
+  const inner = document.getElementById('preview-inner');
+  area.classList.add('visible');
+  inner.innerHTML = `<div class="preview-not-found">${msg}</div>`;
+}
+
+function clearPreview() {
+  document.getElementById('preview-area').classList.remove('visible');
+  document.getElementById('preview-inner').innerHTML = '';
+}
+
+function clearSearch() {
+  currentBrand = null;
+  currentNum   = null;
+  document.getElementById('search-input').value = '';
+  ['SM','AZ','AB'].forEach(b => {
+    document.getElementById('btn-'+b.toLowerCase()).className = 'brand-btn';
+  });
+  document.getElementById('num-grid').innerHTML = '';
+  clearPreview();
+}
+</script>
 
 </body>
 </html>
