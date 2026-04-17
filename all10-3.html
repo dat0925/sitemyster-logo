@@ -141,6 +141,14 @@ body {
   border: 1px solid #e5e7eb;
 }
 
+/* ── VARIANT STRIP ── */
+.variant-strip { display: flex; gap: 8px; width: 100%; }
+.variant { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.variant-svg { width: 100%; display: flex; align-items: center; justify-content: center; padding: 6px; background: #fafafa; border-radius: 6px; border: 1px solid #f3f4f6; min-height: 40px; }
+.variant-svg svg { width: 100%; height: auto; display: block; max-height: 72px; overflow: visible; }
+.v-label { font-size: 9px; font-weight: 700; color: #9CA3AF; letter-spacing: .06em; text-align: center; white-space: nowrap; }
+.logo-display.has-variants { height: auto; min-height: 80px; padding: 14px 16px 10px; display: block; }
+
 /* ─────────────────────────────
    COLOR TOKENS
 ───────────────────────────── */
@@ -1040,5 +1048,72 @@ body {
   </p>
 </div>
 
+<script>
+const SM_PALETTES = [
+  { label: 'インディゴ', colors: null },
+  { label: 'ブルー',     colors: {'#1e1b4b':'#1e3a8a','#3730a3':'#1d4ed8','#4338ca':'#1565c0','#4f46e5':'#2563eb','#6366f1':'#3b82f6','#818cf8':'#60a5fa','#a5b4fc':'#93c5fd','#c7d2fe':'#bfdbfe','#c5d0fa':'#bfdbfe','#e0e7ff':'#dbeafe','#ede9fe':'#eff6ff','#f5f3ff':'#f0f9ff','#3b5bdb':'#1d4ed8'} },
+  { label: 'グリーン',   colors: {'#1e1b4b':'#064e3b','#3730a3':'#065f46','#4338ca':'#047857','#4f46e5':'#10b981','#6366f1':'#059669','#818cf8':'#34d399','#a5b4fc':'#6ee7b7','#c7d2fe':'#a7f3d0','#c5d0fa':'#a7f3d0','#e0e7ff':'#d1fae5','#ede9fe':'#ecfdf5','#f5f3ff':'#f0fdf4','#3b5bdb':'#059669'} },
+  { label: 'クリムゾン', colors: {'#1e1b4b':'#7f1d1d','#3730a3':'#991b1b','#4338ca':'#b91c1c','#4f46e5':'#dc2626','#6366f1':'#ef4444','#818cf8':'#f87171','#a5b4fc':'#fca5a5','#c7d2fe':'#fecaca','#c5d0fa':'#fecaca','#e0e7ff':'#fee2e2','#ede9fe':'#fef2f2','#f5f3ff':'#fff5f5','#3b5bdb':'#b91c1c'} },
+  { label: 'アンバー',   colors: {'#1e1b4b':'#451a03','#3730a3':'#78350f','#4338ca':'#92400e','#4f46e5':'#d97706','#6366f1':'#f59e0b','#818cf8':'#fbbf24','#a5b4fc':'#fcd34d','#c7d2fe':'#fde68a','#c5d0fa':'#fde68a','#e0e7ff':'#fef3c7','#ede9fe':'#fffbeb','#f5f3ff':'#fffff5','#3b5bdb':'#92400e'} },
+];
+
+const AZ_PALETTES = [
+  { label: 'ブルー',     colors: null },
+  { label: 'インディゴ', colors: {'#1e3a8a':'#1e1b4b','#1d4ed8':'#3730a3','#2563eb':'#4f46e5','#3b82f6':'#6366f1','#60a5fa':'#818cf8','#7dd3fc':'#a5b4fc','#93c5fd':'#a5b4fc','#bfdbfe':'#c7d2fe','#dbeafe':'#e0e7ff','#eff6ff':'#f5f3ff','#f0f9ff':'#f5f3ff','#e0f2fe':'#e0e7ff','#f1f5f9':'#f5f3ff','#f8fafc':'#f5f3ff','#38bdf8':'#818cf8'} },
+  { label: 'ティール',   colors: {'#1e3a8a':'#134e4a','#1d4ed8':'#0f766e','#2563eb':'#0d9488','#3b82f6':'#14b8a6','#60a5fa':'#2dd4bf','#7dd3fc':'#5eead4','#93c5fd':'#99f6e4','#bfdbfe':'#ccfbf1','#dbeafe':'#e6fffa','#eff6ff':'#f0fdfa','#f0f9ff':'#f0fdfa','#e0f2fe':'#e6fffa','#f1f5f9':'#f0fdfa','#f8fafc':'#f0fdfa','#38bdf8':'#2dd4bf'} },
+  { label: 'バイオレット',colors: {'#1e3a8a':'#4c1d95','#1d4ed8':'#6d28d9','#2563eb':'#7c3aed','#3b82f6':'#8b5cf6','#60a5fa':'#a78bfa','#7dd3fc':'#c4b5fd','#93c5fd':'#c4b5fd','#bfdbfe':'#ddd6fe','#dbeafe':'#ede9fe','#eff6ff':'#f5f3ff','#f0f9ff':'#f5f3ff','#e0f2fe':'#ede9fe','#f1f5f9':'#f5f3ff','#f8fafc':'#f5f3ff','#38bdf8':'#a78bfa'} },
+  { label: 'アンバー',   colors: {'#1e3a8a':'#451a03','#1d4ed8':'#92400e','#2563eb':'#b45309','#3b82f6':'#d97706','#60a5fa':'#f59e0b','#7dd3fc':'#fbbf24','#93c5fd':'#fcd34d','#bfdbfe':'#fde68a','#dbeafe':'#fef3c7','#eff6ff':'#fffbeb','#f0f9ff':'#fffbeb','#e0f2fe':'#fef3c7','#f1f5f9':'#fffbeb','#f8fafc':'#fffbeb','#38bdf8':'#f59e0b'} },
+];
+
+const AB_PALETTES = [
+  { label: 'グリーン',   colors: null },
+  { label: 'ブルー',     colors: {'#064e3b':'#1e3a8a','#047857':'#1d4ed8','#059669':'#2563eb','#0d9488':'#0284c7','#10b981':'#60a5fa','#34d399':'#7dd3fc','#6ee7b7':'#93c5fd','#a7f3d0':'#bfdbfe','#d1fae5':'#dbeafe','#ecfdf5':'#eff6ff','#f0fdf4':'#f0f9ff','#bbf7d0':'#bfdbfe'} },
+  { label: 'インディゴ', colors: {'#064e3b':'#1e1b4b','#047857':'#3730a3','#059669':'#4f46e5','#0d9488':'#4338ca','#10b981':'#6366f1','#34d399':'#818cf8','#6ee7b7':'#a5b4fc','#a7f3d0':'#c7d2fe','#d1fae5':'#e0e7ff','#ecfdf5':'#f5f3ff','#f0fdf4':'#f5f3ff','#bbf7d0':'#c7d2fe'} },
+  { label: 'クリムゾン', colors: {'#064e3b':'#7f1d1d','#047857':'#991b1b','#059669':'#dc2626','#0d9488':'#b91c1c','#10b981':'#ef4444','#34d399':'#f87171','#6ee7b7':'#fca5a5','#a7f3d0':'#fecaca','#d1fae5':'#fee2e2','#ecfdf5':'#fef2f2','#f0fdf4':'#fff5f5','#bbf7d0':'#fecaca'} },
+  { label: 'アンバー',   colors: {'#064e3b':'#451a03','#047857':'#78350f','#059669':'#d97706','#0d9488':'#92400e','#10b981':'#f59e0b','#34d399':'#fbbf24','#6ee7b7':'#fcd34d','#a7f3d0':'#fde68a','#d1fae5':'#fef3c7','#ecfdf5':'#fffbeb','#f0fdf4':'#fffbeb','#bbf7d0':'#fde68a'} },
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+  function replaceColors(html, map) {
+    let s = html;
+    for (const [f, t] of Object.entries(map)) s = s.split(f).join(t);
+    return s;
+  }
+
+  document.querySelectorAll('.logo-display').forEach(display => {
+    const section = display.closest('.section');
+    const numEl   = section && section.querySelector('.section-num');
+    const secNum  = numEl ? numEl.textContent.trim() : '01';
+    const palettes = secNum === '01' ? SM_PALETTES : secNum === '02' ? AZ_PALETTES : AB_PALETTES;
+
+    const origSvg = display.querySelector('svg');
+    if (!origSvg) return;
+    const origHtml = origSvg.outerHTML;
+
+    const strip = document.createElement('div');
+    strip.className = 'variant-strip';
+
+    for (const p of palettes) {
+      const variant = document.createElement('div');
+      variant.className = 'variant';
+
+      const svgWrap = document.createElement('div');
+      svgWrap.className = 'variant-svg';
+      svgWrap.innerHTML = p.colors ? replaceColors(origHtml, p.colors) : origHtml;
+
+      const label = document.createElement('span');
+      label.className = 'v-label';
+      label.textContent = p.label;
+
+      variant.append(svgWrap, label);
+      strip.appendChild(variant);
+    }
+
+    display.innerHTML = '';
+    display.classList.add('has-variants');
+    display.appendChild(strip);
+  });
+});
+</script>
 </body>
 </html>
