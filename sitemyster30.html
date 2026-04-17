@@ -41,8 +41,8 @@ footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; 
     <button class="swatch active" onclick="applyTheme('default',this)" title="現在（ネイビーブルー）"><span class="sw-half" style="background:#1A3580"></span><span class="sw-half" style="background:#2B5CE6"></span></button>
     <button class="swatch" onclick="applyTheme('purple',this)" title="ロイヤルパープル"><span class="sw-half" style="background:#5B21B6"></span><span class="sw-half" style="background:#8B5CF6"></span></button>
     <button class="swatch" onclick="applyTheme('crimson',this)" title="クリムゾン"><span class="sw-half" style="background:#9B1C1C"></span><span class="sw-half" style="background:#DC2626"></span></button>
-    <button class="swatch" onclick="applyTheme('forest',this)" title="フォレストグリーン"><span class="sw-half" style="background:#14532D"></span><span class="sw-half" style="background:#16A34A"></span></button>
-    <button class="swatch" onclick="applyTheme('slate',this)" title="スレートモダン"><span class="sw-half" style="background:#1E293B"></span><span class="sw-half" style="background:#64748B"></span></button>
+    <button class="swatch" onclick="applyTheme('emerald',this)" title="エメラルド"><span class="sw-half" style="background:#065F46"></span><span class="sw-half" style="background:#059669"></span></button>
+    <button class="swatch" onclick="applyTheme('sunset',this)" title="サンセット"><span class="sw-half" style="background:#92400E"></span><span class="sw-half" style="background:#D97706"></span></button>
   </div>
   <span class="palette-name" id="palette-name">現在（ネイビーブルー）</span>
 </div>
@@ -294,23 +294,73 @@ footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; 
     </div>
 </div>
 <script>
-const THEMES = {
-  default: { primary:'#1A3580', accent:'#2B5CE6', pageBg:'#F8F9FA', imgBg:'#FAFAFA', label:'現在（ネイビーブルー）' },
-  purple:  { primary:'#5B21B6', accent:'#8B5CF6', pageBg:'#F5F3FF', imgBg:'#FAF8FF', label:'ロイヤルパープル' },
-  crimson: { primary:'#9B1C1C', accent:'#DC2626', pageBg:'#FEF2F2', imgBg:'#FFF8F8', label:'クリムゾン' },
-  forest:  { primary:'#14532D', accent:'#16A34A', pageBg:'#F0FDF4', imgBg:'#F5FFF7', label:'フォレストグリーン' },
-  slate:   { primary:'#1E293B', accent:'#64748B', pageBg:'#F1F5F9', imgBg:'#F8FAFC', label:'スレートモダン' },
+// SVGで実際に使われている色を置換してロゴ自体の配色を変える
+const PALETTES = {
+  default: {
+    label: '現在（ネイビーブルー）',
+    primary: '#1A3580', accent: '#2B5CE6', pageBg: '#F8F9FA', imgBg: '#FAFAFA',
+    colors: null // nullのときは元のSVGをそのまま使う
+  },
+  purple: {
+    label: 'ロイヤルパープル',
+    primary: '#4C1D95', accent: '#7C3AED', pageBg: '#F5F3FF', imgBg: '#FAF8FF',
+    colors: { '#1A3580':'#4C1D95','#2B5CE6':'#7C3AED','#60A5FA':'#C4B5FD','#F59E0B':'#D97706','#0F1E4A':'#2D1265','#0A1430':'#1F0D50' }
+  },
+  crimson: {
+    label: 'クリムゾン',
+    primary: '#991B1B', accent: '#DC2626', pageBg: '#FEF2F2', imgBg: '#FFF8F8',
+    colors: { '#1A3580':'#991B1B','#2B5CE6':'#DC2626','#60A5FA':'#FCA5A5','#F59E0B':'#FBBF24','#0F1E4A':'#7F1D1D','#0A1430':'#450A0A' }
+  },
+  emerald: {
+    label: 'エメラルド',
+    primary: '#065F46', accent: '#059669', pageBg: '#ECFDF5', imgBg: '#F0FFF9',
+    colors: { '#1A3580':'#065F46','#2B5CE6':'#059669','#60A5FA':'#6EE7B7','#F59E0B':'#D97706','#0F1E4A':'#022C22','#0A1430':'#011816' }
+  },
+  sunset: {
+    label: 'サンセット',
+    primary: '#92400E', accent: '#D97706', pageBg: '#FFFBEB', imgBg: '#FFFEF5',
+    colors: { '#1A3580':'#92400E','#2B5CE6':'#D97706','#60A5FA':'#FCD34D','#F59E0B':'#EF4444','#0F1E4A':'#451A03','#0A1430':'#292101' }
+  },
 };
-function applyTheme(key, btn) {
-  const t = THEMES[key];
-  const r = document.documentElement.style;
-  r.setProperty('--brand-primary', t.primary);
-  r.setProperty('--brand-accent',  t.accent);
-  r.setProperty('--page-bg',       t.pageBg);
-  r.setProperty('--imgwrap-bg',    t.imgBg);
+
+const svgCache = {};
+let prevBlobUrls = [];
+
+function replaceColors(svg, map) {
+  let s = svg;
+  for (const [f, t] of Object.entries(map)) s = s.split(f).join(t);
+  return s;
+}
+
+async function applyTheme(key, btn) {
+  const p = PALETTES[key];
+  prevBlobUrls.forEach(u => URL.revokeObjectURL(u));
+  prevBlobUrls = [];
+
+  const root = document.documentElement.style;
+  root.setProperty('--brand-primary', p.primary);
+  root.setProperty('--brand-accent',  p.accent);
+  root.setProperty('--page-bg',       p.pageBg);
+  root.setProperty('--imgwrap-bg',    p.imgBg);
+
   document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('palette-name').textContent = t.label;
+  document.getElementById('palette-name').textContent = p.label;
+
+  const imgs = document.querySelectorAll('.img-wrap img');
+  await Promise.all(Array.from(imgs).map(async img => {
+    if (!img.dataset.src) img.dataset.src = img.getAttribute('src');
+    const src = img.dataset.src;
+    if (!p.colors) { img.src = src; return; }
+    if (!svgCache[src]) {
+      try { const r = await fetch(src); svgCache[src] = await r.text(); }
+      catch { return; }
+    }
+    const blob = new Blob([replaceColors(svgCache[src], p.colors)], { type: 'image/svg+xml' });
+    const url = URL.createObjectURL(blob);
+    prevBlobUrls.push(url);
+    img.src = url;
+  }));
 }
 </script>
 <footer><p>全SVGファイルはベクター形式のため、あらゆるサイズで鮮明に表示されます。</p></footer>

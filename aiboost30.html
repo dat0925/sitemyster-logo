@@ -294,23 +294,72 @@ footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; 
     </div>
 </div>
 <script>
-const THEMES = {
-  default: { primary:'#0D4F38', accent:'#00C9A7', pageBg:'#F8F9FA', imgBg:'#FAFAFA', label:'現在' },
-  teal:    { primary:'#0F766E', accent:'#2DD4BF', pageBg:'#F0FDFA', imgBg:'#F5FFFB', label:'ティールコア' },
-  fire:    { primary:'#9A3412', accent:'#F97316', pageBg:'#FFF7ED', imgBg:'#FFFBF5', label:'ファイアオレンジ' },
-  electric:{ primary:'#4C1D95', accent:'#A78BFA', pageBg:'#F5F3FF', imgBg:'#FAF8FF', label:'エレクトリック' },
-  deepred: { primary:'#881337', accent:'#E11D48', pageBg:'#FFF1F2', imgBg:'#FFF5F7', label:'ディープレッド' },
+const PALETTES = {
+  default: {
+    label: '現在',
+    primary: '#0D4F38', accent: '#00C9A7', pageBg: '#F8F9FA', imgBg: '#FAFAFA',
+    colors: null
+  },
+  teal: {
+    label: 'ティールコア',
+    primary: '#0F766E', accent: '#2DD4BF', pageBg: '#F0FDFA', imgBg: '#F5FFFB',
+    colors: { '#0D4F38':'#0F766E','#00C9A7':'#2DD4BF','#1A8A5E':'#0D9488','#FF6B35':'#F59E0B','#0F4032':'#0C4A42','#0A2E20':'#042F2E','#0A8A6A':'#0D9488','#96E6D0':'#99F6E4' }
+  },
+  fire: {
+    label: 'ファイアオレンジ',
+    primary: '#9A3412', accent: '#F97316', pageBg: '#FFF7ED', imgBg: '#FFFBF5',
+    colors: { '#0D4F38':'#9A3412','#00C9A7':'#F97316','#1A8A5E':'#EA580C','#FF6B35':'#FBBF24','#0F4032':'#7C2D12','#0A2E20':'#431407','#0A8A6A':'#C2410C','#96E6D0':'#FED7AA' }
+  },
+  electric: {
+    label: 'エレクトリック',
+    primary: '#4C1D95', accent: '#A78BFA', pageBg: '#F5F3FF', imgBg: '#FAF8FF',
+    colors: { '#0D4F38':'#4C1D95','#00C9A7':'#A78BFA','#1A8A5E':'#7C3AED','#FF6B35':'#EC4899','#0F4032':'#3B0764','#0A2E20':'#1E1B4B','#0A8A6A':'#6D28D9','#96E6D0':'#DDD6FE' }
+  },
+  deepred: {
+    label: 'ディープレッド',
+    primary: '#881337', accent: '#E11D48', pageBg: '#FFF1F2', imgBg: '#FFF5F7',
+    colors: { '#0D4F38':'#881337','#00C9A7':'#E11D48','#1A8A5E':'#BE123C','#FF6B35':'#FB923C','#0F4032':'#4C0519','#0A2E20':'#320015','#0A8A6A':'#9F1239','#96E6D0':'#FECDD3' }
+  },
 };
-function applyTheme(key, btn) {
-  const t = THEMES[key];
-  const r = document.documentElement.style;
-  r.setProperty('--brand-primary', t.primary);
-  r.setProperty('--brand-accent',  t.accent);
-  r.setProperty('--page-bg',       t.pageBg);
-  r.setProperty('--imgwrap-bg',    t.imgBg);
+
+const svgCache = {};
+let prevBlobUrls = [];
+
+function replaceColors(svg, map) {
+  let s = svg;
+  for (const [f, t] of Object.entries(map)) s = s.split(f).join(t);
+  return s;
+}
+
+async function applyTheme(key, btn) {
+  const p = PALETTES[key];
+  prevBlobUrls.forEach(u => URL.revokeObjectURL(u));
+  prevBlobUrls = [];
+
+  const root = document.documentElement.style;
+  root.setProperty('--brand-primary', p.primary);
+  root.setProperty('--brand-accent',  p.accent);
+  root.setProperty('--page-bg',       p.pageBg);
+  root.setProperty('--imgwrap-bg',    p.imgBg);
+
   document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
   btn.classList.add('active');
-  document.getElementById('palette-name').textContent = t.label;
+  document.getElementById('palette-name').textContent = p.label;
+
+  const imgs = document.querySelectorAll('.img-wrap img');
+  await Promise.all(Array.from(imgs).map(async img => {
+    if (!img.dataset.src) img.dataset.src = img.getAttribute('src');
+    const src = img.dataset.src;
+    if (!p.colors) { img.src = src; return; }
+    if (!svgCache[src]) {
+      try { const r = await fetch(src); svgCache[src] = await r.text(); }
+      catch { return; }
+    }
+    const blob = new Blob([replaceColors(svgCache[src], p.colors)], { type: 'image/svg+xml' });
+    const url = URL.createObjectURL(blob);
+    prevBlobUrls.push(url);
+    img.src = url;
+  }));
 }
 </script>
 <footer><p>全SVGファイルはベクター形式のため、あらゆるサイズで鮮明に表示されます。</p></footer>
