@@ -11,24 +11,21 @@ body { font-family: 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif; backgro
 header { text-align: center; margin-bottom: 48px; }
 header h1 { font-size: 26px; font-weight: 800; color: var(--brand-primary); margin-bottom: 8px; transition: color .35s; }
 header p { font-size: 13px; color: #6B7280; }
-.logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 18px; }
+.logo-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
 .logo-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #E5E7EB; transition: box-shadow .2s, transform .2s; }
 .logo-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.12); transform: translateY(-2px); }
-.logo-card .img-wrap { padding: 20px; background: var(--imgwrap-bg); display: flex; align-items: center; justify-content: center; min-height: 150px; border-bottom: 1px solid #F3F4F6; transition: background .35s; }
+.logo-card .img-wrap { padding: 12px 16px; background: var(--imgwrap-bg); border-bottom: 1px solid #F3F4F6; transition: background .35s; }
 .logo-card img { max-width: 100%; height: auto; }
 .logo-card .info { padding: 14px 18px; }
-.logo-card .info .number { font-size: 10px; font-weight: 700; color: var(--brand-accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px; transition: color .35s; }
+.logo-card .info .number { font-size: 10px; font-weight: 700; color: var(--brand-accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px; }
 .logo-card .info .name { font-size: 13px; font-weight: 600; color: #1A1A2E; margin-bottom: 5px; }
 .logo-card .info .concept { font-size: 11px; color: #6B7280; line-height: 1.6; }
 footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; }
-.palette-bar { display:flex; align-items:center; gap:14px; padding:9px 24px; background:white; border-bottom:1px solid #E5E7EB; flex-wrap:wrap; }
-.palette-label { font-size:10px; font-weight:700; color:#9CA3AF; letter-spacing:0.1em; text-transform:uppercase; white-space:nowrap; }
-.swatches { display:flex; gap:8px; align-items:center; }
-.swatch { width:28px; height:28px; border-radius:50%; border:2px solid transparent; padding:0; cursor:pointer; overflow:hidden; display:flex; transition:border-color .2s, transform .15s, box-shadow .15s; outline:none; }
-.swatch:hover { transform:scale(1.18); box-shadow:0 2px 10px rgba(0,0,0,0.2); }
-.swatch.active { border-color:#1A1A2E; transform:scale(1.18); box-shadow:0 2px 10px rgba(0,0,0,0.2); }
-.sw-half { flex:1; display:block; }
-.palette-name { font-size:11px; font-weight:600; color:#6B7280; }
+.variant-strip { display: flex; gap: 10px; width: 100%; }
+.variant { display: flex; flex-direction: column; align-items: center; gap: 5px; flex: 1; min-width: 0; }
+.variant img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.v-label { font-size: 9px; font-weight: 700; color: #9CA3AF; letter-spacing: 0.06em; text-align: center; }
+.palette-bar { display: none; }
 </style>
 </head>
 <body>
@@ -296,7 +293,7 @@ footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; 
 <script>
 const PALETTES = {
   default: {
-    label: '現在（フォレストグリーン）',
+    label: 'フォレストグリーン',
     primary: '#0D4F38', accent: '#00C9A7', pageBg: '#F8F9FA', imgBg: '#FAFAFA',
     colors: null
   },
@@ -306,7 +303,7 @@ const PALETTES = {
     colors: { '#0D4F38':'#1E3A8A','#00C9A7':'#38BDF8','#1A8A5E':'#1D4ED8','#0A3D2E':'#172554','#0A2E20':'#172554','#00E5C3':'#7DD3FC' }
   },
   amber: {
-    label: 'アンバーウォーム',
+    label: 'アンバー',
     primary: '#78350F', accent: '#F59E0B', pageBg: '#FFFBEB', imgBg: '#FFFDF5',
     colors: { '#0D4F38':'#78350F','#00C9A7':'#F59E0B','#1A8A5E':'#B45309','#0A3D2E':'#451A03','#0A2E20':'#451A03','#00E5C3':'#FCD34D' }
   },
@@ -316,51 +313,64 @@ const PALETTES = {
     colors: { '#0D4F38':'#4C1D95','#00C9A7':'#7C3AED','#1A8A5E':'#6D28D9','#0A3D2E':'#2E1065','#0A2E20':'#2E1065','#00E5C3':'#A78BFA' }
   },
   midnight: {
-    label: 'ミッドナイトシアン',
+    label: 'ミッドナイト',
     primary: '#0F172A', accent: '#06B6D4', pageBg: '#F0F9FF', imgBg: '#F5FDFF',
     colors: { '#0D4F38':'#0F172A','#00C9A7':'#06B6D4','#1A8A5E':'#0E7490','#0A3D2E':'#020617','#0A2E20':'#020617','#00E5C3':'#22D3EE' }
   },
 };
 
-const svgCache = {};
-let prevBlobUrls = [];
+document.addEventListener('DOMContentLoaded', async () => {
+  const paletteEntries = Object.entries(PALETTES);
+  const svgCache = {};
 
-function replaceColors(svg, map) {
-  let s = svg;
-  for (const [f, t] of Object.entries(map)) s = s.split(f).join(t);
-  return s;
-}
-
-async function applyTheme(key, btn) {
-  const p = PALETTES[key];
-  prevBlobUrls.forEach(u => URL.revokeObjectURL(u));
-  prevBlobUrls = [];
-
-  const root = document.documentElement.style;
-  root.setProperty('--brand-primary', p.primary);
-  root.setProperty('--brand-accent',  p.accent);
-  root.setProperty('--page-bg',       p.pageBg);
-  root.setProperty('--imgwrap-bg',    p.imgBg);
-
-  document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('palette-name').textContent = p.label;
-
-  const imgs = document.querySelectorAll('.img-wrap img');
-  await Promise.all(Array.from(imgs).map(async img => {
-    if (!img.dataset.src) img.dataset.src = img.getAttribute('src');
-    const src = img.dataset.src;
-    if (!p.colors) { img.src = src; return; }
-    if (!svgCache[src]) {
+  async function fetchSvg(src) {
+    if (!(src in svgCache)) {
       try { const r = await fetch(src); svgCache[src] = await r.text(); }
-      catch { return; }
+      catch { svgCache[src] = null; }
     }
-    const blob = new Blob([replaceColors(svgCache[src], p.colors)], { type: 'image/svg+xml' });
-    const url = URL.createObjectURL(blob);
-    prevBlobUrls.push(url);
-    img.src = url;
+    return svgCache[src];
+  }
+
+  function replaceColors(svg, map) {
+    let s = svg;
+    for (const [f, t] of Object.entries(map)) s = s.split(f).join(t);
+    return s;
+  }
+
+  await Promise.all(Array.from(document.querySelectorAll('.img-wrap')).map(async wrap => {
+    const img = wrap.querySelector('img');
+    if (!img) return;
+    const src = img.getAttribute('src');
+    const svgText = await fetchSvg(src);
+
+    const strip = document.createElement('div');
+    strip.className = 'variant-strip';
+
+    for (const [, p] of paletteEntries) {
+      const variant = document.createElement('div');
+      variant.className = 'variant';
+
+      const vImg = document.createElement('img');
+      vImg.alt = img.alt;
+      if (!p.colors || !svgText) {
+        vImg.src = src;
+      } else {
+        const blob = new Blob([replaceColors(svgText, p.colors)], { type: 'image/svg+xml' });
+        vImg.src = URL.createObjectURL(blob);
+      }
+
+      const label = document.createElement('span');
+      label.className = 'v-label';
+      label.textContent = p.label;
+
+      variant.append(vImg, label);
+      strip.appendChild(variant);
+    }
+
+    wrap.innerHTML = '';
+    wrap.appendChild(strip);
   }));
-}
+});
 </script>
 <footer><p>全SVGファイルはベクター形式のため、あらゆるサイズで鮮明に表示されます。</p></footer>
 </body></html>
