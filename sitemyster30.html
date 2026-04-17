@@ -4,25 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>サイトマイスター ロゴデザイン一覧 — ロゴ一覧</title>
-  <style>* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif; background: #F8F9FA; color: #1A1A2E; padding: 40px 24px; }
+  <style>
+:root { --brand-primary: #1A3580; --brand-accent: #2B5CE6; --page-bg: #F8F9FA; --imgwrap-bg: #FAFAFA; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif; background: var(--page-bg); color: #1A1A2E; padding: 40px 24px; transition: background .35s; }
 header { text-align: center; margin-bottom: 48px; }
-header h1 { font-size: 26px; font-weight: 800; color: #1A3580; margin-bottom: 8px; }
+header h1 { font-size: 26px; font-weight: 800; color: var(--brand-primary); margin-bottom: 8px; transition: color .35s; }
 header p { font-size: 13px; color: #6B7280; }
 .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 18px; }
 .logo-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #E5E7EB; transition: box-shadow .2s, transform .2s; }
 .logo-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.12); transform: translateY(-2px); }
-.logo-card .img-wrap { padding: 20px; background: #FAFAFA; display: flex; align-items: center; justify-content: center; min-height: 150px; border-bottom: 1px solid #F3F4F6; }
+.logo-card .img-wrap { padding: 20px; background: var(--imgwrap-bg); display: flex; align-items: center; justify-content: center; min-height: 150px; border-bottom: 1px solid #F3F4F6; transition: background .35s; }
 .logo-card img { max-width: 100%; height: auto; }
 .logo-card .info { padding: 14px 18px; }
-.logo-card .info .number { font-size: 10px; font-weight: 700; color: #2B5CE6; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px; }
+.logo-card .info .number { font-size: 10px; font-weight: 700; color: var(--brand-accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px; transition: color .35s; }
 .logo-card .info .name { font-size: 13px; font-weight: 600; color: #1A1A2E; margin-bottom: 5px; }
 .logo-card .info .concept { font-size: 11px; color: #6B7280; line-height: 1.6; }
-footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; }</style>
+footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; }
+.palette-bar { display:flex; align-items:center; gap:14px; padding:9px 24px; background:white; border-bottom:1px solid #E5E7EB; flex-wrap:wrap; }
+.palette-label { font-size:10px; font-weight:700; color:#9CA3AF; letter-spacing:0.1em; text-transform:uppercase; white-space:nowrap; }
+.swatches { display:flex; gap:8px; align-items:center; }
+.swatch { width:28px; height:28px; border-radius:50%; border:2px solid transparent; padding:0; cursor:pointer; overflow:hidden; display:flex; transition:border-color .2s, transform .15s, box-shadow .15s; outline:none; }
+.swatch:hover { transform:scale(1.18); box-shadow:0 2px 10px rgba(0,0,0,0.2); }
+.swatch.active { border-color:#1A1A2E; transform:scale(1.18); box-shadow:0 2px 10px rgba(0,0,0,0.2); }
+.sw-half { flex:1; display:block; }
+.palette-name { font-size:11px; font-weight:600; color:#6B7280; }
+</style>
 </head>
 <body>
 <div style="position:sticky;top:0;z-index:100;background:rgba(248,249,250,0.96);backdrop-filter:blur(6px);border-bottom:1px solid #E5E7EB;padding:10px 24px;">
   <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;color:#1A3580;text-decoration:none;font-size:13px;font-weight:700;font-family:'Helvetica Neue',Arial,sans-serif;">← トップページへ戻る</a>
+</div>
+<div class="palette-bar">
+  <span class="palette-label">配色バリエーション</span>
+  <div class="swatches">
+    <button class="swatch active" onclick="applyTheme('default',this)" title="現在（ネイビーブルー）"><span class="sw-half" style="background:#1A3580"></span><span class="sw-half" style="background:#2B5CE6"></span></button>
+    <button class="swatch" onclick="applyTheme('purple',this)" title="ロイヤルパープル"><span class="sw-half" style="background:#5B21B6"></span><span class="sw-half" style="background:#8B5CF6"></span></button>
+    <button class="swatch" onclick="applyTheme('crimson',this)" title="クリムゾン"><span class="sw-half" style="background:#9B1C1C"></span><span class="sw-half" style="background:#DC2626"></span></button>
+    <button class="swatch" onclick="applyTheme('forest',this)" title="フォレストグリーン"><span class="sw-half" style="background:#14532D"></span><span class="sw-half" style="background:#16A34A"></span></button>
+    <button class="swatch" onclick="applyTheme('slate',this)" title="スレートモダン"><span class="sw-half" style="background:#1E293B"></span><span class="sw-half" style="background:#64748B"></span></button>
+  </div>
+  <span class="palette-name" id="palette-name">現在（ネイビーブルー）</span>
 </div>
 <header>
   <h1>サイトマイスター ロゴデザイン一覧</h1>
@@ -271,5 +293,25 @@ footer { text-align: center; margin-top: 48px; font-size: 12px; color: #9CA3AF; 
       </div>
     </div>
 </div>
+<script>
+const THEMES = {
+  default: { primary:'#1A3580', accent:'#2B5CE6', pageBg:'#F8F9FA', imgBg:'#FAFAFA', label:'現在（ネイビーブルー）' },
+  purple:  { primary:'#5B21B6', accent:'#8B5CF6', pageBg:'#F5F3FF', imgBg:'#FAF8FF', label:'ロイヤルパープル' },
+  crimson: { primary:'#9B1C1C', accent:'#DC2626', pageBg:'#FEF2F2', imgBg:'#FFF8F8', label:'クリムゾン' },
+  forest:  { primary:'#14532D', accent:'#16A34A', pageBg:'#F0FDF4', imgBg:'#F5FFF7', label:'フォレストグリーン' },
+  slate:   { primary:'#1E293B', accent:'#64748B', pageBg:'#F1F5F9', imgBg:'#F8FAFC', label:'スレートモダン' },
+};
+function applyTheme(key, btn) {
+  const t = THEMES[key];
+  const r = document.documentElement.style;
+  r.setProperty('--brand-primary', t.primary);
+  r.setProperty('--brand-accent',  t.accent);
+  r.setProperty('--page-bg',       t.pageBg);
+  r.setProperty('--imgwrap-bg',    t.imgBg);
+  document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('palette-name').textContent = t.label;
+}
+</script>
 <footer><p>全SVGファイルはベクター形式のため、あらゆるサイズで鮮明に表示されます。</p></footer>
 </body></html>
