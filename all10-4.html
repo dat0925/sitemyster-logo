@@ -390,14 +390,14 @@ function replaceColors(svgHtml, map) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.logo-card').forEach(card => {
+  let uid = 0;
+
+  document.querySelectorAll('.logo-card').forEach((card, cardIdx) => {
     const imgWrap = card.querySelector('.img-wrap');
     const origSvg = imgWrap ? imgWrap.querySelector('svg') : null;
     if (!origSvg) return;
     const origHtml = origSvg.outerHTML;
-    const isDark = origHtml.includes('#111827') || origHtml.includes('#1A2240') && origHtml.includes('rgba(255,255,255');
 
-    // img-wrapを空にしてvariant-stripに置き換え
     imgWrap.innerHTML = '';
     imgWrap.style.padding = '0';
     imgWrap.style.display = 'block';
@@ -405,20 +405,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const strip = document.createElement('div');
     strip.className = 'variant-strip';
 
-    PALETTES.forEach(p => {
+    PALETTES.forEach((p, pi) => {
       const variant = document.createElement('div');
       variant.className = 'variant';
 
       let svgHtml = origHtml;
       if (p.map) svgHtml = replaceColors(svgHtml, p.map);
 
+      // グラデーションIDの重複を避けるためユニーク化
+      const prefix = `c${cardIdx}p${pi}`;
+      svgHtml = svgHtml.replace(/id="([^"]+)"/g, (m, id) => `id="${prefix}_${id}"`);
+      svgHtml = svgHtml.replace(/url\(#([^)]+)\)/g, (m, id) => `url(#${prefix}_${id})`);
+
       const tmp = document.createElement('div');
       tmp.innerHTML = svgHtml;
       const svg = tmp.querySelector('svg');
-      svg.removeAttribute('width');
+      // width/heightは削除せずstyle上書きでレスポンシブ化
+      svg.setAttribute('width', '100%');
       svg.removeAttribute('height');
-      svg.style.width = '100%';
-      svg.style.height = 'auto';
+      svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
       const label = document.createElement('span');
       label.className = 'v-label';
