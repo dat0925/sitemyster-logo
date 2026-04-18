@@ -29,8 +29,6 @@
   </g>
 
   <!-- Logotype -->
-  <text x="158" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="158" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0D4F38">AIブースト</text>
   <!-- Accent underline (gradient) -->
   <defs>
     <linearGradient id="underGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -39,5 +37,8 @@
     </linearGradient>
   </defs>
   <rect x="158" y="124" width="160" height="3" fill="url(#underGrad)" rx="1.5"/>
-  <text x="158" y="150" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="#9CA3AF">そのホームページ、AIで成果を加速させる</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="158.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="#6B7280" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="158.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0D4F38" letter-spacing="2">AIブースト</text>
 </svg>

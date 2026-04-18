@@ -21,10 +21,10 @@
   </g>
 
   <!-- Logotype -->
-  <text x="162" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="162" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0D4F38">AIブースト</text>
-  <text x="162" y="148" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="#9CA3AF">AI Boost — 既存サイトを最適化・加速</text>
   <!-- Tag -->
   <rect x="162" y="155" width="62" height="16" rx="8" fill="#0D4F38"/>
-  <text x="193" y="167" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle" letter-spacing="1">REPLACE</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="162.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="#6B7280" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="162.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0D4F38" letter-spacing="2">AIブースト</text>
 </svg>

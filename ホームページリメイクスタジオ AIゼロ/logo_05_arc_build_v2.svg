@@ -26,12 +26,11 @@
   </g>
 
   <!-- Logotype -->
-  <text x="158" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
 
   <!-- Bold clean type -->
-  <text x="158" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="800" fill="#0D4F38">AI</text>
   <!-- "ZERO" with hollow/outline style -->
-  <text x="222" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="300" fill="none" stroke="#0D4F38" stroke-width="2">ZERO</text>
 
-  <text x="158" y="152" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="#9CA3AF" letter-spacing="1">生成 / 自動化 / 信頼 / スピード</text>
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="158.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="#6B7280" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="158.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0D4F38" letter-spacing="2">AI ZERO</text>
 </svg>

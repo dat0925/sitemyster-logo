@@ -28,9 +28,10 @@
   <line x1="158" y1="40" x2="158" y2="160" stroke="#E5E7EB" stroke-width="1"/>
 
   <!-- Logotype -->
-  <text x="172" y="76" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" font-weight="400" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="172" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0D4F38">AI ZERO</text>
   <!-- Meister label -->
   <rect x="172" y="130" width="90" height="18" rx="3" fill="#0D4F38"/>
-  <text x="217" y="143" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="white" text-anchor="middle" letter-spacing="2">MEISTER</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="172.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="#6B7280" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="172.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0D4F38" letter-spacing="2">AI ZERO</text>
 </svg>

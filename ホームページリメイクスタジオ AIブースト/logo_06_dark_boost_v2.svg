@@ -22,9 +22,10 @@
   </g>
 
   <!-- Logotype -->
-  <text x="162" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="rgba(255,255,255,0.45)" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="162" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="white">AIブースト</text>
   <!-- Teal accent bar -->
   <rect x="162" y="124" width="55" height="3" fill="#00C9A7" rx="1.5"/>
-  <text x="162" y="150" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" letter-spacing="1">成果を加速させるリメイクサービス</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="162.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="rgba(255,255,255,0.45)" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="162.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="white" letter-spacing="2">AIブースト</text>
 </svg>

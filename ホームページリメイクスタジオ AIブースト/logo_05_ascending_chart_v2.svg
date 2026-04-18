@@ -18,10 +18,11 @@
   </g>
 
   <!-- Logotype -->
-  <text x="158" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="158" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0D4F38">AIブースト</text>
   <!-- Progress bar style decoration -->
   <rect x="158" y="126" width="200" height="4" rx="2" fill="#F3F4F6"/>
   <rect x="158" y="126" width="140" height="4" rx="2" fill="#00C9A7"/>
-  <text x="158" y="150" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="#9CA3AF">既存サイトをAIで解析・最適化</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="158.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="#6B7280" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="158.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0D4F38" letter-spacing="2">AIブースト</text>
 </svg>

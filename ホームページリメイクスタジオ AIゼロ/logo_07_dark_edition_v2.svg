@@ -22,9 +22,10 @@
   </g>
 
   <!-- Logotype -->
-  <text x="155" y="75" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="rgba(255,255,255,0.5)" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="155" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="white">AI ZERO</text>
   <!-- Teal accent under "AI" -->
   <rect x="155" y="126" width="46" height="3" fill="#00C9A7" rx="1.5"/>
-  <text x="155" y="152" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">ゼロから成果が出るホームページへ</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="155.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="rgba(255,255,255,0.5)" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="155.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="white" letter-spacing="2">AI ZERO</text>
 </svg>

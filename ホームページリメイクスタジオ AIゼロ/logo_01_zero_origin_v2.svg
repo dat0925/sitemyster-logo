@@ -34,10 +34,11 @@
   </g>
 
   <!-- Logotype -->
-  <text x="155" y="82" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="22" font-weight="700" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
-  <text x="155" y="125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0D4F38" letter-spacing="-1">AI ZERO</text>
   <!-- Accent underline -->
   <rect x="155" y="133" width="130" height="3" fill="url(#accent1)" rx="1.5"/>
   <!-- Tagline -->
-  <text x="155" y="155" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" font-weight="300" fill="#9CA3AF" letter-spacing="1">ゼロから、最短で成果が出るホームページへ。</text>
+
+  <!-- v3: ホームページリメイクスタジオ大・ブランド名小 -->
+  <text x="155.0" y="94" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" fill="#6B7280" letter-spacing="0.5">ホームページリメイクスタジオ</text>
+  <text x="155.0" y="120" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0D4F38" letter-spacing="2">AI ZERO</text>
 </svg>
