@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+<g transform="translate(90,100)">
+    <path d="M -40 -40 L 0 -40 Q 0 -56 8 -56 Q 16 -56 16 -40 L 40 -40 L 40 -8 Q 56 -8 56 0 Q 56 8 40 8 L 40 40 L -40 40 L -40 8 Q -56 8 -56 0 Q -56 -8 -40 -8 Z" fill="#0D4F38"/>
+    <path d="M -28 -40 L -28 40 M 0 -40 L 0 40 M 28 -40 L 28 40" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <path d="M -40 -14 L 40 -14 M -40 14 L 40 14" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="10" fill="#00C9A7"/>
+    <circle cx="0" cy="0" r="5" fill="white"/>
+  </g>
+  <text x="158" y="72" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="158" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#0D4F38">AI ZERO</text>
+  <rect x="158" y="124" width="130" height="2.5" fill="#00C9A7" rx="1.25"/>
+  <text x="158" y="149" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">最初のピースから、完成形を生成</text>
+</svg>

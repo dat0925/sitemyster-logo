@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+<g transform="translate(90,100)">
+    <ellipse cx="0" cy="0" rx="50" ry="20" fill="none" stroke="#0D4F38" stroke-width="2" transform="rotate(-20)"/>
+    <ellipse cx="0" cy="0" rx="50" ry="20" fill="none" stroke="#0D4F38" stroke-width="1.5" transform="rotate(60)" opacity="0.5"/>
+    <circle cx="0" cy="0" r="14" fill="#0D4F38"/>
+    <circle cx="0" cy="0" r="8" fill="#00C9A7"/>
+    <circle cx="0" cy="0" r="3" fill="white"/>
+    <circle cx="40" cy="-14" r="7" fill="#0D4F38"/>
+    <circle cx="-38" cy="14" r="5" fill="#00C9A7" opacity="0.7"/>
+    <polygon points="46,-18 56,-10 44,-8" fill="#0D4F38"/>
+  </g>
+  <text x="158" y="72" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="158" y="118" font-family="'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="#0D4F38">AIブースト</text>
+  <rect x="158" y="124" width="130" height="2.5" fill="#00C9A7" rx="1.25"/>
+  <text x="158" y="149" font-family="'Helvetica Neue',Arial,'Noto Sans JP',sans-serif" font-size="10" fill="#9CA3AF">AI軌道を描く、精密ブーストエンジン</text>
+</svg>

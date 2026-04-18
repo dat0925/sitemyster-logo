@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" fill="white"/>
+
+  <!-- Symbol: Ultra minimal — just a styled zero with inner element -->
+  <g transform="translate(90, 100)">
+    <!-- Thick bold zero -->
+    <ellipse cx="0" cy="0" rx="38" ry="44" fill="none" stroke="#0D4F38" stroke-width="12"/>
+    <!-- Thin inner line suggesting AI generation -->
+    <line x1="0" y1="-28" x2="0" y2="28" stroke="#00C9A7" stroke-width="3" stroke-linecap="round"/>
+    <!-- Horizontal accent -->
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Logotype (clean, generous whitespace) -->
+  <text x="160" y="68" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="22" font-weight="700" fill="#9CA3AF" letter-spacing="3">ホームページリメイクスタジオ</text>
+  <text x="160" y="116" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0D4F38" letter-spacing="-2">AI ZERO</text>
+  <text x="160" y="152" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="300" fill="#00C9A7" letter-spacing="4">HOMEPAGE REMAKE STUDIO</text>
+</svg>

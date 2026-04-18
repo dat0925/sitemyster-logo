@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="darkBoostGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2E20;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F4032;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="480" height="200" fill="url(#darkBoostGrad)" rx="8"/>
+
+  <!-- Symbol: B letter stylized with speed motion -->
+  <g transform="translate(90, 100)">
+    <!-- B shape using curves -->
+    <path d="M -24 -44 L -24 44 L 10 44 Q 36 44 36 24 Q 36 6 14 2 Q 34 -2 34 -22 Q 34 -44 10 -44 Z" fill="none" stroke="white" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Inner bumps of B (simplified) -->
+    <path d="M -24 2 L 12 2 Q 28 2 28 24 Q 28 44 10 44 L -24 44" fill="none" stroke="white" stroke-width="5"/>
+    <!-- Speed lines to right of B -->
+    <line x1="42" y1="-16" x2="58" y2="-16" stroke="#00C9A7" stroke-width="3" stroke-linecap="round"/>
+    <line x1="42" y1="0" x2="64" y2="0" stroke="#00C9A7" stroke-width="3" stroke-linecap="round"/>
+    <line x1="42" y1="16" x2="56" y2="16" stroke="#00C9A7" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Logotype -->
+  <text x="162" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="rgba(255,255,255,0.45)" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="162" y="118" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="white">AIブースト</text>
+  <!-- Teal accent bar -->
+  <rect x="162" y="124" width="55" height="3" fill="#00C9A7" rx="1.5"/>
+  <text x="162" y="150" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" letter-spacing="1">成果を加速させるリメイクサービス</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <defs>
+    <linearGradient id="transGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0D4F38;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C9A7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="200" fill="white"/>
+
+  <!-- Symbol: "Before" webpage → Transform → "After" boosted page -->
+  <g transform="translate(90, 100)">
+    <!-- Before: simple dull page -->
+    <rect x="-52" y="-32" width="32" height="42" rx="3" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="-47" y1="-24" x2="-25" y2="-24" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-47" y1="-16" x2="-30" y2="-16" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-47" y1="-8" x2="-25" y2="-8" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Transform arrow (teal, bold) -->
+    <path d="M -14 -10 Q 0 -22 14 -10" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="14,-10 22,-4 10,-4" fill="#00C9A7"/>
+    <!-- Lightning symbol on arrow -->
+    <polygon points="-2,-20 -6,-12 -1,-12 -4,-4 4,-14 -1,-14 2,-20" fill="#00C9A7" transform="translate(0, 0) scale(0.7)"/>
+
+    <!-- After: vibrant boosted page -->
+    <rect x="22" y="-44" width="38" height="54" rx="4" fill="url(#transGrad)"/>
+    <!-- White content lines on boosted page -->
+    <line x1="28" y1="-34" x2="54" y2="-34" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="28" y1="-26" x2="50" y2="-26" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="28" y1="-18" x2="54" y2="-18" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <!-- Star/sparkle on boosted page -->
+    <polygon points="41,-4 43,1 48,0 44,4 46,9 41,7 36,9 38,4 34,0 39,1" fill="white" opacity="0.9" transform="scale(0.8) translate(12,-4)"/>
+  </g>
+
+  <!-- Logotype -->
+  <text x="158" y="72" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10.5" fill="#6B7280" letter-spacing="2">ホームページリメイクスタジオ</text>
+  <text x="158" y="116" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0D4F38">AIブースト</text>
+  <rect x="158" y="123" width="150" height="2.5" fill="#00C9A7" rx="1.25"/>
+  <text x="158" y="148" font-family="'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif" font-size="10" fill="#9CA3AF">今ある資産を活かしてリメイク</text>
+</svg>
