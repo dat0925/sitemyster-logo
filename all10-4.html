@@ -184,10 +184,55 @@
     font-size: 12px;
   }
   footer strong { color: white; }
+
+  .palette-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 14px 40px;
+    background: white;
+    border-bottom: 1px solid #E5E7EB;
+    position: sticky;
+    top: 41px;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .palette-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6B7280;
+    letter-spacing: .08em;
+    white-space: nowrap;
+  }
+  .swatches { display: flex; gap: 8px; }
+  .swatch {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    border: 2.5px solid #E5E7EB;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+    transition: border-color .2s, transform .15s;
+  }
+  .swatch:hover { transform: scale(1.1); border-color: #9CA3AF; }
+  .swatch.active { border-color: #3B4FD8; box-shadow: 0 0 0 3px rgba(59,79,216,0.25); }
+  .sw-half { flex: 1; height: 100%; display: block; }
+  .palette-name {
+    font-size: 11px;
+    font-weight: 600;
+    color: #374151;
+    min-width: 120px;
+  }
+
 </style>
 </head>
 <body>
 
+<div style="position:sticky;top:0;z-index:200;background:rgba(26,34,64,0.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(107,127,232,0.2);padding:10px 24px;">
+  <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;color:#818CF8;text-decoration:none;font-size:13px;font-weight:700;">← トップページへ戻る</a>
+</div>
 <header>
   <a href="https://dat0925.github.io/sitemyster-logo/">← トップページへ戻る</a>
   <div class="badge">Brand Logo Design · Integrated Logotype Version</div>
@@ -195,6 +240,17 @@
   <p>シンボル＋ロゴタイプ統合版（文字入りSVGロゴ）／ 10パターン</p>
 </header>
 
+<div class="palette-bar" id="palette-bar">
+  <span class="palette-label">配色バリエーション</span>
+  <div class="swatches">
+    <button class="swatch active" onclick="applyTheme('indigo',this)" title="インディゴ（デフォルト）"><span class="sw-half" style="background:#1A2240"></span><span class="sw-half" style="background:#3B4FD8"></span></button>
+    <button class="swatch" onclick="applyTheme('ocean',this)" title="オーシャンブルー"><span class="sw-half" style="background:#0C4A6E"></span><span class="sw-half" style="background:#0EA5E9"></span></button>
+    <button class="swatch" onclick="applyTheme('violet',this)" title="バイオレット"><span class="sw-half" style="background:#4C1D95"></span><span class="sw-half" style="background:#A78BFA"></span></button>
+    <button class="swatch" onclick="applyTheme('emerald',this)" title="エメラルド"><span class="sw-half" style="background:#064E3B"></span><span class="sw-half" style="background:#10B981"></span></button>
+    <button class="swatch" onclick="applyTheme('crimson',this)" title="クリムゾン"><span class="sw-half" style="background:#7F1D1D"></span><span class="sw-half" style="background:#F43F5E"></span></button>
+  </div>
+  <span class="palette-name" id="palette-name">インディゴ（デフォルト）</span>
+</div>
 <div class="section-label">
   <div class="num">01</div>
   サイトマイスター — 文字統合ロゴ 10案
@@ -643,6 +699,105 @@
   シンボルマーク＋「サイトマイスター」ロゴタイプ統合SVG版 ／ 10案 + 推奨3案展開<br>
   カラー原則：インディゴ (#3B4FD8) · ネイビー (#1A2240) · ホワイト
 </footer>
+
+<script>
+const PALETTES = {
+  indigo: {
+    label: 'インディゴ（デフォルト）',
+    map: null
+  },
+  ocean: {
+    label: 'オーシャンブルー',
+    map: {
+      '#3B4FD8':'#0284C7','#6B7FE8':'#38BDF8','#1A2240':'#0C4A6E',
+      '#2A3BB8':'#0369A1','#818CF8':'#7DD3FC','#4F63E8':'#0EA5E9',
+      '#4C1D95':'#075985','#5B21B6':'#0369A1','#6D28D9':'#0284C7',
+      '#7C3AED':'#0EA5E9',
+      'rgba(59,79,216,0.5)':'rgba(2,132,199,0.5)',
+      'rgba(107,127,232,0.3)':'rgba(56,189,248,0.3)',
+      'rgba(59,79,216,0.18)':'rgba(2,132,199,0.18)',
+      'rgba(59,79,216,0.07)':'rgba(2,132,199,0.07)',
+    }
+  },
+  violet: {
+    label: 'バイオレット',
+    map: {
+      '#3B4FD8':'#7C3AED','#6B7FE8':'#A78BFA','#1A2240':'#2E1065',
+      '#2A3BB8':'#6D28D9','#818CF8':'#C4B5FD','#4F63E8':'#7C3AED',
+      '#4C1D95':'#3B0764','#5B21B6':'#4C1D95','#6D28D9':'#6D28D9',
+      '#7C3AED':'#8B5CF6',
+      'rgba(59,79,216,0.5)':'rgba(124,58,237,0.5)',
+      'rgba(107,127,232,0.3)':'rgba(167,139,250,0.3)',
+      'rgba(59,79,216,0.18)':'rgba(124,58,237,0.18)',
+      'rgba(59,79,216,0.07)':'rgba(124,58,237,0.07)',
+    }
+  },
+  emerald: {
+    label: 'エメラルド',
+    map: {
+      '#3B4FD8':'#059669','#6B7FE8':'#34D399','#1A2240':'#064E3B',
+      '#2A3BB8':'#047857','#818CF8':'#6EE7B7','#4F63E8':'#10B981',
+      '#4C1D95':'#065F46','#5B21B6':'#047857','#6D28D9':'#059669',
+      '#7C3AED':'#10B981',
+      'rgba(59,79,216,0.5)':'rgba(5,150,105,0.5)',
+      'rgba(107,127,232,0.3)':'rgba(52,211,153,0.3)',
+      'rgba(59,79,216,0.18)':'rgba(5,150,105,0.18)',
+      'rgba(59,79,216,0.07)':'rgba(5,150,105,0.07)',
+    }
+  },
+  crimson: {
+    label: 'クリムゾン',
+    map: {
+      '#3B4FD8':'#E11D48','#6B7FE8':'#FB7185','#1A2240':'#7F1D1D',
+      '#2A3BB8':'#BE123C','#818CF8':'#FDA4AF','#4F63E8':'#F43F5E',
+      '#4C1D95':'#881337','#5B21B6':'#9F1239','#6D28D9':'#BE123C',
+      '#7C3AED':'#E11D48',
+      'rgba(59,79,216,0.5)':'rgba(225,29,72,0.5)',
+      'rgba(107,127,232,0.3)':'rgba(251,113,133,0.3)',
+      'rgba(59,79,216,0.18)':'rgba(225,29,72,0.18)',
+      'rgba(59,79,216,0.07)':'rgba(225,29,72,0.07)',
+    }
+  },
+};
+
+// 元のSVGテキストをキャッシュ
+const svgOriginals = {};
+document.querySelectorAll('.logo-area svg').forEach((svg, i) => {
+  svgOriginals[i] = svg.outerHTML;
+});
+
+function applyTheme(key, btn) {
+  const p = PALETTES[key];
+  document.getElementById('palette-name').textContent = p.label;
+
+  // swatch active
+  document.querySelectorAll('.swatch').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  // active swatch border color update
+  const activeColor = key === 'indigo' ? '#3B4FD8'
+    : key === 'ocean' ? '#0284C7'
+    : key === 'violet' ? '#7C3AED'
+    : key === 'emerald' ? '#059669'
+    : '#E11D48';
+  document.querySelector('.swatch.active').style.boxShadow = `0 0 0 3px ${activeColor}44`;
+
+  document.querySelectorAll('.logo-area').forEach((area, i) => {
+    let svgHtml = svgOriginals[i];
+    if (!svgHtml) return;
+    if (p.map) {
+      for (const [from, to] of Object.entries(p.map)) {
+        svgHtml = svgHtml.split(from).join(to);
+      }
+    }
+    // replace inner HTML
+    const tmp = document.createElement('div');
+    tmp.innerHTML = svgHtml;
+    const newSvg = tmp.querySelector('svg');
+    if (newSvg) area.replaceChild(newSvg, area.querySelector('svg'));
+  });
+}
+</script>
 
 </body>
 </html>
