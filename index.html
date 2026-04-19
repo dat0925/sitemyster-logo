@@ -363,19 +363,34 @@
 
     /* ===== ブランドグループ ===== */
     .brand-group {
-      margin-bottom: 28px;
+      margin-bottom: 20px;
       border-radius: 18px;
-      padding: 20px 24px 24px;
       border: 2px solid transparent;
+      overflow: hidden;
     }
     .brand-group-blue  { background: #EEF2FF; border-color: #C7D0E8; }
     .brand-group-green { background: #ECFDF5; border-color: #A7D7C5; }
     .brand-group-teal  { background: #F0FDFA; border-color: #99D6D0; }
+
+    /* ヘッダー部分がトグルボタン */
+    .brand-group-toggle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      gap: 12px;
+    }
+    .brand-group-toggle:hover { filter: brightness(0.97); }
     .brand-group-header {
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 16px;
+      flex: 1;
     }
     .brand-group-icon { font-size: 28px; line-height: 1; flex-shrink: 0; }
     .brand-group-name {
@@ -390,47 +405,22 @@
       margin-top: 3px;
       font-weight: 500;
     }
-
-    /* ===== ブランド内アコーディオン ===== */
-    .inner-accordion {
-      margin-top: 12px;
-    }
-    .inner-acc-toggle {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 11px 16px;
-      border-radius: 10px;
-      border: 1.5px solid rgba(0,0,0,0.10);
-      background: rgba(255,255,255,0.6);
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 700;
-      color: #374151;
-      transition: background 0.15s, border-color 0.15s;
-      text-align: left;
-    }
-    .inner-acc-toggle:hover { background: rgba(255,255,255,0.85); }
-    .inner-acc-toggle.open { border-radius: 10px 10px 0 0; border-bottom-color: transparent; background: rgba(255,255,255,0.85); }
-    .inner-acc-toggle-green { color: #0D4F38; }
-    .inner-acc-toggle-teal  { color: #0F766E; }
-    .inner-acc-arrow {
-      font-size: 11px;
+    .brand-group-arrow {
+      font-size: 12px;
       color: #9CA3AF;
-      transition: transform 0.2s;
+      transition: transform 0.25s;
       flex-shrink: 0;
     }
-    .inner-acc-toggle.open .inner-acc-arrow { transform: rotate(180deg); }
-    .inner-acc-body {
-      display: none;
-      background: rgba(255,255,255,0.5);
-      border: 1.5px solid rgba(0,0,0,0.10);
-      border-top: none;
-      border-radius: 0 0 10px 10px;
-      padding: 16px;
+    .brand-group-toggle[aria-expanded="false"] .brand-group-arrow {
+      transform: rotate(180deg);
     }
-    .inner-acc-body.open { display: block; }
+
+    /* カードエリア */
+    .brand-group-body {
+      display: none;
+      padding: 0 20px 20px;
+    }
+    .brand-group-body.open { display: block; }
 
     /* ===== アコーディオン検索 ===== */
     .accordion-section {
@@ -523,268 +513,200 @@
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;|&nbsp; 全ページ一覧</p>
 </header>
 
-<!-- ===== ブランド別 30案 ===== -->
+<!-- ===== ブランド別 ===== -->
 <div class="section" style="margin-top:40px;">
-  <div class="section-title">ブランド別ロゴ — 各30案</div>
+  <div class="section-title">ブランド別ロゴ</div>
 
   <!-- ===== サイトマイスター ===== -->
   <div class="brand-group brand-group-blue">
-    <div class="brand-group-header">
-      <span class="brand-group-icon">🔷</span>
-      <div>
-        <div class="brand-group-name">サイトマイスター</div>
-        <div class="brand-group-sub">直販チャネル｜ネイビーブルー × ゴールド</div>
-      </div>
-    </div>
-
-    <!-- メインカード -->
-    <div class="grid grid-1">
-      <a href="sitemyster30.html" class="card color-blue">
-        <div class="card-top">
-          <span class="card-icon">🔷</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-blue">直販チャネル</span>
-        <h2>サイトマイスター</h2>
-        <p>ドイツ語で「達人」を意味するマイスター。AIが高品質なHPを提供するブランド。ネイビーブルー × ゴールド。</p>
-        <span class="arrow">SM-01 〜 SM-30 →</span>
-      </a>
-    </div>
-
-    <!-- アコーディオン：比較・まとめ -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle" onclick="toggleInner(this)">
-        <span>🔤 比較・まとめ表示</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="all10-4.html" class="card color-blue">
-            <div class="card-top">
-              <span class="card-icon">🔤</span>
-              <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-blue">サイトマイスター / 文字統合版</span>
-            <h2>ロゴデザイン集（文字統合版）</h2>
-            <p>シンボルマークに「サイトマイスター」のロゴタイプを直接統合したSVG版。5配色（インディゴ・オーシャン・バイオレット・エメラルド・クリムゾン）を横並びで比較できる。</p>
-            <span class="arrow">SM-01 〜 SM-10 ／ 5配色横並び →</span>
-          </a>
+    <button class="brand-group-toggle" onclick="toggleBrand(this)" aria-expanded="true">
+      <div class="brand-group-header">
+        <span class="brand-group-icon">🔷</span>
+        <div>
+          <div class="brand-group-name">サイトマイスター</div>
+          <div class="brand-group-sub">直販チャネル｜ネイビーブルー × ゴールド</div>
         </div>
       </div>
-    </div>
-
-    <!-- アコーディオン：フリーデザイン -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle" onclick="toggleInner(this)">
-        <span>🔷 フリーデザイン版（30案）</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="サイトマイスターロゴ（フリーデザイン）/01_サイトマイスター.html" class="card color-blue">
-            <div class="card-top">
-              <span class="card-icon">🔷</span>
-              <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-blue">フリーデザイン</span>
-            <h2>サイトマイスター</h2>
-            <p>信頼・品質・職人性を体現するブランド。ブルー系 #1B4FC2 / アクセント ゴールド。各30案を5配色で展開。</p>
-            <span class="arrow">SM-01〜30 →</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- アコーディオン：ロゴ×サービス名 -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle" onclick="toggleInner(this)">
-        <span>🔷 ロゴ × サービス名 組み合わせ確認</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="combo-meister.html" class="card color-blue">
-            <div class="card-top">
-              <span class="card-icon">🔷</span>
-              <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-blue">シンボル × テキスト</span>
-            <h2>サイトマイスター</h2>
-            <p>ロゴシンボルにサービス名テキストを組み合わせたイメージ。インディゴ・ブルー・グリーンなど5配色バリアントを横並びで確認。</p>
-            <span class="arrow">SM-01 〜 SM-10 × 5配色 →</span>
-          </a>
-        </div>
+      <span class="brand-group-arrow">▲</span>
+    </button>
+    <div class="brand-group-body open">
+      <div class="grid grid-3">
+        <a href="sitemyster30.html" class="card color-blue">
+          <div class="card-top">
+            <span class="card-icon">🔷</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-blue">直販チャネル</span>
+          <h2>サイトマイスター</h2>
+          <p>ドイツ語で「達人」を意味するマイスター。AIが高品質なHPを提供するブランド。ネイビーブルー × ゴールド。</p>
+          <span class="arrow">SM-01 〜 SM-30 →</span>
+        </a>
+        <a href="all10-4.html" class="card color-blue">
+          <div class="card-top">
+            <span class="card-icon">🔤</span>
+            <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-blue">比較・まとめ / 文字統合版</span>
+          <h2>ロゴデザイン集（文字統合版）</h2>
+          <p>シンボルマークに「サイトマイスター」のロゴタイプを直接統合したSVG版。5配色を横並びで比較。</p>
+          <span class="arrow">SM-01 〜 SM-10 ／ 5配色横並び →</span>
+        </a>
+        <a href="サイトマイスターロゴ（フリーデザイン）/01_サイトマイスター.html" class="card color-blue">
+          <div class="card-top">
+            <span class="card-icon">🔷</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-blue">フリーデザイン</span>
+          <h2>サイトマイスター</h2>
+          <p>信頼・品質・職人性を体現するブランド。ブルー系 #1B4FC2 / アクセント ゴールド。各30案を5配色で展開。</p>
+          <span class="arrow">SM-01〜30 →</span>
+        </a>
+        <a href="combo-meister.html" class="card color-blue">
+          <div class="card-top">
+            <span class="card-icon">🔷</span>
+            <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-blue">シンボル × テキスト</span>
+          <h2>ロゴ × サービス名 組み合わせ確認</h2>
+          <p>ロゴシンボルにサービス名テキストを組み合わせたイメージ。インディゴ・ブルー・グリーンなど5配色バリアントを横並びで確認。</p>
+          <span class="arrow">SM-01 〜 SM-10 × 5配色 →</span>
+        </a>
       </div>
     </div>
   </div>
 
   <!-- ===== AI ZERO ===== -->
   <div class="brand-group brand-group-green">
-    <div class="brand-group-header">
-      <span class="brand-group-icon">🟢</span>
-      <div>
-        <div class="brand-group-name">ホームページリメイクスタジオ AI ZERO</div>
-        <div class="brand-group-sub">WEBチャネル・新規｜フォレストグリーン × ティール</div>
-      </div>
-    </div>
-
-    <!-- メインカード -->
-    <div class="grid grid-3">
-      <a href="ai-zero30.html" class="card color-green">
-        <div class="card-top">
-          <span class="card-icon">🟢</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-green">v1 ベース</span>
-        <h2>AI ZERO</h2>
-        <p>「ゼロから、迷わず成果が出るホームページへ。」AIがトータルサポート。</p>
-        <span class="arrow">AZ-01 〜 AZ-30 →</span>
-      </a>
-      <a href="ai-zero30-v2.html" class="card color-green">
-        <div class="card-top">
-          <span class="card-icon">🟢</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-green">v2 サービス名強調版</span>
-        <h2>AI ZERO</h2>
-        <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
-        <span class="arrow">AZ-01 〜 AZ-30 (v2) →</span>
-      </a>
-      <a href="ai-zero30-v3.html" class="card color-green">
-        <div class="card-top">
-          <span class="card-icon">🟢</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-green">v3 文字サイズ拡大版（36px）</span>
-        <h2>AI ZERO</h2>
-        <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
-        <span class="arrow">AZ-01 〜 AZ-30 (v3) →</span>
-      </a>
-    </div>
-
-    <!-- アコーディオン：フリーデザイン -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle inner-acc-toggle-green" onclick="toggleInner(this)">
-        <span>🟢 フリーデザイン版（30案）</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="サイトマイスターロゴ（フリーデザイン）/02_AI_ZERO.html" class="card color-green">
-            <div class="card-top">
-              <span class="card-icon">🟢</span>
-              <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-green">フリーデザイン</span>
-            <h2>ホームページリメイクスタジオ AI ZERO</h2>
-            <p>ゼロからの出発と信頼を表現。フォレストグリーン × ティール。各30案を5配色で展開。</p>
-            <span class="arrow">AZ-01〜30 →</span>
-          </a>
+    <button class="brand-group-toggle" onclick="toggleBrand(this)" aria-expanded="true">
+      <div class="brand-group-header">
+        <span class="brand-group-icon">🟢</span>
+        <div>
+          <div class="brand-group-name">ホームページリメイクスタジオ AI ZERO</div>
+          <div class="brand-group-sub">WEBチャネル・新規｜フォレストグリーン × ティール</div>
         </div>
       </div>
-    </div>
-
-    <!-- アコーディオン：ロゴ×サービス名 -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle inner-acc-toggle-green" onclick="toggleInner(this)">
-        <span>🟢 ロゴ × サービス名 組み合わせ確認</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="combo-zero.html" class="card color-green">
-            <div class="card-top">
-              <span class="card-icon">🟢</span>
-              <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-green">シンボル × テキスト</span>
-            <h2>ホームページリメイクスタジオ AI ZERO</h2>
-            <p>ロゴシンボルに「ホームページリメイクスタジオ」＋AI ZEROバッジを組み合わせたイメージ。5配色バリアントを横並びで確認。</p>
-            <span class="arrow">AZ-01 〜 AZ-10 × 5配色 →</span>
-          </a>
-        </div>
+      <span class="brand-group-arrow">▲</span>
+    </button>
+    <div class="brand-group-body open">
+      <div class="grid grid-3">
+        <a href="ai-zero30.html" class="card color-green">
+          <div class="card-top">
+            <span class="card-icon">🟢</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-green">v1 ベース</span>
+          <h2>AI ZERO</h2>
+          <p>「ゼロから、迷わず成果が出るホームページへ。」AIがトータルサポート。フォレストグリーン × ティール。</p>
+          <span class="arrow">AZ-01 〜 AZ-30 →</span>
+        </a>
+        <a href="ai-zero30-v2.html" class="card color-green">
+          <div class="card-top">
+            <span class="card-icon">🟢</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-green">v2 サービス名強調版</span>
+          <h2>AI ZERO</h2>
+          <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
+          <span class="arrow">AZ-01 〜 AZ-30 (v2) →</span>
+        </a>
+        <a href="ai-zero30-v3.html" class="card color-green">
+          <div class="card-top">
+            <span class="card-icon">🟢</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-green">v3 文字サイズ拡大版（36px）</span>
+          <h2>AI ZERO</h2>
+          <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
+          <span class="arrow">AZ-01 〜 AZ-30 (v3) →</span>
+        </a>
+        <a href="サイトマイスターロゴ（フリーデザイン）/02_AI_ZERO.html" class="card color-green">
+          <div class="card-top">
+            <span class="card-icon">🟢</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-green">フリーデザイン</span>
+          <h2>AI ZERO</h2>
+          <p>ゼロからの出発と信頼を表現。フォレストグリーン × ティール。各30案を5配色で展開。</p>
+          <span class="arrow">AZ-01〜30 →</span>
+        </a>
+        <a href="combo-zero.html" class="card color-green">
+          <div class="card-top">
+            <span class="card-icon">🟢</span>
+            <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-green">シンボル × テキスト</span>
+          <h2>ロゴ × サービス名 組み合わせ確認</h2>
+          <p>ロゴシンボルに「ホームページリメイクスタジオ」＋AI ZEROバッジを組み合わせたイメージ。5配色バリアントを確認。</p>
+          <span class="arrow">AZ-01 〜 AZ-10 × 5配色 →</span>
+        </a>
       </div>
     </div>
   </div>
 
   <!-- ===== AIブースト ===== -->
   <div class="brand-group brand-group-teal">
-    <div class="brand-group-header">
-      <span class="brand-group-icon">🚀</span>
-      <div>
-        <div class="brand-group-name">ホームページリメイクスタジオ AIブースト</div>
-        <div class="brand-group-sub">WEBチャネル・リプレイス｜既存サイトをAIで加速</div>
-      </div>
-    </div>
-
-    <!-- メインカード -->
-    <div class="grid grid-3">
-      <a href="aiboost30.html" class="card color-teal">
-        <div class="card-top">
-          <span class="card-icon">🚀</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-teal">v1 ベース</span>
-        <h2>AIブースト</h2>
-        <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し集客を一段引き上げる。</p>
-        <span class="arrow">AB-01 〜 AB-30 →</span>
-      </a>
-      <a href="aiboost30-v2.html" class="card color-teal">
-        <div class="card-top">
-          <span class="card-icon">🚀</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-teal">v2 サービス名強調版</span>
-        <h2>AIブースト</h2>
-        <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
-        <span class="arrow">AB-01 〜 AB-30 (v2) →</span>
-      </a>
-      <a href="aiboost30-v3.html" class="card color-teal">
-        <div class="card-top">
-          <span class="card-icon">🚀</span>
-          <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-        </div>
-        <span class="card-label label-teal">v3 文字サイズ拡大版（36px）</span>
-        <h2>AIブースト</h2>
-        <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
-        <span class="arrow">AB-01 〜 AB-30 (v3) →</span>
-      </a>
-    </div>
-
-    <!-- アコーディオン：フリーデザイン -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle inner-acc-toggle-teal" onclick="toggleInner(this)">
-        <span>🚀 フリーデザイン版（30案）</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="サイトマイスターロゴ（フリーデザイン）/03_AIブースト.html" class="card color-teal">
-            <div class="card-top">
-              <span class="card-icon">🚀</span>
-              <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-teal">フリーデザイン</span>
-            <h2>ホームページリメイクスタジオ AIブースト</h2>
-            <p>成果加速をビジュアル化。グリーン系 #1B8C3E。各30案を5配色で展開。</p>
-            <span class="arrow">AB-01〜30 →</span>
-          </a>
+    <button class="brand-group-toggle" onclick="toggleBrand(this)" aria-expanded="true">
+      <div class="brand-group-header">
+        <span class="brand-group-icon">🚀</span>
+        <div>
+          <div class="brand-group-name">ホームページリメイクスタジオ AIブースト</div>
+          <div class="brand-group-sub">WEBチャネル・リプレイス｜既存サイトをAIで加速</div>
         </div>
       </div>
-    </div>
-
-    <!-- アコーディオン：ロゴ×サービス名 -->
-    <div class="inner-accordion">
-      <button class="inner-acc-toggle inner-acc-toggle-teal" onclick="toggleInner(this)">
-        <span>🚀 ロゴ × サービス名 組み合わせ確認</span><span class="inner-acc-arrow">▼</span>
-      </button>
-      <div class="inner-acc-body">
-        <div class="grid grid-1">
-          <a href="combo-boost.html" class="card color-teal">
-            <div class="card-top">
-              <span class="card-icon">🚀</span>
-              <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
-            </div>
-            <span class="card-label label-teal">シンボル × テキスト</span>
-            <h2>ホームページリメイクスタジオ AIブースト</h2>
-            <p>ロゴシンボルに「ホームページリメイクスタジオ」＋AI BOOSTバッジを組み合わせたイメージ。5配色バリアントを横並びで確認。</p>
-            <span class="arrow">AB-01 〜 AB-10 × 5配色 →</span>
-          </a>
-        </div>
+      <span class="brand-group-arrow">▲</span>
+    </button>
+    <div class="brand-group-body open">
+      <div class="grid grid-3">
+        <a href="aiboost30.html" class="card color-teal">
+          <div class="card-top">
+            <span class="card-icon">🚀</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-teal">v1 ベース</span>
+          <h2>AIブースト</h2>
+          <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し集客を一段引き上げる。</p>
+          <span class="arrow">AB-01 〜 AB-30 →</span>
+        </a>
+        <a href="aiboost30-v2.html" class="card color-teal">
+          <div class="card-top">
+            <span class="card-icon">🚀</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-teal">v2 サービス名強調版</span>
+          <h2>AIブースト</h2>
+          <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
+          <span class="arrow">AB-01 〜 AB-30 (v2) →</span>
+        </a>
+        <a href="aiboost30-v3.html" class="card color-teal">
+          <div class="card-top">
+            <span class="card-icon">🚀</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-teal">v3 文字サイズ拡大版（36px）</span>
+          <h2>AIブースト</h2>
+          <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
+          <span class="arrow">AB-01 〜 AB-30 (v3) →</span>
+        </a>
+        <a href="サイトマイスターロゴ（フリーデザイン）/03_AIブースト.html" class="card color-teal">
+          <div class="card-top">
+            <span class="card-icon">🚀</span>
+            <div class="count-block"><span class="count-num">30</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-teal">フリーデザイン</span>
+          <h2>AIブースト</h2>
+          <p>成果加速をビジュアル化。グリーン系 #1B8C3E。各30案を5配色で展開。</p>
+          <span class="arrow">AB-01〜30 →</span>
+        </a>
+        <a href="combo-boost.html" class="card color-teal">
+          <div class="card-top">
+            <span class="card-icon">🚀</span>
+            <div class="count-block"><span class="count-num">10</span><span class="count-unit">案</span></div>
+          </div>
+          <span class="card-label label-teal">シンボル × テキスト</span>
+          <h2>ロゴ × サービス名 組み合わせ確認</h2>
+          <p>ロゴシンボルに「ホームページリメイクスタジオ」＋AI BOOSTバッジを組み合わせたイメージ。5配色バリアントを確認。</p>
+          <span class="arrow">AB-01 〜 AB-10 × 5配色 →</span>
+        </a>
       </div>
     </div>
   </div>
@@ -1143,10 +1065,10 @@ function clearPreview() {
 }
 
 /* ========= アコーディオン ========= */
-function toggleInner(btn) {
+function toggleBrand(btn) {
   const body = btn.nextElementSibling;
-  const isOpen = btn.classList.contains('open');
-  btn.classList.toggle('open', !isOpen);
+  const isOpen = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
   body.classList.toggle('open', !isOpen);
 }
 
