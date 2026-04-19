@@ -43,9 +43,104 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,'Hiragi
 footer{text-align:center;margin-top:40px;font-size:11px;color:#bbb;padding:0 24px}
 @media(max-width:1100px){.color-strip{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:680px){.color-strip{grid-template-columns:repeat(2,1fr)}.source-grid{grid-template-columns:1fr}}
+
+/* ===== ブランド内ページナビ ===== */
+.brand-page-nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--brand-bg, #F3F4F6);
+  border-bottom: 2px solid var(--brand-border, #E5E7EB);
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+.brand-page-nav .bpn-brand {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--brand-color, #374151);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.brand-page-nav .bpn-center {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bpn-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #D1D5DB;
+  flex-shrink: 0;
+  transition: transform 0.15s, background 0.15s;
+}
+.bpn-dot.current {
+  background: var(--brand-color, #374151);
+  transform: scale(1.4);
+}
+.brand-page-nav .bpn-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.bpn-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 7px;
+  border: 1.5px solid var(--brand-border, #E5E7EB);
+  background: white;
+  color: var(--brand-color, #374151);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.bpn-btn:hover {
+  background: var(--brand-bg, #F3F4F6);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+.bpn-btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.bpn-index {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  border-radius: 7px;
+  background: var(--brand-color, #374151);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.15s, transform 0.15s;
+}
+.bpn-index:hover { opacity: 0.85; transform: translateY(-1px); }
+
 </style>
 </head>
 <body>
+<div class="brand-page-nav" style="--brand-color:#1A3580;--brand-bg:#EEF2FF;--brand-border:#C7D0E8">
+  <div class="bpn-brand">🔷 サイトマイスター</div>
+  <div class="bpn-center">
+    <a class="bpn-btn" href="combo-meister.html">← ロゴ×サービス名</a>
+    <span class="bpn-dot" title="SM 30案 v1"></span><span class="bpn-dot" title="文字統合版"></span><span class="bpn-dot" title="フリーデザイン"></span><span class="bpn-dot" title="ロゴ×サービス名"></span><span class="bpn-dot current" title="Gemini配色"></span>
+    <span class="bpn-btn disabled">次へ →</span>
+  </div>
+  <a class="bpn-index" href="index.html">一覧へ</a>
+</div>
 
 <div class="top-nav">
   <a href="index.html">← トップへ戻る</a>
