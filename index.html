@@ -174,7 +174,7 @@
       color: #9CA3AF;
     }
 
-    .divider { margin-top: 40px; }
+    .divider { margin-top: 16px; }
 
     /* ===== ブランドグループ ===== */
     .brand-group {
@@ -267,35 +267,37 @@
     }
     .global-btn:hover { border-color: #A0AEC0; background: #F9FAFB; color: #1A1A2E; }
 
-    /* Geminiアコーディオン（外側） */
+    /* Geminiアコーディオン — brand-group と同スタイル */
+    .gemini-group {
+      margin-bottom: 20px;
+      border-radius: 18px;
+      border: 2px solid #E9D5FF;
+      background: #FDF4FF;
+      overflow: hidden;
+    }
     .gemini-acc-toggle {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 20px;
-      background: white;
-      border: 1.5px solid #E5E7EB;
-      border-radius: 14px;
+      padding: 18px 24px;
+      background: transparent;
+      border: none;
       cursor: pointer;
-      font-size: 15px;
-      font-weight: 700;
-      color: #7E22CE;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: border-color 0.15s, box-shadow 0.15s;
-      margin-bottom: 0;
+      text-align: left;
+      gap: 12px;
     }
-    .gemini-acc-toggle:hover { border-color: #C4B5FD; box-shadow: 0 4px 16px rgba(0,0,0,0.09); }
+    .gemini-acc-toggle:hover { filter: brightness(0.97); }
     .gemini-acc-toggle[aria-expanded="false"] .brand-group-arrow { transform: rotate(180deg); }
     .gemini-acc-body {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.45s ease, padding 0.45s ease;
-      padding: 0;
+      padding: 0 20px;
     }
     .gemini-acc-body.open {
       max-height: 2000px;
-      padding: 16px 0 0;
+      padding: 0 20px 20px;
     }
 
 
@@ -547,38 +549,46 @@
 
 <!-- ===== Gemini提案 ===== -->
 <div class="section divider">
-  <button class="gemini-acc-toggle" onclick="toggleGemini(this)" aria-expanded="true">
-    <span>✨ AI提案（Gemini）</span>
-    <span class="brand-group-arrow">▲</span>
-  </button>
-  <div class="gemini-acc-body open">
-    <div class="grid grid-2">
-      <a href="gemini.html" class="card color-gem">
-        <div class="card-top">
-          <span class="card-icon">✨</span>
-          <div class="count-block">
-            <span class="count-num">4</span>
-            <span class="count-unit">点</span>
-          </div>
+  <div class="gemini-group">
+    <button class="gemini-acc-toggle" onclick="toggleGemini(this)" aria-expanded="true">
+      <div class="brand-group-header">
+        <span class="brand-group-icon">✨</span>
+        <div>
+          <div class="brand-group-name" style="color:#7E22CE;">AI提案（Gemini）</div>
+          <div class="brand-group-sub">Google Gemini によるロゴデザイン提案・配色バリエーション</div>
         </div>
-        <span class="card-label label-gem">Gemini提案</span>
-        <h2>Gemini によるロゴデザイン提案</h2>
-        <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
-        <span class="arrow">提案画像 4点 →</span>
-      </a>
-      <a href="gemini-color-variants.html" class="card color-gem">
-        <div class="card-top">
-          <span class="card-icon">🎨</span>
-          <div class="count-block">
-            <span class="count-num">70</span>
-            <span class="count-unit">案</span>
+      </div>
+      <span class="brand-group-arrow">▲</span>
+    </button>
+    <div class="gemini-acc-body open">
+      <div class="grid grid-2">
+        <a href="gemini.html" class="card color-gem">
+          <div class="card-top">
+            <span class="card-icon">✨</span>
+            <div class="count-block">
+              <span class="count-num">4</span>
+              <span class="count-unit">点</span>
+            </div>
           </div>
-        </div>
-        <span class="card-label label-gem">Gemini × 配色展開</span>
-        <h2>Gemini提案ロゴ 配色バリエーション集</h2>
-        <p>Gemini提案の4画像から14ロゴをSVGで再現し、各5配色パターンに展開。全70バリエーションを一覧表示。</p>
-        <span class="arrow">14ロゴ × 5配色 →</span>
-      </a>
+          <span class="card-label label-gem">Gemini提案</span>
+          <h2>Gemini によるロゴデザイン提案</h2>
+          <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
+          <span class="arrow">提案画像 4点 →</span>
+        </a>
+        <a href="gemini-color-variants.html" class="card color-gem">
+          <div class="card-top">
+            <span class="card-icon">🎨</span>
+            <div class="count-block">
+              <span class="count-num">70</span>
+              <span class="count-unit">案</span>
+            </div>
+          </div>
+          <span class="card-label label-gem">Gemini × 配色展開</span>
+          <h2>Gemini提案ロゴ 配色バリエーション集</h2>
+          <p>Gemini提案の4画像から14ロゴをSVGで再現し、各5配色パターンに展開。全70バリエーションを一覧表示。</p>
+          <span class="arrow">14ロゴ × 5配色 →</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -604,13 +614,6 @@ function toggleGemini(btn) {
   body.classList.toggle('open', !isOpen);
 }
 
-function toggleGeminiSub(btn) {
-  const body = btn.nextElementSibling;
-  const isOpen = btn.getAttribute('aria-expanded') === 'true';
-  btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-  body.classList.toggle('open', !isOpen);
-}
-
 /* ========= 全開く / 全閉じる ========= */
 function openAll() {
   document.querySelectorAll('.brand-group-toggle').forEach(btn => {
@@ -622,10 +625,6 @@ function openAll() {
     geminiBtn.setAttribute('aria-expanded', 'true');
     geminiBtn.nextElementSibling.classList.add('open');
   }
-  document.querySelectorAll('.gemini-sub-toggle').forEach(btn => {
-    btn.setAttribute('aria-expanded', 'true');
-    btn.nextElementSibling.classList.add('open');
-  });
 }
 
 function closeAll() {
@@ -638,10 +637,6 @@ function closeAll() {
     geminiBtn.setAttribute('aria-expanded', 'false');
     geminiBtn.nextElementSibling.classList.remove('open');
   }
-  document.querySelectorAll('.gemini-sub-toggle').forEach(btn => {
-    btn.setAttribute('aria-expanded', 'false');
-    btn.nextElementSibling.classList.remove('open');
-  });
 }
 </script>
 
