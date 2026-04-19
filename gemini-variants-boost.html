@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ホームページリメイクスタジオ AIブースト — Gemini配色バリエーション</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,'Hiragino Sans','Yu Gothic',Meiryo,sans-serif;background:#E8E8E8;padding:0 0 80px;color:#1a1a1a}
+.top-nav{position:sticky;top:0;z-index:100;background:rgba(232,232,232,0.96);backdrop-filter:blur(6px);border-bottom:1px solid #D1D5DB;padding:10px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.top-nav a{color:#1A3580;text-decoration:none;font-size:13px;font-weight:700}
+.top-nav a.active{color:#00836F;border-bottom:2px solid #00836F;padding-bottom:1px}
+.page-header{padding:48px 40px 40px;text-align:center;color:white}
+.page-header h1{font-size:28px;font-weight:900;letter-spacing:-.5px;margin-bottom:8px}
+.page-header .sub{font-size:13px;opacity:.75;margin-bottom:16px}
+.gemini-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:5px 16px;font-size:12px;font-weight:600}
+.bar{width:64px;height:3px;background:rgba(255,255,255,.4);margin:16px auto 0;border-radius:2px}
+.section-head{padding:24px 28px 16px;margin-top:32px}
+.section-head h2{font-size:18px;font-weight:800;color:#111;margin-bottom:4px}
+.section-head p{font-size:12px;color:#888}
+.section-divider{height:4px;border-radius:2px;margin:0 28px 24px}
+.divider-arc{background:linear-gradient(90deg,#00B4A0,#00836F,#007A6E)}
+.divider-12p{background:linear-gradient(90deg,#1A6B8A,#0D3F56,#1B4FC2)}
+.divider-geo{background:linear-gradient(90deg,#1A6B8A,#F97316)}
+.logo-list{padding:0 24px}
+.logo-group{background:#fff;border-radius:14px;padding:14px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 14px rgba(0,0,0,.04)}
+.logo-group:hover{box-shadow:0 4px 20px rgba(0,0,0,.10)}
+.group-label{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid #F0F0F0}
+.g-num{font-size:11px;font-weight:800;letter-spacing:1.5px;color:#aaa;white-space:nowrap}
+.g-desc{font-size:11px;color:#999;line-height:1.4}
+.color-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.card-mini{background:#F8F9FA;border-radius:10px;padding:10px 6px 8px;text-align:center;transition:transform .15s,box-shadow .15s}
+.card-mini:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.card-mini.original{background:#F0FDF9;outline:2px solid #99F6E4}
+.palette-badge{font-size:8px;font-weight:700;letter-spacing:.5px;color:#999;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-mini.original .palette-badge{color:#059669}
+.card-mini svg{width:100%;height:auto}
+.source-section{padding:24px;margin-top:8px}
+.source-section h3{font-size:14px;font-weight:700;color:#555;margin-bottom:12px}
+.source-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.source-img{border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.source-img img{width:100%;display:block;border-radius:10px}
+footer{text-align:center;margin-top:40px;font-size:11px;color:#bbb;padding:0 24px}
+@media(max-width:1100px){.color-strip{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.color-strip{grid-template-columns:repeat(2,1fr)}.source-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <a href="index.html">← トップへ戻る</a>
+  <a href="gemini.html">Gemini元提案</a>
+  <a href="gemini-variants-meister.html">サイトマイスター</a>
+  <a href="gemini-variants-zero.html">HP リメイクスタジオ AI ZERO</a>
+  <a href="gemini-variants-boost.html" class="active">HP リメイクスタジオ AIブースト</a>
+</div>
+
+
+<div class="page-header" style="background:linear-gradient(135deg,#1A6B8A 0%,#0D3F56 50%,#F97316 100%)">
+  <div class="gemini-badge">✦ AIブースト ロゴバリエーション</div>
+  <h1 style="margin-top:14px">ホームページリメイクスタジオ<br>AIブースト</h1>
+  <p class="sub">AI Boost ブランド向けロゴ配色バリエーション（G-03 / G-13）</p>
+  <div class="bar"></div>
+</div>
+
+<!-- A: Responsive Arc Boost -->
+<div class="section-head">
+  <h2>A. "Responsive Arc" — AI Boost サブブランド</h2>
+  <p>アーク＋上昇矢印（ロケット）＋ AI Boost ロゴタイプ</p>
+</div>
+<div class="section-divider divider-arc"></div>
+<div class="logo-list">
+<div class="logo-group">
+  <div class="group-label"><span class="g-num">G-03</span><span class="g-desc">Responsive Arc — AI Boost サブブランド ／ アーク＋上昇矢印（ロケット）＋ AI Boost ロゴタイプ</span></div>
+  <div class="color-strip"><div class="card-mini original"><div class="palette-badge">オリジナル</div><svg viewBox="0 0 280 120" width="280" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arc squares -->
+  <rect x="20" y="72" width="14" height="14" rx="3" fill="#00B4A0" opacity="0.45" transform="rotate(-38,27,79)"/>
+  <rect x="34" y="58" width="17" height="17" rx="4" fill="#00B4A0" opacity="0.6" transform="rotate(-24,42,66)"/>
+  <rect x="52" y="46" width="20" height="20" rx="5" fill="#00B4A0" opacity="0.75" transform="rotate(-12,62,56)"/>
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#007A6E" transform="rotate(0,85,51)"/>
+  <!-- Yellow square accent -->
+  <rect x="55" y="68" width="16" height="16" rx="4" fill="#FFD700"/>
+  <!-- Rocket arrow icon in rounded square -->
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#007A6E"/>
+  <polygon points="85,43 91,51 88,51 88,60 82,60 82,51 79,51" fill="white" opacity="0.9"/>
+  <!-- Text: ホームページリメイクスタジオを大きく上に、AI Boostを小さく下に -->
+  <text x="110" y="39.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#007A6E" text-anchor="start">ホームページ</text>
+  <text x="110" y="53.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#007A6E" text-anchor="start">リメイクスタジオ</text>
+  <text x="108" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" fill="#1A2744" text-anchor="start" dominant-baseline="middle">AI Boost</text>
+  <text x="110" y="96" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#1A2744" opacity="0.55" text-anchor="start">AIブースト</text>
+</svg></div><div class="card-mini "><div class="palette-badge">フォレスト</div><svg viewBox="0 0 280 120" width="280" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arc squares -->
+  <rect x="20" y="72" width="14" height="14" rx="3" fill="#15803D" opacity="0.45" transform="rotate(-38,27,79)"/>
+  <rect x="34" y="58" width="17" height="17" rx="4" fill="#15803D" opacity="0.6" transform="rotate(-24,42,66)"/>
+  <rect x="52" y="46" width="20" height="20" rx="5" fill="#15803D" opacity="0.75" transform="rotate(-12,62,56)"/>
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#052E16" transform="rotate(0,85,51)"/>
+  <!-- Yellow square accent -->
+  <rect x="55" y="68" width="16" height="16" rx="4" fill="#FCD34D"/>
+  <!-- Rocket arrow icon in rounded square -->
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#052E16"/>
+  <polygon points="85,43 91,51 88,51 88,60 82,60 82,51 79,51" fill="white" opacity="0.9"/>
+  <!-- Text: ホームページリメイクスタジオを大きく上に、AI Boostを小さく下に -->
+  <text x="110" y="39.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#052E16" text-anchor="start">ホームページ</text>
+  <text x="110" y="53.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#052E16" text-anchor="start">リメイクスタジオ</text>
+  <text x="108" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" fill="#052E16" text-anchor="start" dominant-baseline="middle">AI Boost</text>
+  <text x="110" y="96" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#052E16" opacity="0.55" text-anchor="start">AIブースト</text>
+</svg></div><div class="card-mini "><div class="palette-badge">ライム×オレンジ</div><svg viewBox="0 0 280 120" width="280" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arc squares -->
+  <rect x="20" y="72" width="14" height="14" rx="3" fill="#65A30D" opacity="0.45" transform="rotate(-38,27,79)"/>
+  <rect x="34" y="58" width="17" height="17" rx="4" fill="#65A30D" opacity="0.6" transform="rotate(-24,42,66)"/>
+  <rect x="52" y="46" width="20" height="20" rx="5" fill="#65A30D" opacity="0.75" transform="rotate(-12,62,56)"/>
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#365314" transform="rotate(0,85,51)"/>
+  <!-- Yellow square accent -->
+  <rect x="55" y="68" width="16" height="16" rx="4" fill="#F97316"/>
+  <!-- Rocket arrow icon in rounded square -->
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#365314"/>
+  <polygon points="85,43 91,51 88,51 88,60 82,60 82,51 79,51" fill="white" opacity="0.9"/>
+  <!-- Text: ホームページリメイクスタジオを大きく上に、AI Boostを小さく下に -->
+  <text x="110" y="39.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#365314" text-anchor="start">ホームページ</text>
+  <text x="110" y="53.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#365314" text-anchor="start">リメイクスタジオ</text>
+  <text x="108" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" fill="#365314" text-anchor="start" dominant-baseline="middle">AI Boost</text>
+  <text x="110" y="96" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#365314" opacity="0.55" text-anchor="start">AIブースト</text>
+</svg></div><div class="card-mini "><div class="palette-badge">インディゴ</div><svg viewBox="0 0 280 120" width="280" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arc squares -->
+  <rect x="20" y="72" width="14" height="14" rx="3" fill="#4F46E5" opacity="0.45" transform="rotate(-38,27,79)"/>
+  <rect x="34" y="58" width="17" height="17" rx="4" fill="#4F46E5" opacity="0.6" transform="rotate(-24,42,66)"/>
+  <rect x="52" y="46" width="20" height="20" rx="5" fill="#4F46E5" opacity="0.75" transform="rotate(-12,62,56)"/>
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#1E1B4B" transform="rotate(0,85,51)"/>
+  <!-- Yellow square accent -->
+  <rect x="55" y="68" width="16" height="16" rx="4" fill="#818CF8"/>
+  <!-- Rocket arrow icon in rounded square -->
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#1E1B4B"/>
+  <polygon points="85,43 91,51 88,51 88,60 82,60 82,51 79,51" fill="white" opacity="0.9"/>
+  <!-- Text: ホームページリメイクスタジオを大きく上に、AI Boostを小さく下に -->
+  <text x="110" y="39.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#1E1B4B" text-anchor="start">ホームページ</text>
+  <text x="110" y="53.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#1E1B4B" text-anchor="start">リメイクスタジオ</text>
+  <text x="108" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" fill="#1E1B4B" text-anchor="start" dominant-baseline="middle">AI Boost</text>
+  <text x="110" y="96" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#1E1B4B" opacity="0.55" text-anchor="start">AIブースト</text>
+</svg></div><div class="card-mini "><div class="palette-badge">エナジー</div><svg viewBox="0 0 280 120" width="280" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arc squares -->
+  <rect x="20" y="72" width="14" height="14" rx="3" fill="#EA580C" opacity="0.45" transform="rotate(-38,27,79)"/>
+  <rect x="34" y="58" width="17" height="17" rx="4" fill="#EA580C" opacity="0.6" transform="rotate(-24,42,66)"/>
+  <rect x="52" y="46" width="20" height="20" rx="5" fill="#EA580C" opacity="0.75" transform="rotate(-12,62,56)"/>
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#7C2D12" transform="rotate(0,85,51)"/>
+  <!-- Yellow square accent -->
+  <rect x="55" y="68" width="16" height="16" rx="4" fill="#22C55E"/>
+  <!-- Rocket arrow icon in rounded square -->
+  <rect x="74" y="40" width="22" height="22" rx="6" fill="#7C2D12"/>
+  <polygon points="85,43 91,51 88,51 88,60 82,60 82,51 79,51" fill="white" opacity="0.9"/>
+  <!-- Text: ホームページリメイクスタジオを大きく上に、AI Boostを小さく下に -->
+  <text x="110" y="39.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#7C2D12" text-anchor="start">ホームページ</text>
+  <text x="110" y="53.0" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="11" fill="#7C2D12" text-anchor="start">リメイクスタジオ</text>
+  <text x="108" y="74" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="22" fill="#7C2D12" text-anchor="start" dominant-baseline="middle">AI Boost</text>
+  <text x="110" y="96" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#7C2D12" opacity="0.55" text-anchor="start">AIブースト</text>
+</svg></div></div>
+</div>
+</div>
+
+</div>
+
+<!-- C: Geometric Polyhedron Boost -->
+<div class="section-head">
+  <h2>C. Geometric Polyhedron — AIブースト</h2>
+  <p>多面体＋上昇矢印（オレンジ）。AI力×ブースト加速</p>
+</div>
+<div class="section-divider divider-geo"></div>
+<div class="logo-list">
+  <div class="group-label"><span class="g-num">G-13</span><span class="g-desc">Geometric Polyhedron — AIブースト ／ 多面体＋上昇矢印（オレンジ）。AI力×ブースト加速</span></div>
+  <div class="color-strip"><div class="card-mini original"><div class="palette-badge">オリジナル</div><svg viewBox="0 0 200 118" width="200" height="118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wireframe cube/polyhedron (same structure) -->
+  <polygon points="24,32 64,24 64,76 24,84" fill="none" stroke="#1A6B8A" stroke-width="2"/>
+  <polygon points="42,18 82,10 82,62 42,70" fill="none" stroke="#1A6B8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="42" y2="18" stroke="#1A6B8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="24" x2="82" y2="10" stroke="#1A6B8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="76" x2="82" y2="62" stroke="#1A6B8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="84" x2="42" y2="70" stroke="#1A6B8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="64" y2="76" stroke="#1A6B8A" stroke-width="1" opacity="0.2"/>
+  <line x1="64" y1="24" x2="24" y2="84" stroke="#1A6B8A" stroke-width="1" opacity="0.2"/>
+  <circle cx="24" cy="32" r="3" fill="#1A6B8A"/>
+  <circle cx="64" cy="24" r="3" fill="#1A6B8A"/>
+  <circle cx="64" cy="76" r="3" fill="#1A6B8A"/>
+  <circle cx="24" cy="84" r="3" fill="#1A6B8A"/>
+  <!-- Orange boost arrow -->
+  <line x1="60" y1="72" x2="88" y2="30" stroke="#F97316" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="88,30 78,38 90,44" fill="#F97316"/>
+  <!-- Text -->
+  <text x="148" y="28.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#1A2744" opacity="0.7" text-anchor="middle">ホームページ</text>
+  <text x="148" y="40.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#1A2744" opacity="0.7" text-anchor="middle">リメイクスタジオ</text>
+  <text x="148" y="58" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="24" fill="#1A2744" text-anchor="middle">AI ブースト</text>
+  <text x="148" y="76" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#1A2744" opacity="0.5" text-anchor="middle">AI BOOST</text>
+  <text x="100" y="106" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#1A2744" opacity="0.4" text-anchor="middle">サイトマイスター</text>
+</svg></div><div class="card-mini "><div class="palette-badge">グリーン×オレンジ</div><svg viewBox="0 0 200 118" width="200" height="118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wireframe cube/polyhedron (same structure) -->
+  <polygon points="24,32 64,24 64,76 24,84" fill="none" stroke="#15803D" stroke-width="2"/>
+  <polygon points="42,18 82,10 82,62 42,70" fill="none" stroke="#15803D" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="42" y2="18" stroke="#15803D" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="24" x2="82" y2="10" stroke="#15803D" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="76" x2="82" y2="62" stroke="#15803D" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="84" x2="42" y2="70" stroke="#15803D" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="64" y2="76" stroke="#15803D" stroke-width="1" opacity="0.2"/>
+  <line x1="64" y1="24" x2="24" y2="84" stroke="#15803D" stroke-width="1" opacity="0.2"/>
+  <circle cx="24" cy="32" r="3" fill="#15803D"/>
+  <circle cx="64" cy="24" r="3" fill="#15803D"/>
+  <circle cx="64" cy="76" r="3" fill="#15803D"/>
+  <circle cx="24" cy="84" r="3" fill="#15803D"/>
+  <!-- Orange boost arrow -->
+  <line x1="60" y1="72" x2="88" y2="30" stroke="#F97316" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="88,30 78,38 90,44" fill="#F97316"/>
+  <!-- Text -->
+  <text x="148" y="28.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#052E16" opacity="0.7" text-anchor="middle">ホームページ</text>
+  <text x="148" y="40.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#052E16" opacity="0.7" text-anchor="middle">リメイクスタジオ</text>
+  <text x="148" y="58" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="24" fill="#052E16" text-anchor="middle">AI ブースト</text>
+  <text x="148" y="76" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#052E16" opacity="0.5" text-anchor="middle">AI BOOST</text>
+  <text x="100" y="106" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#052E16" opacity="0.4" text-anchor="middle">サイトマイスター</text>
+</svg></div><div class="card-mini "><div class="palette-badge">インディゴ×シアン</div><svg viewBox="0 0 200 118" width="200" height="118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wireframe cube/polyhedron (same structure) -->
+  <polygon points="24,32 64,24 64,76 24,84" fill="none" stroke="#4F46E5" stroke-width="2"/>
+  <polygon points="42,18 82,10 82,62 42,70" fill="none" stroke="#4F46E5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="42" y2="18" stroke="#4F46E5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="24" x2="82" y2="10" stroke="#4F46E5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="76" x2="82" y2="62" stroke="#4F46E5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="84" x2="42" y2="70" stroke="#4F46E5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="64" y2="76" stroke="#4F46E5" stroke-width="1" opacity="0.2"/>
+  <line x1="64" y1="24" x2="24" y2="84" stroke="#4F46E5" stroke-width="1" opacity="0.2"/>
+  <circle cx="24" cy="32" r="3" fill="#4F46E5"/>
+  <circle cx="64" cy="24" r="3" fill="#4F46E5"/>
+  <circle cx="64" cy="76" r="3" fill="#4F46E5"/>
+  <circle cx="24" cy="84" r="3" fill="#4F46E5"/>
+  <!-- Orange boost arrow -->
+  <line x1="60" y1="72" x2="88" y2="30" stroke="#06B6D4" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="88,30 78,38 90,44" fill="#06B6D4"/>
+  <!-- Text -->
+  <text x="148" y="28.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#1E1B4B" opacity="0.7" text-anchor="middle">ホームページ</text>
+  <text x="148" y="40.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#1E1B4B" opacity="0.7" text-anchor="middle">リメイクスタジオ</text>
+  <text x="148" y="58" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="24" fill="#1E1B4B" text-anchor="middle">AI ブースト</text>
+  <text x="148" y="76" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#1E1B4B" opacity="0.5" text-anchor="middle">AI BOOST</text>
+  <text x="100" y="106" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4" text-anchor="middle">サイトマイスター</text>
+</svg></div><div class="card-mini "><div class="palette-badge">ネイビー×ゴールド</div><svg viewBox="0 0 200 118" width="200" height="118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wireframe cube/polyhedron (same structure) -->
+  <polygon points="24,32 64,24 64,76 24,84" fill="none" stroke="#1E3A8A" stroke-width="2"/>
+  <polygon points="42,18 82,10 82,62 42,70" fill="none" stroke="#1E3A8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="42" y2="18" stroke="#1E3A8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="24" x2="82" y2="10" stroke="#1E3A8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="76" x2="82" y2="62" stroke="#1E3A8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="84" x2="42" y2="70" stroke="#1E3A8A" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="64" y2="76" stroke="#1E3A8A" stroke-width="1" opacity="0.2"/>
+  <line x1="64" y1="24" x2="24" y2="84" stroke="#1E3A8A" stroke-width="1" opacity="0.2"/>
+  <circle cx="24" cy="32" r="3" fill="#1E3A8A"/>
+  <circle cx="64" cy="24" r="3" fill="#1E3A8A"/>
+  <circle cx="64" cy="76" r="3" fill="#1E3A8A"/>
+  <circle cx="24" cy="84" r="3" fill="#1E3A8A"/>
+  <!-- Orange boost arrow -->
+  <line x1="60" y1="72" x2="88" y2="30" stroke="#D4A017" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="88,30 78,38 90,44" fill="#D4A017"/>
+  <!-- Text -->
+  <text x="148" y="28.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#0A1F5C" opacity="0.7" text-anchor="middle">ホームページ</text>
+  <text x="148" y="40.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#0A1F5C" opacity="0.7" text-anchor="middle">リメイクスタジオ</text>
+  <text x="148" y="58" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="24" fill="#0A1F5C" text-anchor="middle">AI ブースト</text>
+  <text x="148" y="76" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#0A1F5C" opacity="0.5" text-anchor="middle">AI BOOST</text>
+  <text x="100" y="106" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#0A1F5C" opacity="0.4" text-anchor="middle">サイトマイスター</text>
+</svg></div><div class="card-mini "><div class="palette-badge">ダーク×ピンク</div><svg viewBox="0 0 200 118" width="200" height="118" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wireframe cube/polyhedron (same structure) -->
+  <polygon points="24,32 64,24 64,76 24,84" fill="none" stroke="#374151" stroke-width="2"/>
+  <polygon points="42,18 82,10 82,62 42,70" fill="none" stroke="#374151" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="42" y2="18" stroke="#374151" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="24" x2="82" y2="10" stroke="#374151" stroke-width="1.5" opacity="0.5"/>
+  <line x1="64" y1="76" x2="82" y2="62" stroke="#374151" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="84" x2="42" y2="70" stroke="#374151" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="32" x2="64" y2="76" stroke="#374151" stroke-width="1" opacity="0.2"/>
+  <line x1="64" y1="24" x2="24" y2="84" stroke="#374151" stroke-width="1" opacity="0.2"/>
+  <circle cx="24" cy="32" r="3" fill="#374151"/>
+  <circle cx="64" cy="24" r="3" fill="#374151"/>
+  <circle cx="64" cy="76" r="3" fill="#374151"/>
+  <circle cx="24" cy="84" r="3" fill="#374151"/>
+  <!-- Orange boost arrow -->
+  <line x1="60" y1="72" x2="88" y2="30" stroke="#EC4899" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="88,30 78,38 90,44" fill="#EC4899"/>
+  <!-- Text -->
+  <text x="148" y="28.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#111827" opacity="0.7" text-anchor="middle">ホームページ</text>
+  <text x="148" y="40.0" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#111827" opacity="0.7" text-anchor="middle">リメイクスタジオ</text>
+  <text x="148" y="58" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="24" fill="#111827" text-anchor="middle">AI ブースト</text>
+  <text x="148" y="76" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10" fill="#111827" opacity="0.5" text-anchor="middle">AI BOOST</text>
+  <text x="100" y="106" font-family="'Helvetica Neue',Arial,sans-serif" font-size="9" fill="#111827" opacity="0.4" text-anchor="middle">サイトマイスター</text>
+</svg></div></div>
+</div>
+<div class="logo-group">
+
+</div>
+
+<footer>
+  <p>&copy; 2026 iFLAG Co., Ltd. &nbsp;|&nbsp; Gemini提案ロゴ 配色バリエーション展開 &nbsp;|&nbsp; SVG再現・配色展開: Claude AI</p>
+</footer>
+</body>
+</html>
