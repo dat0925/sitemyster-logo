@@ -249,7 +249,7 @@ const PALETTES = [
 // 10 logo SVGs for サイトマイスター
 const LOGOS = [
   {
-    id: 'SM-01', name: 'ポータルアーク',
+    id: 'SC-01', name: 'ポータルアーク',
     desc: '中心点から同心弧が放射。「ゼロから生成される」瞬間を凝縮。3本の弧＝質問・処理・完成のフロー。',
     tags: ['インディゴ','生成感','ミニマル','Sora 800'],
     tagline: 'SiteMeister · AI Web Builder',
@@ -261,7 +261,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-02', name: 'グリッドビルダー',
+    id: 'SC-02', name: 'グリッドビルダー',
     desc: '右上から左下へ濃淡グラデーションするタイル群。AIが自動でレイアウトを構築するプロセスを視覚化。',
     tags: ['パープル系','グリッド','構築感','Lexend 700'],
     tagline: 'AI Web Generator',
@@ -285,7 +285,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-03', name: 'コンパス',
+    id: 'SC-03', name: 'コンパス',
     desc: '精密さ・方向性・マイスター的職人感。ダッシュサークル＝AI処理、輝く針＝ユーザーへの出力を示す。',
     tags: ['インディゴ','精度','職人性','Sora 800'],
     tagline: 'Precision · Craft · AI',
@@ -301,7 +301,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-04', name: 'ブラウザスター',
+    id: 'SC-04', name: 'ブラウザスター',
     desc: 'ブラウザウィンドウ＋AIスパーク。3秒でサービス内容が伝わる最もダイレクトな表現。LP・提案資料に最適。',
     tags: ['インディゴ','直感的','LP向き','Lexend 700'],
     tagline: 'AI Homepage Builder',
@@ -320,7 +320,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-05', name: 'ジオメトリックM',
+    id: 'SC-05', name: 'ジオメトリックM',
     desc: 'Meisterの頭文字Mを幾何学構築。M字の山型＝安定と信頼、ベースライン＝精度のガイドライン。アイコン転用◎。',
     tags: ['インディゴ','Mマーク','職人性','Sora 800'],
     tagline: 'Meister · Quality · Web',
@@ -331,7 +331,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-06', name: 'ドットマトリクス',
+    id: 'SC-06', name: 'ドットマトリクス',
     desc: '点群が密度を増しながら矢印へ収束。「情報→AIが整理→WEB完成」のプロセスを点で視覚化。データビジュアル感。',
     tags: ['パープル系','ドット収束','データ感','Sora 800'],
     tagline: 'Data → AI → Web',
@@ -355,7 +355,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-07', name: 'シールドスパーク',
+    id: 'SC-07', name: 'シールドスパーク',
     desc: 'シールド（品質保証・信頼）の中にライトニング（AI瞬発力）。職人の品質×AIの速度を1形で体現。',
     tags: ['インディゴ','シールド','信頼感','Lexend 700'],
     tagline: 'Trusted · Fast · AI',
@@ -365,7 +365,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-08', name: 'フローダイアグラム',
+    id: 'SC-08', name: 'フローダイアグラム',
     desc: '「質問→AI→WEB完成」の3ステップをシンボル化。サービスの仕組みをロゴ自体で説明するコミュニケーションロゴ。',
     tags: ['インディゴ','説明力','LP向き','Sora 800'],
     tagline: 'Question → AI → Web',
@@ -383,7 +383,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-09', name: '波紋クロス',
+    id: 'SC-09', name: '波紋クロス',
     desc: '中心から波紋が広がり4方向の突起が「入力→全方位展開」を表現。精度・ターゲティング感とブランドの広がりを両立。',
     tags: ['インディゴ','波紋','展開感','Lexend 700'],
     tagline: 'Zero to Website · Instantly',
@@ -400,7 +400,7 @@ const LOGOS = [
     </svg>`
   },
   {
-    id: 'SM-10', name: 'カーソルブリンク',
+    id: 'SC-10', name: 'カーソルブリンク',
     desc: 'マウスカーソル＋点滅テキストカーソル。「クリックするだけ」の直感操作感とWEB制作＝入力を同時表現。',
     tags: ['インディゴ','直感的','アニメ対応','Sora 800'],
     tagline: 'Click · Create · Complete',
@@ -420,6 +420,7 @@ function replaceColors(html, map) {
 function buildCard(logo) {
   const card = document.createElement('div');
   card.className = 'combo-card';
+  card.id = logo.id;
 
   // Combo display: variants strip
   const display = document.createElement('div');

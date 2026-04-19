@@ -324,6 +324,67 @@
       .site-header h1 { font-size: 22px; }
       .count-num { font-size: 36px; }
     }
+
+  /* ===== ロゴ番号ジャンプ ===== */
+  #jump-section {
+    max-width: 680px;
+    margin: 40px auto 0;
+    padding: 28px 28px 32px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(30,58,138,.08);
+    border: 1.5px solid #E0E7FF;
+  }
+  #jump-section h3 {
+    font-size: 15px; font-weight: 700; color: #1E3A8A;
+    margin: 0 0 4px; letter-spacing: .04em;
+  }
+  #jump-section p.jump-sub {
+    font-size: 12px; color: #6B7280; margin: 0 0 16px;
+  }
+  .jump-row { display: flex; gap: 10px; align-items: center; }
+  #jump-input {
+    flex: 1; padding: 10px 14px; font-size: 15px; font-family: 'JetBrains Mono', monospace;
+    border: 1.5px solid #C7D2FE; border-radius: 8px; outline: none;
+    text-transform: uppercase; letter-spacing: .08em;
+    transition: border-color .2s;
+  }
+  #jump-input:focus { border-color: #4F46E5; }
+  #jump-btn {
+    padding: 10px 20px; background: #1E3A8A; color: #fff;
+    border: none; border-radius: 8px; font-size: 14px; font-weight: 700;
+    cursor: pointer; white-space: nowrap; transition: background .2s;
+  }
+  #jump-btn:hover { background: #2563EB; }
+  #jump-result {
+    margin-top: 14px; min-height: 44px;
+    font-size: 13px;
+  }
+  .jump-card {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 16px; border-radius: 10px;
+    background: #EFF6FF; border: 1.5px solid #BFDBFE;
+    text-decoration: none; color: #1E3A8A;
+    transition: background .15s;
+  }
+  .jump-card:hover { background: #DBEAFE; }
+  .jump-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px; font-weight: 700; color: #1D4ED8;
+    min-width: 72px;
+  }
+  .jump-meta { flex: 1; }
+  .jump-page { font-size: 12px; color: #6B7280; }
+  .jump-desc { font-size: 13px; font-weight: 600; color: #1E3A8A; margin-top: 2px; }
+  .jump-arrow-icon { font-size: 18px; color: #93C5FD; }
+  .jump-err {
+    padding: 10px 14px; border-radius: 8px;
+    background: #FFF1F2; border: 1px solid #FECDD3;
+    color: #BE123C; font-size: 13px;
+  }
+  .jump-hint {
+    margin-top: 12px; font-size: 11.5px; color: #9CA3AF; line-height: 1.8;
+  }
   </style>
 </head>
 <body>
@@ -393,7 +454,7 @@
           <span class="card-label label-blue">比較・まとめ / 文字統合版</span>
           <h2>ロゴデザイン集（文字統合版）</h2>
           <p>シンボルマークに「サイトマイスター」のロゴタイプを直接統合したSVG版。5配色を横並びで比較。</p>
-          <span class="arrow">SM-01 〜 SM-10 ／ 5配色横並び →</span>
+          <span class="arrow">SX-01 〜 SX-10 ／ 5配色横並び →</span>
         </a>
         <a href="サイトマイスターロゴ（フリーデザイン）/01_サイトマイスター.html" class="card color-blue">
           <div class="card-top">
@@ -403,7 +464,7 @@
           <span class="card-label label-blue">フリーデザイン</span>
           <h2>サイトマイスター</h2>
           <p>信頼・品質・職人性を体現するブランド。ブルー系 #1B4FC2 / アクセント ゴールド。各30案を5配色で展開。</p>
-          <span class="arrow">SM-01〜30 →</span>
+          <span class="arrow">SF-01 〜 SF-30 →</span>
         </a>
         <a href="combo-meister.html" class="card color-blue">
           <div class="card-top">
@@ -413,7 +474,7 @@
           <span class="card-label label-blue">シンボル × テキスト</span>
           <h2>ロゴ × サービス名 組み合わせ確認</h2>
           <p>ロゴシンボルにサービス名テキストを組み合わせたイメージ。インディゴ・ブルー・グリーンなど5配色バリアントを横並びで確認。</p>
-          <span class="arrow">SM-01 〜 SM-10 × 5配色 →</span>
+          <span class="arrow">SC-01 〜 SC-10 × 5配色 →</span>
         </a>
         <a href="gemini-variants-meister.html" class="card color-gem">
           <div class="card-top">
@@ -423,7 +484,7 @@
           <span class="card-label label-gem">Gemini × 配色展開</span>
           <h2>Gemini提案 配色バリエーション</h2>
           <p>Gemini提案ロゴをSVGで再現し5配色に展開。Responsive Arc・12パターン・Wordmark など10案を収録。</p>
-          <span class="arrow">G-01 / G-04〜G-11 / G-14 →</span>
+          <span class="arrow">GS-01 / GS-04〜GS-11 / GS-14 →</span>
         </a>
       </div>
     </div>
@@ -461,7 +522,7 @@
           <span class="card-label label-green">v2 サービス名強調版</span>
           <h2>AI ZERO</h2>
           <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
-          <span class="arrow">AZ-01 〜 AZ-30 (v2) →</span>
+          <span class="arrow">ZV-01 〜 ZV-30 →</span>
         </a>
         <a href="サイトマイスターロゴ（フリーデザイン）/02_AI_ZERO.html" class="card color-green">
           <div class="card-top">
@@ -471,7 +532,7 @@
           <span class="card-label label-green">フリーデザイン</span>
           <h2>AI ZERO</h2>
           <p>ゼロからの出発と信頼を表現。フォレストグリーン × ティール。各30案を5配色で展開。</p>
-          <span class="arrow">AZ-01〜30 →</span>
+          <span class="arrow">ZF-01 〜 ZF-30 →</span>
         </a>
         <a href="combo-zero.html" class="card color-green">
           <div class="card-top">
@@ -481,7 +542,7 @@
           <span class="card-label label-green">シンボル × テキスト</span>
           <h2>ロゴ × サービス名 組み合わせ確認</h2>
           <p>ロゴシンボルに「ホームページリメイクスタジオ」＋AI ZEROバッジを組み合わせたイメージ。5配色バリアントを確認。</p>
-          <span class="arrow">AZ-01 〜 AZ-10 × 5配色 →</span>
+          <span class="arrow">ZC-01 〜 ZC-10 × 5配色 →</span>
         </a>
         <a href="gemini-variants-zero.html" class="card color-gem">
           <div class="card-top">
@@ -491,7 +552,7 @@
           <span class="card-label label-gem">Gemini × 配色展開</span>
           <h2>Gemini提案 配色バリエーション</h2>
           <p>Gemini提案ロゴをSVGで再現し5配色に展開。Responsive Arc・Geometric Polyhedron の2コンセプトを収録。</p>
-          <span class="arrow">G-02 / G-12 →</span>
+          <span class="arrow">GZ-02 / GZ-12 →</span>
         </a>
       </div>
     </div>
@@ -529,7 +590,7 @@
           <span class="card-label label-teal">v2 サービス名強調版</span>
           <h2>AIブースト</h2>
           <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
-          <span class="arrow">AB-01 〜 AB-30 (v2) →</span>
+          <span class="arrow">BV-01 〜 BV-30 →</span>
         </a>
         <a href="サイトマイスターロゴ（フリーデザイン）/03_AIブースト.html" class="card color-teal">
           <div class="card-top">
@@ -539,7 +600,7 @@
           <span class="card-label label-teal">フリーデザイン</span>
           <h2>AIブースト</h2>
           <p>成果加速をビジュアル化。グリーン系 #1B8C3E。各30案を5配色で展開。</p>
-          <span class="arrow">AB-01〜30 →</span>
+          <span class="arrow">BF-01 〜 BF-30 →</span>
         </a>
         <a href="combo-boost.html" class="card color-teal">
           <div class="card-top">
@@ -549,7 +610,7 @@
           <span class="card-label label-teal">シンボル × テキスト</span>
           <h2>ロゴ × サービス名 組み合わせ確認</h2>
           <p>ロゴシンボルに「ホームページリメイクスタジオ」＋AI BOOSTバッジを組み合わせたイメージ。5配色バリアントを確認。</p>
-          <span class="arrow">AB-01 〜 AB-10 × 5配色 →</span>
+          <span class="arrow">BC-01 〜 BC-10 × 5配色 →</span>
         </a>
         <a href="gemini-variants-boost.html" class="card color-gem">
           <div class="card-top">
@@ -559,7 +620,7 @@
           <span class="card-label label-gem">Gemini × 配色展開</span>
           <h2>Gemini提案 配色バリエーション</h2>
           <p>Gemini提案ロゴをSVGで再現し5配色に展開。Responsive Arc・Geometric Polyhedron の2コンセプトを収録。</p>
-          <span class="arrow">G-03 / G-13 →</span>
+          <span class="arrow">GB-03 / GB-13 →</span>
         </a>
       </div>
     </div>
@@ -569,6 +630,22 @@
 
 
 
+
+<div id="jump-section">
+  <h3>🔍 ロゴ番号で直接ジャンプ</h3>
+  <p class="jump-sub">番号を入力すると掲載ページへ一発移動します（例: SM-01 / ZV-15 / GS-08）</p>
+  <div class="jump-row">
+    <input id="jump-input" type="text" placeholder="例: SM-01" maxlength="8" autocomplete="off" />
+    <button id="jump-btn" onclick="doJump()">移動 →</button>
+  </div>
+  <div id="jump-result"></div>
+  <p class="jump-hint">
+    SM-01〜30 / SX-01〜10 / SF-01〜30 / SC-01〜10 / GS-01,04〜11,14<br>
+    AZ-01〜30 / ZV-01〜30 / ZF-01〜30 / ZC-01〜10 / GZ-02,12<br>
+    AB-01〜30 / BV-01〜30 / BF-01〜30 / BC-01〜10 / GB-03,13<br>
+    GM-01〜04 / GV-01〜14
+  </p>
+</div>
 
 <footer>
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;—&nbsp; 各カードをクリックすると詳細ページを表示します</p>
@@ -614,6 +691,90 @@ function closeAll() {
     geminiBtn.nextElementSibling.classList.remove('open');
   }
 }
+
+/* ===== ロゴ番号ジャンプ ===== */
+const JUMP_MAP = (() => {
+  // prefix → {url, page, desc}
+  const BASE = 'https://dat0925.github.io/sitemyster-logo/';
+  const FD   = BASE + encodeURI('サイトマイスターロゴ（フリーデザイン）/');
+
+  function range(prefix, from, to, url, page, desc) {
+    const rows = [];
+    for (let i = from; i <= to; i++) {
+      const id = prefix + '-' + String(i).padStart(2,'0');
+      rows.push([id, {url: url + '#' + id, page, desc: desc + ' ' + id}]);
+    }
+    return rows;
+  }
+
+  return new Map([
+    // サイトマイスター
+    ...range('SM', 1, 30, BASE+'sitemyster30.html',       'サイトマイスター（直販）30案',          'ブランドロゴ'),
+    ...range('SX', 1, 10, BASE+'all10-4.html',            '文字統合版 10案',                        'ロゴ文字統合'),
+    ...range('SF', 1, 30, FD+'01_サイトマイスター.html',  'フリーデザイン サイトマイスター 30案',   'フリーデザイン'),
+    ...range('SC', 1, 10, BASE+'combo-meister.html',      'コンボ サイトマイスター 10案',            'シンボル×テキスト'),
+    // GS — Gemini × Sitemyster (非連続)
+    ...[1,4,5,6,7,8,9,10,11,14].map(n => {
+      const id = 'GS-' + String(n).padStart(2,'0');
+      return [id, {url: BASE+'gemini-variants-meister.html#'+id, page:'Gemini配色 サイトマイスター', desc:'Gemini配色'}];
+    }),
+    // AI ZERO
+    ...range('AZ', 1, 30, BASE+'ai-zero30.html',          'AI ZERO（v1）30案',                      'ブランドロゴ'),
+    ...range('ZV', 1, 30, BASE+'ai-zero30-v2.html',       'AI ZERO v2 サービス名強調版 30案',        'v2強調版'),
+    ...range('ZF', 1, 30, FD+'02_AI_ZERO.html',           'フリーデザイン AI ZERO 30案',             'フリーデザイン'),
+    ...range('ZC', 1, 10, BASE+'combo-zero.html',         'コンボ AI ZERO 10案',                    'シンボル×テキスト'),
+    ...[2,12].map(n => {
+      const id = 'GZ-' + String(n).padStart(2,'0');
+      return [id, {url: BASE+'gemini-variants-zero.html#'+id, page:'Gemini配色 AI ZERO', desc:'Gemini配色'}];
+    }),
+    // AI BOOST
+    ...range('AB', 1, 30, BASE+'aiboost30.html',          'AIブースト（v1）30案',                   'ブランドロゴ'),
+    ...range('BV', 1, 30, BASE+'aiboost30-v2.html',       'AIブースト v2 サービス名強調版 30案',     'v2強調版'),
+    ...range('BF', 1, 30, FD+'03_AIブースト.html',        'フリーデザイン AIブースト 30案',          'フリーデザイン'),
+    ...range('BC', 1, 10, BASE+'combo-boost.html',        'コンボ AIブースト 10案',                 'シンボル×テキスト'),
+    ...[3,13].map(n => {
+      const id = 'GB-' + String(n).padStart(2,'0');
+      return [id, {url: BASE+'gemini-variants-boost.html#'+id, page:'Gemini配色 AIブースト', desc:'Gemini配色'}];
+    }),
+    // Gemini
+    ...range('GM', 1, 4,  BASE+'gemini.html',             'Gemini提案 4点',                         'Gemini提案画像'),
+    ...[1,2,3,4,11,12,13,14].map(n => {
+      const id = 'GV-' + String(n).padStart(2,'0');
+      return [id, {url: BASE+'gemini-color-variants-index.html#'+id, page:'Gemini配色バリエーション集', desc:'Gemini全配色'}];
+    }),
+  ]);
+})();
+
+function doJump() {
+  const raw = document.getElementById('jump-input').value.trim().toUpperCase()
+                .replace(/[Ａ-Ｚａ-ｚ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+                .replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+                .replace(/ー|-|−|‐/g, '-');
+  const result = document.getElementById('jump-result');
+
+  if (!raw) { result.innerHTML = ''; return; }
+
+  const entry = JUMP_MAP.get(raw);
+  if (!entry) {
+    result.innerHTML = `<div class="jump-err">❌ <strong>${raw}</strong> は存在しない番号です。ヒント欄の一覧をご確認ください。</div>`;
+    return;
+  }
+
+  result.innerHTML = `
+    <a class="jump-card" href="${entry.url}" target="_blank">
+      <span class="jump-id">${raw}</span>
+      <span class="jump-meta">
+        <div class="jump-page">${entry.page}</div>
+        <div class="jump-desc">${entry.desc}</div>
+      </span>
+      <span class="jump-arrow-icon">↗</span>
+    </a>`;
+}
+
+document.getElementById('jump-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doJump();
+});
+
 </script>
 
 </body>
