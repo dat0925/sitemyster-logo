@@ -1066,7 +1066,7 @@ function clearPreview() {
 
 /* ========= アコーディオン ========= */
 function toggleBrand(btn) {
-  const body = btn.nextElementSibling;
+  const body = btn.parentElement.querySelector('.brand-group-body');
   const isOpen = btn.getAttribute('aria-expanded') === 'true';
   btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
   body.classList.toggle('open', !isOpen);
