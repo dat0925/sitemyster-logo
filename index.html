@@ -361,6 +361,36 @@
 
     .divider { margin-top: 40px; }
 
+    /* ===== ブランドグループ ===== */
+    .brand-group {
+      margin-bottom: 28px;
+      border-radius: 18px;
+      padding: 20px 24px 24px;
+      border: 2px solid transparent;
+    }
+    .brand-group-blue  { background: #EEF2FF; border-color: #C7D0E8; }
+    .brand-group-green { background: #ECFDF5; border-color: #A7D7C5; }
+    .brand-group-teal  { background: #F0FDFA; border-color: #99D6D0; }
+    .brand-group-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .brand-group-icon { font-size: 28px; line-height: 1; flex-shrink: 0; }
+    .brand-group-name {
+      font-size: 16px;
+      font-weight: 900;
+      color: #1A1A2E;
+      letter-spacing: 0.02em;
+    }
+    .brand-group-sub {
+      font-size: 11.5px;
+      color: #6B7280;
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
     /* ===== アコーディオン検索 ===== */
     .accordion-section {
       max-width: 1080px;
@@ -455,107 +485,137 @@
 <!-- ===== ブランド別 30案 ===== -->
 <div class="section" style="margin-top:40px;">
   <div class="section-title">ブランド別ロゴ — 各30案</div>
-  <div class="grid grid-3">
 
-    <a href="sitemyster30.html" class="card color-blue">
-      <div class="card-top">
-        <span class="card-icon">🔷</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
-        </div>
+  <!-- サイトマイスター -->
+  <div class="brand-group brand-group-blue">
+    <div class="brand-group-header">
+      <span class="brand-group-icon">🔷</span>
+      <div>
+        <div class="brand-group-name">サイトマイスター</div>
+        <div class="brand-group-sub">直販チャネル｜ネイビーブルー × ゴールド</div>
       </div>
-      <span class="card-label label-blue">直販チャネル</span>
-      <h2>サイトマイスター</h2>
-      <p>ドイツ語で「達人」を意味するマイスター。AIが高品質なHPを提供するブランド。ネイビーブルー × ゴールド。</p>
-      <span class="arrow">SM-01 〜 SM-30 →</span>
-    </a>
-
-    <a href="ai-zero30.html" class="card color-green">
-      <div class="card-top">
-        <span class="card-icon">🟢</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
+    </div>
+    <div class="grid grid-1">
+      <a href="sitemyster30.html" class="card color-blue">
+        <div class="card-top">
+          <span class="card-icon">🔷</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
         </div>
-      </div>
-      <span class="card-label label-green">WEBチャネル・新規</span>
-      <h2>ホームページリメイクスタジオ<br>AI ZERO</h2>
-      <p>「ゼロから、迷わず成果が出るホームページへ。」AIがトータルサポート。フォレストグリーン × ティール。</p>
-      <span class="arrow">AZ-01 〜 AZ-30 →</span>
-    </a>
-
-    <a href="aiboost30.html" class="card color-teal">
-      <div class="card-top">
-        <span class="card-icon">🚀</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
-        </div>
-      </div>
-      <span class="card-label label-teal">WEBチャネル・リプレイス</span>
-      <h2>ホームページリメイクスタジオ<br>AIブースト</h2>
-      <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し集客を一段引き上げる。</p>
-      <span class="arrow">AB-01 〜 AB-30 →</span>
-    </a>
-
-    <a href="ai-zero30-v2.html" class="card color-green">
-      <div class="card-top">
-        <span class="card-icon">🟢</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
-        </div>
-      </div>
-      <span class="card-label label-green">WEBチャネル・新規 / v2</span>
-      <h2>ホームページリメイクスタジオ<br>AI ZERO <small style="font-size:12px;font-weight:500;color:#6B7280;">サービス名強調版</small></h2>
-      <p>AI ZEROの30案を「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
-      <span class="arrow">AZ-01 〜 AZ-30 (v2) →</span>
-    </a>
-
-    <a href="aiboost30-v2.html" class="card color-teal">
-      <div class="card-top">
-        <span class="card-icon">🚀</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
-        </div>
-      </div>
-      <span class="card-label label-teal">WEBチャネル・リプレイス / v2</span>
-      <h2>ホームページリメイクスタジオ<br>AIブースト <small style="font-size:12px;font-weight:500;color:#6B7280;">サービス名強調版</small></h2>
-      <p>AIブーストの30案を「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
-      <span class="arrow">AB-01 〜 AB-30 (v2) →</span>
-    </a>
-
-    <a href="ai-zero30-v3.html" class="card color-green">
-      <div class="card-top">
-        <span class="card-icon">🟢</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
-        </div>
-      </div>
-      <span class="card-label label-green">WEBチャネル・新規 / v3</span>
-      <h2>ホームページリメイクスタジオ<br>AI ZERO <small style="font-size:12px;font-weight:500;color:#6B7280;">文字サイズ拡大版（36px）</small></h2>
-      <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
-      <span class="arrow">AZ-01 〜 AZ-30 (v3) →</span>
-    </a>
-
-    <a href="aiboost30-v3.html" class="card color-teal">
-      <div class="card-top">
-        <span class="card-icon">🚀</span>
-        <div class="count-block">
-          <span class="count-num">30</span>
-          <span class="count-unit">案</span>
-        </div>
-      </div>
-      <span class="card-label label-teal">WEBチャネル・リプレイス / v3</span>
-      <h2>ホームページリメイクスタジオ<br>AIブースト <small style="font-size:12px;font-weight:500;color:#6B7280;">文字サイズ拡大版（36px）</small></h2>
-      <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
-      <span class="arrow">AB-01 〜 AB-30 (v3) →</span>
-    </a>
-
+        <span class="card-label label-blue">直販チャネル</span>
+        <h2>サイトマイスター</h2>
+        <p>ドイツ語で「達人」を意味するマイスター。AIが高品質なHPを提供するブランド。ネイビーブルー × ゴールド。</p>
+        <span class="arrow">SM-01 〜 SM-30 →</span>
+      </a>
+    </div>
   </div>
+
+  <!-- AI ZERO -->
+  <div class="brand-group brand-group-green">
+    <div class="brand-group-header">
+      <span class="brand-group-icon">🟢</span>
+      <div>
+        <div class="brand-group-name">ホームページリメイクスタジオ AI ZERO</div>
+        <div class="brand-group-sub">WEBチャネル・新規｜フォレストグリーン × ティール</div>
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <a href="ai-zero30.html" class="card color-green">
+        <div class="card-top">
+          <span class="card-icon">🟢</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
+        </div>
+        <span class="card-label label-green">v1 ベース</span>
+        <h2>AI ZERO</h2>
+        <p>「ゼロから、迷わず成果が出るホームページへ。」AIがトータルサポート。</p>
+        <span class="arrow">AZ-01 〜 AZ-30 →</span>
+      </a>
+      <a href="ai-zero30-v2.html" class="card color-green">
+        <div class="card-top">
+          <span class="card-icon">🟢</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
+        </div>
+        <span class="card-label label-green">v2 サービス名強調版</span>
+        <h2>AI ZERO</h2>
+        <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
+        <span class="arrow">AZ-01 〜 AZ-30 (v2) →</span>
+      </a>
+      <a href="ai-zero30-v3.html" class="card color-green">
+        <div class="card-top">
+          <span class="card-icon">🟢</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
+        </div>
+        <span class="card-label label-green">v3 文字サイズ拡大版（36px）</span>
+        <h2>AI ZERO</h2>
+        <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
+        <span class="arrow">AZ-01 〜 AZ-30 (v3) →</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- AIブースト -->
+  <div class="brand-group brand-group-teal">
+    <div class="brand-group-header">
+      <span class="brand-group-icon">🚀</span>
+      <div>
+        <div class="brand-group-name">ホームページリメイクスタジオ AIブースト</div>
+        <div class="brand-group-sub">WEBチャネル・リプレイス｜既存サイトをAIで加速</div>
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <a href="aiboost30.html" class="card color-teal">
+        <div class="card-top">
+          <span class="card-icon">🚀</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
+        </div>
+        <span class="card-label label-teal">v1 ベース</span>
+        <h2>AIブースト</h2>
+        <p>「そのホームページ、AIで成果を加速させる。」既存サイトをAIが解析し集客を一段引き上げる。</p>
+        <span class="arrow">AB-01 〜 AB-30 →</span>
+      </a>
+      <a href="aiboost30-v2.html" class="card color-teal">
+        <div class="card-top">
+          <span class="card-icon">🚀</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
+        </div>
+        <span class="card-label label-teal">v2 サービス名強調版</span>
+        <h2>AIブースト</h2>
+        <p>「ホームページリメイクスタジオ」を大きく表示するレイアウトに改修したv2版。</p>
+        <span class="arrow">AB-01 〜 AB-30 (v2) →</span>
+      </a>
+      <a href="aiboost30-v3.html" class="card color-teal">
+        <div class="card-top">
+          <span class="card-icon">🚀</span>
+          <div class="count-block">
+            <span class="count-num">30</span>
+            <span class="count-unit">案</span>
+          </div>
+        </div>
+        <span class="card-label label-teal">v3 文字サイズ拡大版（36px）</span>
+        <h2>AIブースト</h2>
+        <p>v2からさらに「ホームページリメイクスタジオ」のフォントを30px→36pxに拡大したv3版。</p>
+        <span class="arrow">AB-01 〜 AB-30 (v3) →</span>
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <!-- ===== 比較・まとめ ===== -->
