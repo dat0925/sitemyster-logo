@@ -298,48 +298,6 @@
       padding: 16px 0 0;
     }
 
-    /* Gemini サブアコーディオン（内側2つ） */
-    .gemini-sub {
-      border: 1.5px solid #EDE9FE;
-      border-radius: 12px;
-      overflow: hidden;
-      margin-bottom: 10px;
-    }
-    .gemini-sub:last-child { margin-bottom: 0; }
-    .gemini-sub-toggle {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 13px 18px;
-      background: #FAFAFA;
-      border: none;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 700;
-      color: #6D28D9;
-      text-align: left;
-      gap: 10px;
-      transition: background 0.15s;
-    }
-    .gemini-sub-toggle:hover { background: #F5F3FF; }
-    .gemini-sub-toggle[aria-expanded="false"] .sub-arrow { transform: rotate(180deg); }
-    .sub-arrow {
-      font-size: 11px;
-      color: #A78BFA;
-      transition: transform 0.25s;
-      flex-shrink: 0;
-    }
-    .gemini-sub-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.4s ease;
-      padding: 0 16px;
-    }
-    .gemini-sub-body.open {
-      max-height: 800px;
-      padding: 16px;
-    }
 
     footer {
       text-align: center;
@@ -594,53 +552,34 @@
     <span class="brand-group-arrow">▲</span>
   </button>
   <div class="gemini-acc-body open">
-
-    <!-- サブ1: ロゴデザイン提案 -->
-    <div class="gemini-sub">
-      <button class="gemini-sub-toggle" onclick="toggleGeminiSub(this)" aria-expanded="true">
-        <span>✨ &nbsp;Gemini によるロゴデザイン提案</span>
-        <span class="sub-arrow">▲</span>
-      </button>
-      <div class="gemini-sub-body open">
-        <a href="gemini.html" class="card color-gem" style="margin:0;">
-          <div class="card-top">
-            <span class="card-icon">✨</span>
-            <div class="count-block">
-              <span class="count-num">4</span>
-              <span class="count-unit">点</span>
-            </div>
+    <div class="grid grid-2">
+      <a href="gemini.html" class="card color-gem">
+        <div class="card-top">
+          <span class="card-icon">✨</span>
+          <div class="count-block">
+            <span class="count-num">4</span>
+            <span class="count-unit">点</span>
           </div>
-          <span class="card-label label-gem">Gemini提案</span>
-          <h2>Gemini によるロゴデザイン提案</h2>
-          <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
-          <span class="arrow">提案画像 4点 →</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- サブ2: 配色バリエーション集 -->
-    <div class="gemini-sub">
-      <button class="gemini-sub-toggle" onclick="toggleGeminiSub(this)" aria-expanded="true">
-        <span>🎨 &nbsp;配色バリエーション集</span>
-        <span class="sub-arrow">▲</span>
-      </button>
-      <div class="gemini-sub-body open">
-        <a href="gemini-color-variants.html" class="card color-gem" style="margin:0;">
-          <div class="card-top">
-            <span class="card-icon">🎨</span>
-            <div class="count-block">
-              <span class="count-num">70</span>
-              <span class="count-unit">案</span>
-            </div>
+        </div>
+        <span class="card-label label-gem">Gemini提案</span>
+        <h2>Gemini によるロゴデザイン提案</h2>
+        <p>Google Gemini が生成したロゴデザイン提案画像。Site Meister・AI Zero・AI Boost 各ブランドのビジュアルコンセプト4点を収録。</p>
+        <span class="arrow">提案画像 4点 →</span>
+      </a>
+      <a href="gemini-color-variants.html" class="card color-gem">
+        <div class="card-top">
+          <span class="card-icon">🎨</span>
+          <div class="count-block">
+            <span class="count-num">70</span>
+            <span class="count-unit">案</span>
           </div>
-          <span class="card-label label-gem">Gemini × 配色展開</span>
-          <h2>Gemini提案ロゴ 配色バリエーション集</h2>
-          <p>Gemini提案の4画像から14ロゴをSVGで再現し、各5配色パターンに展開。全70バリエーションを一覧表示。</p>
-          <span class="arrow">14ロゴ × 5配色 →</span>
-        </a>
-      </div>
+        </div>
+        <span class="card-label label-gem">Gemini × 配色展開</span>
+        <h2>Gemini提案ロゴ 配色バリエーション集</h2>
+        <p>Gemini提案の4画像から14ロゴをSVGで再現し、各5配色パターンに展開。全70バリエーションを一覧表示。</p>
+        <span class="arrow">14ロゴ × 5配色 →</span>
+      </a>
     </div>
-
   </div>
 </div>
 
