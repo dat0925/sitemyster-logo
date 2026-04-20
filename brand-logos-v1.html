@@ -73,15 +73,62 @@
 </style>
 </head>
 <body>
-<div style="background:#1A1A2E;padding:10px 28px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:999">
-  <a href="index.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:12px;font-weight:700;letter-spacing:0.08em;display:flex;align-items:center;gap:6px;">
-    ← ロゴ一覧へ戻る
-  </a>
-  <span style="color:rgba(255,255,255,0.2);font-size:11px;">|</span>
-  <a href="#brand01" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:11px;font-weight:600;">サイトマイスター</a>
-  <a href="#brand02" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:11px;font-weight:600;">AI ZERO</a>
-  <a href="#brand03" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:11px;font-weight:600;">AIブースト</a>
+<style>
+.brand-page-nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--brand-bg, #F3F4F6);
+  border-bottom: 2px solid var(--brand-border, #E5E7EB);
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+.brand-page-nav .bpn-brand { font-size: 11px; font-weight: 800; color: var(--brand-color, #374151); letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0; }
+.brand-page-nav .bpn-center { display: flex; align-items: center; gap: 6px; flex: 1; justify-content: center; flex-wrap: wrap; }
+.bpn-dot { width: 8px; height: 8px; border-radius: 50%; background: #D1D5DB; flex-shrink: 0; transition: transform 0.15s, background 0.15s; }
+.bpn-dot.current { background: var(--brand-color, #374151); transform: scale(1.4); }
+.bpn-btn { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 7px; border: 1.5px solid var(--brand-border, #E5E7EB); background: white; color: var(--brand-color, #374151); font-size: 11px; font-weight: 700; text-decoration: none; white-space: nowrap; transition: background 0.15s, box-shadow 0.15s, transform 0.15s; }
+.bpn-btn:hover { background: var(--brand-bg, #F3F4F6); box-shadow: 0 2px 8px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.bpn-btn.disabled { opacity: 0.3; pointer-events: none; }
+.bpn-index { display: inline-flex; align-items: center; gap: 4px; padding: 5px 12px; border-radius: 7px; background: var(--brand-color, #374151); color: white; font-size: 11px; font-weight: 700; text-decoration: none; transition: opacity 0.15s, transform 0.15s; }
+.bpn-index:hover { opacity: 0.85; transform: translateY(-1px); }
+</style>
+
+<!-- サイトマイスター -->
+<div class="brand-page-nav" style="--brand-color:#1A3580;--brand-bg:#EEF2FF;--brand-border:#C7D0E8">
+  <div class="bpn-brand">🔷 サイトマイスター</div>
+  <div class="bpn-center">
+    <a class="bpn-btn" href="gemini-variants-meister.html">← Gemini配色</a>
+    <span class="bpn-dot" title="SM 30案 v1"></span><span class="bpn-dot" title="文字統合版"></span><span class="bpn-dot" title="フリーデザイン"></span><span class="bpn-dot" title="ロゴ×サービス名"></span><span class="bpn-dot" title="Gemini配色"></span><span class="bpn-dot current" title="ブランドロゴ提案 v1"></span>
+    <span class="bpn-btn disabled">次へ →</span>
+  </div>
+  <a class="bpn-index" href="index.html">一覧へ</a>
 </div>
+<!-- AI ZERO -->
+<div class="brand-page-nav" style="--brand-color:#0D4F38;--brand-bg:#ECFDF5;--brand-border:#A7D7C5">
+  <div class="bpn-brand">🟢 AI ZERO</div>
+  <div class="bpn-center">
+    <a class="bpn-btn" href="gemini-variants-zero.html">← Gemini配色</a>
+    <span class="bpn-dot" title="30案 v1"></span><span class="bpn-dot" title="30案 v2"></span><span class="bpn-dot" title="フリーデザイン"></span><span class="bpn-dot" title="ロゴ×サービス名"></span><span class="bpn-dot" title="Gemini配色"></span><span class="bpn-dot current" title="ブランドロゴ提案 v1"></span>
+    <span class="bpn-btn disabled">次へ →</span>
+  </div>
+  <a class="bpn-index" href="index.html">一覧へ</a>
+</div>
+<!-- AIブースト -->
+<div class="brand-page-nav" style="--brand-color:#0F766E;--brand-bg:#F0FDFA;--brand-border:#99D6D0">
+  <div class="bpn-brand">🚀 AIブースト</div>
+  <div class="bpn-center">
+    <a class="bpn-btn" href="gemini-variants-boost.html">← Gemini配色</a>
+    <span class="bpn-dot" title="30案 v1"></span><span class="bpn-dot" title="30案 v2"></span><span class="bpn-dot" title="フリーデザイン"></span><span class="bpn-dot" title="ロゴ×サービス名"></span><span class="bpn-dot" title="Gemini配色"></span><span class="bpn-dot current" title="ブランドロゴ提案 v1"></span>
+    <span class="bpn-btn disabled">次へ →</span>
+  </div>
+  <a class="bpn-index" href="index.html">一覧へ</a>
+</div>
+
 <div class="page">
 
   <div class="kicker">Brand System · v1 · 2026</div>
