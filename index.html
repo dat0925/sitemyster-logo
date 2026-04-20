@@ -666,14 +666,15 @@
   <p class="jump-sub">番号を入力すると掲載ページへ一発移動します（例: SM-01 / ZV-15 / GS-08）</p>
   <div class="jump-row">
     <input id="jump-input" type="text" placeholder="例: SM-01" maxlength="8" autocomplete="off" />
-    <button id="jump-btn" onclick="doJump()">移動 →</button>
+    <button id="jump-btn" onclick="doJump()">検索</button>
   </div>
   <div id="jump-result"></div>
   <p class="jump-hint">
     SM-01〜30 / SX-01〜10 / SF-01〜30 / SC-01〜10 / GS-01,04〜11,14<br>
     AZ-01〜30 / ZV-01〜30 / ZF-01〜30 / ZC-01〜10 / GZ-02,12<br>
     AB-01〜30 / BV-01〜30 / BF-01〜30 / BC-01〜10 / GB-03,13<br>
-    GM-01〜04 / GV-01〜14
+    GM-01〜04 / GV-01〜14<br>
+    M-01〜05 / Z-01〜05 / B-01〜05（ブランドシステム v1）
   </p>
 </div>
 
@@ -772,6 +773,10 @@ const JUMP_MAP = (() => {
       const id = 'GV-' + String(n).padStart(2,'0');
       return [id, {url: BASE+'gemini-color-variants-index.html#'+id, page:'Gemini配色バリエーション集', desc:'Gemini全配色'}];
     }),
+    // brand-logos-v1 (M / Z / B)
+    ...range('M', 1, 5, BASE+'brand-logos-v1.html',  'ブランドシステム v1 サイトマイスター', 'ブランドロゴ v1'),
+    ...range('Z', 1, 5, BASE+'brand-logos-v1.html',  'ブランドシステム v1 AI ZERO',          'ブランドロゴ v1'),
+    ...range('B', 1, 5, BASE+'brand-logos-v1.html',  'ブランドシステム v1 AIブースト',       'ブランドロゴ v1'),
   ]);
 })();
 
@@ -780,25 +785,28 @@ function doJump() {
                 .replace(/[Ａ-Ｚａ-ｚ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
                 .replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
                 .replace(/ー|-|−|‐/g, '-');
-  const result = document.getElementById('jump-result');
+  const resultBox = document.getElementById('jump-result');
 
-  if (!raw) { result.innerHTML = ''; return; }
+  if (!raw) return;
 
   const entry = JUMP_MAP.get(raw);
+  let newItem;
   if (!entry) {
-    result.innerHTML = `<div class="jump-err">❌ <strong>${raw}</strong> は存在しない番号です。ヒント欄の一覧をご確認ください。</div>`;
-    return;
+    newItem = `<div class="jump-err" style="margin-bottom:8px;">❌ <strong>${raw}</strong> は存在しない番号です。ヒント欄の一覧をご確認ください。</div>`;
+  } else {
+    newItem = `
+      <a class="jump-card" href="${entry.url}" target="_blank" style="margin-bottom:8px;display:flex;">
+        <span class="jump-id">${raw}</span>
+        <span class="jump-meta">
+          <div class="jump-page">${entry.page}</div>
+          <div class="jump-desc">${entry.desc}</div>
+        </span>
+        <span class="jump-arrow-icon">↗</span>
+      </a>`;
   }
 
-  result.innerHTML = `
-    <a class="jump-card" href="${entry.url}" target="_blank">
-      <span class="jump-id">${raw}</span>
-      <span class="jump-meta">
-        <div class="jump-page">${entry.page}</div>
-        <div class="jump-desc">${entry.desc}</div>
-      </span>
-      <span class="jump-arrow-icon">↗</span>
-    </a>`;
+  resultBox.insertAdjacentHTML('afterbegin', newItem);
+  document.getElementById('jump-input').value = '';
 }
 
 document.getElementById('jump-input').addEventListener('keydown', e => {
