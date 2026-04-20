@@ -12,6 +12,7 @@
       min-height: 100vh;
     }
 
+
     /* ===== クイックリンクバー ===== */
     .quicklinks {
       background: #1A1A2E;
@@ -55,6 +56,7 @@
     .ql-dot.blue   { background: #60A5FA; }
     .ql-dot.orange { background: #FB923C; }
 
+
     /* ===== ヘッダー ===== */
     .site-header {
       background: linear-gradient(135deg, #1A1A2E 0%, #1A3580 100%);
@@ -72,6 +74,8 @@
       font-size: 14px;
       color: rgba(255,255,255,0.65);
     }
+
+
 
 
     /* ===== カードセクション ===== */
@@ -93,6 +97,7 @@
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-2 { grid-template-columns: repeat(2, 1fr); }
     .grid-1 { grid-template-columns: 1fr; }
+
 
     .card {
       display: block;
@@ -143,6 +148,7 @@
     .color-gem   .count-num { color: #7E22CE; }
     .color-gem   .count-unit { color: #A855F7; }
 
+
     .card-label {
       display: inline-block;
       font-size: 11px;
@@ -157,6 +163,7 @@
     .label-teal  { background: #F0FDFA; color: #0F766E; }
     .label-gem   { background: #FDF4FF; color: #7E22CE; }
     .label-gray  { background: #F3F4F6; color: #374151; }
+
 
     .card h2 {
       font-size: 19px;
@@ -174,7 +181,9 @@
       color: #9CA3AF;
     }
 
+
     .divider { margin-top: 16px; }
+
 
     /* ===== ブランドグループ ===== */
     .brand-group {
@@ -186,6 +195,7 @@
     .brand-group-blue  { background: #EEF2FF; border-color: #C7D0E8; }
     .brand-group-green { background: #ECFDF5; border-color: #A7D7C5; }
     .brand-group-teal  { background: #F0FDFA; border-color: #99D6D0; }
+
 
     /* ヘッダー部分がトグルボタン */
     .brand-group-toggle {
@@ -230,6 +240,7 @@
       transform: rotate(180deg);
     }
 
+
     /* カードエリア — アニメーション */
     .brand-group-body {
       max-height: 0;
@@ -241,6 +252,7 @@
       max-height: 2000px;
       padding: 0 20px 20px;
     }
+
 
     /* ===== 全開閉ボタン ===== */
     .global-controls {
@@ -277,6 +289,7 @@
     }
     .global-btn-close:hover { background: #4B5563; box-shadow: 0 4px 14px rgba(107,114,128,0.35); transform: translateY(-1px); }
 
+
     /* Geminiアコーディオン — brand-group と同スタイル */
     .gemini-group {
       margin-bottom: 20px;
@@ -311,6 +324,8 @@
     }
 
 
+
+
     footer {
       text-align: center;
       padding: 48px 24px 32px;
@@ -319,11 +334,13 @@
       color: #D1D5DB;
     }
 
+
     @media (max-width: 768px) {
       .grid-3, .grid-2 { grid-template-columns: 1fr; }
       .site-header h1 { font-size: 22px; }
       .count-num { font-size: 36px; }
     }
+
 
   /* ===== ロゴ番号ジャンプ ===== */
   #jump-section {
@@ -389,6 +406,7 @@
 </head>
 <body>
 
+
 <!-- ===== クイックリンク ===== -->
 <nav class="quicklinks">
   <span class="quicklinks-label">Quick Links</span>
@@ -406,11 +424,26 @@
   </a>
 </nav>
 
+
+<!-- ===== ピックアップバナー ===== -->
+<div style="background: linear-gradient(90deg, #1A2240 0%, #2D3F80 50%, #1A2240 100%); padding: 14px 24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+  <div style="display:flex; align-items:center; gap:12px;">
+    <span style="background:#F59E0B; color:#1A1A2E; font-size:10px; font-weight:800; letter-spacing:0.1em; padding:3px 10px; border-radius:20px;">PICKUP</span>
+    <span style="color:white; font-size:14px; font-weight:700;">ロゴ選出案 — 0422</span>
+    <span style="color:rgba(255,255,255,0.5); font-size:12px;">9案 選出 / 修正反映済み</span>
+  </div>
+  <a href="pickup-0422.html" style="display:inline-flex; align-items:center; gap:6px; background:white; color:#1A2240; font-size:12px; font-weight:800; padding:8px 20px; border-radius:8px; text-decoration:none; letter-spacing:0.04em; transition:opacity 0.15s;" onmouseover="this.style.opacity='.8'" onmouseout="this.style.opacity='1'">
+    ピックアップページへ →
+  </a>
+</div>
+
+
 <!-- ===== ヘッダー ===== -->
 <header class="site-header">
   <h1>サイトマイスター ロゴデザイン</h1>
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;|&nbsp; 全ページ一覧</p>
 </header>
+
 
 <!-- ===== 全開閉ボタン ===== -->
 <div class="global-controls">
@@ -418,9 +451,11 @@
   <button class="global-btn global-btn-close" onclick="closeAll()">▲ 全て閉じる</button>
 </div>
 
+
 <!-- ===== ブランド別 ===== -->
 <div class="section" style="margin-top:8px;">
   <div class="section-title">ブランド別ロゴ</div>
+
 
   <!-- ===== サイトマイスター ===== -->
   <div class="brand-group brand-group-blue">
@@ -500,6 +535,7 @@
     </div>
   </div>
 
+
   <!-- ===== AI ZERO ===== -->
   <div class="brand-group brand-group-green">
     <button class="brand-group-toggle" onclick="toggleBrand(this)" aria-expanded="true">
@@ -577,6 +613,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- ===== AIブースト ===== -->
   <div class="brand-group brand-group-teal">
@@ -656,7 +693,12 @@
     </div>
   </div>
 
+
 </div>
+
+
+
+
 
 
 
@@ -678,9 +720,11 @@
   </p>
 </div>
 
+
 <footer>
   <p>iFLAG Co.,Ltd. Confidential &copy; 2026 &nbsp;—&nbsp; 各カードをクリックすると詳細ページを表示します</p>
 </footer>
+
 
 <script>
 /* ========= アコーディオン ========= */
@@ -691,12 +735,14 @@ function toggleBrand(btn) {
   body.classList.toggle('open', !isOpen);
 }
 
+
 function toggleGemini(btn) {
   const body = btn.nextElementSibling;
   const isOpen = btn.getAttribute('aria-expanded') === 'true';
   btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
   body.classList.toggle('open', !isOpen);
 }
+
 
 /* ========= 全開く / 全閉じる ========= */
 function openAll() {
@@ -711,6 +757,7 @@ function openAll() {
   }
 }
 
+
 function closeAll() {
   document.querySelectorAll('.brand-group-toggle').forEach(btn => {
     btn.setAttribute('aria-expanded', 'false');
@@ -723,11 +770,13 @@ function closeAll() {
   }
 }
 
+
 /* ===== ロゴ番号ジャンプ ===== */
 const JUMP_MAP = (() => {
   // prefix → {url, page, desc}
   const BASE = 'https://dat0925.github.io/sitemyster-logo/';
   const FD   = BASE + encodeURI('サイトマイスターロゴ（フリーデザイン）/');
+
 
   function range(prefix, from, to, url, page, desc) {
     const rows = [];
@@ -737,6 +786,7 @@ const JUMP_MAP = (() => {
     }
     return rows;
   }
+
 
   return new Map([
     // サイトマイスター
@@ -780,6 +830,7 @@ const JUMP_MAP = (() => {
   ]);
 })();
 
+
 function doJump() {
   const raw = document.getElementById('jump-input').value.trim().toUpperCase()
                 .replace(/[Ａ-Ｚａ-ｚ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
@@ -787,7 +838,9 @@ function doJump() {
                 .replace(/ー|-|−|‐/g, '-');
   const resultBox = document.getElementById('jump-result');
 
+
   if (!raw) return;
+
 
   const entry = JUMP_MAP.get(raw);
   let newItem;
@@ -805,15 +858,19 @@ function doJump() {
       </a>`;
   }
 
+
   resultBox.insertAdjacentHTML('afterbegin', newItem);
   document.getElementById('jump-input').value = '';
 }
+
 
 document.getElementById('jump-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') doJump();
 });
 
+
 </script>
+
 
 </body>
 </html>
