@@ -1,218 +1,122 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ロゴ ピックアップ — 0422 選出案</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Noto+Sans+JP:wght@400;700;900&family=Lexend:wght@700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --brand-primary: #1A2240;
-      --brand-accent:  #3B4FD8;
-      --page-bg:       #F3F4F8;
-      --imgwrap-bg:    #FAFAFA;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
-      background: var(--page-bg);
-      color: #1A1A2E;
-      padding: 0 0 60px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ロゴ ピックアップ — 0422 選出案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Noto+Sans+JP:wght@400;700;900&family=Lexend:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-primary: #1A2240;
+  --brand-accent: #3B4FD8;
+  --page-bg: #F3F4F8;
+  --imgwrap-bg: #FAFAFA;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--page-bg);
+  color: #1A1A2E;
+  padding: 0 0 60px;
+}
 
-    /* ===== ページナビ ===== */
-    .page-nav {
-      position: sticky;
-      top: 0;
-      z-index: 200;
-      background: #1A2240;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      height: 44px;
-    }
-    .page-nav a {
-      color: rgba(255,255,255,0.7);
-      text-decoration: none;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: background 0.15s, color 0.15s;
-    }
-    .page-nav a:hover { background: rgba(255,255,255,0.1); color: #fff; }
-    .page-nav .sep {
-      color: rgba(255,255,255,0.2);
-      font-size: 12px;
-    }
-    .page-nav .badge {
-      margin-left: auto;
-      background: #F59E0B;
-      color: #1A1A2E;
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      padding: 3px 10px;
-      border-radius: 20px;
-    }
+/* ===== ページナビ ===== */
+.page-nav {
+  position: sticky; top: 0; z-index: 200;
+  background: #1A2240; padding: 0 24px;
+  display: flex; align-items: center; gap: 8px; height: 44px;
+}
+.page-nav a {
+  color: rgba(255,255,255,0.7); text-decoration: none;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+  padding: 6px 12px; border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+.page-nav a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.page-nav .sep { color: rgba(255,255,255,0.2); font-size: 12px; }
+.page-nav .badge {
+  margin-left: auto; background: #F59E0B; color: #1A1A2E;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.08em;
+  padding: 3px 10px; border-radius: 20px;
+}
 
-    /* ===== ヘッダー ===== */
-    header {
-      background: linear-gradient(135deg, #1A2240 0%, #2D3F80 60%, #3B4FD8 100%);
-      padding: 48px 24px 40px;
-      text-align: center;
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-    header::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 70% 30%, rgba(107,127,232,0.25) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    header .label {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.55);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 4px 14px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-    }
-    header h1 {
-      font-size: 28px;
-      font-weight: 900;
-      letter-spacing: 0.02em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 13px;
-      color: rgba(255,255,255,0.6);
-    }
+/* ===== ヘッダー ===== */
+header {
+  background: linear-gradient(135deg, #1A2240 0%, #2D3F80 60%, #3B4FD8 100%);
+  padding: 48px 24px 40px; text-align: center; color: white;
+  position: relative; overflow: hidden;
+}
+header::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 30%, rgba(107,127,232,0.25) 0%, transparent 60%);
+  pointer-events: none;
+}
+header .label {
+  display: inline-block; font-size: 10px; font-weight: 800;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.2);
+  padding: 4px 14px; border-radius: 20px; margin-bottom: 16px;
+}
+header h1 { font-size: 28px; font-weight: 900; letter-spacing: 0.02em; margin-bottom: 10px; }
+header p { font-size: 13px; color: rgba(255,255,255,0.6); }
 
-    /* ===== セクション ===== */
-    .section {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 44px 24px 0;
-    }
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .section-dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .section-title {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #6B7280;
-    }
+/* ===== セクション ===== */
+.section { max-width: 860px; margin: 0 auto; padding: 44px 24px 0; }
+.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.section-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.section-title { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280; }
 
-    /* ===== ロゴカード ===== */
-    .logo-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-    }
-    .logo-card {
-      background: white;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      border: 1px solid #E5E7EB;
-      transition: box-shadow .2s, transform .2s;
-    }
-    .logo-card:hover {
-      box-shadow: 0 8px 28px rgba(59,79,216,0.13);
-      transform: translateY(-2px);
-    }
-    .logo-card .img-wrap {
-      padding: 12px 16px;
-      background: var(--imgwrap-bg);
-      border-bottom: 1px solid #F3F4F6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 120px;
-    }
-    .logo-card .img-wrap svg,
-    .logo-card .img-wrap img {
-      width: 100%;
-      max-width: 480px;
-      height: auto;
-      display: block;
-    }
-    .logo-card .img-wrap.dark  { background: #111827; }
-    .logo-card .img-wrap.navy  { background: #1A2240; }
-    .logo-card .img-wrap.black { background: #000; }
-    .logo-card .info { padding: 16px 20px; }
-    .logo-card .info .number {
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--brand-accent);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 3px;
-    }
-    .logo-card .info .name {
-      font-size: 14px;
-      font-weight: 700;
-      color: #1A1A2E;
-      margin-bottom: 5px;
-    }
-    .logo-card .info .concept {
-      font-size: 12px;
-      color: #6B7280;
-      line-height: 1.7;
-    }
-    .mod-badge {
-      display: inline-block;
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      color: #D97706;
-      background: #FEF3C7;
-      border: 1px solid #FDE68A;
-      border-radius: 4px;
-      padding: 1px 7px;
-      margin-left: 6px;
-      vertical-align: middle;
-    }
+/* ===== ロゴカード ===== */
+.logo-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.logo-card {
+  background: white; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #E5E7EB;
+  transition: box-shadow .2s, transform .2s;
+}
+.logo-card:hover { box-shadow: 0 8px 28px rgba(59,79,216,0.13); transform: translateY(-2px); }
 
-    footer {
-      text-align: center;
-      margin-top: 56px;
-      font-size: 12px;
-      color: #9CA3AF;
-    }
+.img-wrap {
+  padding: 12px 16px; background: var(--imgwrap-bg);
+  border-bottom: 1px solid #F3F4F6;
+}
+.img-wrap.black { background: #000; }
+.img-wrap svg, .img-wrap img { width: 100%; max-width: 480px; height: auto; display: block; }
 
-    /* SVG inline from JS */
-    .svg-target svg {
-      width: 100%;
-      max-width: 480px;
-      height: auto;
-      display: block;
-    }
-  </style>
+/* ===== バリアントストリップ ===== */
+.variant-strip {
+  display: flex; gap: 8px; width: 100%;
+  overflow-x: auto; padding-bottom: 2px;
+}
+.variant {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 5px; flex: 1; min-width: 0;
+}
+.variant img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.variant.on-dark img { border-radius: 4px; background: #111827; }
+.variant.on-black img { border-radius: 4px; background: #000; }
+.v-label {
+  font-size: 9px; font-weight: 700; color: #9CA3AF;
+  letter-spacing: 0.06em; text-align: center; white-space: nowrap;
+}
+
+.logo-card .info { padding: 16px 20px; }
+.logo-card .info .number {
+  font-size: 10px; font-weight: 700; color: var(--brand-accent);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px;
+}
+.logo-card .info .name { font-size: 14px; font-weight: 700; color: #1A1A2E; margin-bottom: 5px; }
+.logo-card .info .concept { font-size: 12px; color: #6B7280; line-height: 1.7; }
+.mod-badge {
+  display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
+  color: #D97706; background: #FEF3C7; border: 1px solid #FDE68A;
+  border-radius: 4px; padding: 1px 7px; margin-left: 6px; vertical-align: middle;
+}
+footer { text-align: center; margin-top: 56px; font-size: 12px; color: #9CA3AF; }
+</style>
 </head>
 <body>
 
-<!-- ページナビ -->
 <nav class="page-nav">
   <a href="index.html">← トップ</a>
   <span class="sep">|</span>
@@ -223,13 +127,11 @@
   <span class="badge">PICKUP 0422</span>
 </nav>
 
-<!-- ヘッダー -->
 <header>
   <div class="label">Selected Logos</div>
   <h1>ロゴ ピックアップ</h1>
   <p>0422 選出案 — 修正反映済み</p>
 </header>
-
 
 <!-- ===== サイトマイスター ===== -->
 <section class="section">
@@ -239,33 +141,8 @@
   </div>
   <div class="logo-grid">
 
-    <!-- SX02-0422 (SX-02 改：インディゴを青くする) -->
-    <div class="logo-card" id="SX02-0422" style="scroll-margin-top:56px;">
-      <div class="img-wrap">
-        <svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="gridGrad0422" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%"   stop-color="#7C3AED"/>
-              <stop offset="100%" stop-color="#1D6FEB"/>
-            </linearGradient>
-          </defs>
-          <g transform="translate(18,27)">
-            <rect x="0"  y="0"  width="11" height="11" rx="2" fill="#7C3AED" opacity="1"/>
-            <rect x="14" y="0"  width="11" height="11" rx="2" fill="#6D28D9" opacity="0.8"/>
-            <rect x="28" y="0"  width="11" height="11" rx="2" fill="#5B21B6" opacity="0.55"/>
-            <rect x="0"  y="14" width="11" height="11" rx="2" fill="#6D28D9" opacity="0.8"/>
-            <rect x="14" y="14" width="11" height="11" rx="2" fill="#3B6FE0" opacity="0.65"/>
-            <rect x="28" y="14" width="11" height="11" rx="2" fill="#1D6FEB" opacity="0.45"/>
-            <rect x="0"  y="28" width="11" height="11" rx="2" fill="#3B6FE0" opacity="0.55"/>
-            <rect x="14" y="28" width="11" height="11" rx="2" fill="#1D6FEB" opacity="0.38"/>
-            <rect x="28" y="28" width="11" height="11" rx="2" fill="#1565C0" opacity="0.22"/>
-          </g>
-          <text x="80" y="40"  font-family="'Lexend', sans-serif" font-weight="700" font-size="20" fill="#1A2240" letter-spacing="-0.3">SiteMeister</text>
-          <text x="80" y="64"  font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="17" fill="#6D28D9" letter-spacing="2">サイトマイスター</text>
-          <line x1="80" y1="73" x2="262" y2="73" stroke="#E5E7EB" stroke-width="1"/>
-          <text x="80" y="87"  font-family="'Lexend', sans-serif" font-weight="700" font-size="9.5" fill="#9CA3AF" letter-spacing="2.5">AI GRID BUILDER</text>
-        </svg>
-      </div>
+    <div class="logo-card" id="SX02-0422">
+      <div class="img-wrap" id="wrap-SX02"></div>
       <div class="info">
         <div class="number">SX02-0422 <span class="mod-badge">修正済</span></div>
         <div class="name">グリッドビルダー</div>
@@ -273,32 +150,8 @@
       </div>
     </div>
 
-    <!-- SX03-0422 (SX-03 そのまま) -->
-    <div class="logo-card" id="SX03-0422" style="scroll-margin-top:56px;">
-      <div class="img-wrap">
-        <svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg">
-          <!-- Symbol: compass -->
-          <g transform="translate(46,55)">
-            <circle cx="0" cy="0" r="28" fill="none" stroke="#3B4FD8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
-            <circle cx="0" cy="0" r="20" fill="none" stroke="#3B4FD8" stroke-width="1"   stroke-dasharray="2 3" opacity="0.25"/>
-            <line x1="0"   y1="-28" x2="0"  y2="-12" stroke="#3B4FD8" stroke-width="1.5" stroke-dasharray="2 2"/>
-            <line x1="0"   y1="12"  x2="0"  y2="28"  stroke="#3B4FD8" stroke-width="1.5" stroke-dasharray="2 2"/>
-            <line x1="-28" y1="0"   x2="-12" y2="0"  stroke="#3B4FD8" stroke-width="1.5" stroke-dasharray="2 2"/>
-            <line x1="12"  y1="0"   x2="28"  y2="0"  stroke="#3B4FD8" stroke-width="1.5" stroke-dasharray="2 2"/>
-            <!-- needle -->
-            <polygon points="0,-18 4,0 0,4 -4,0" fill="#3B4FD8"/>
-            <polygon points="0,18 4,0 0,4 -4,0"  fill="#3B4FD8" opacity="0.3"/>
-            <circle cx="0" cy="0" r="4" fill="white" stroke="#3B4FD8" stroke-width="2"/>
-            <!-- spark -->
-            <circle cx="16" cy="-16" r="3"   fill="#6B7FE8"/>
-            <circle cx="16" cy="-16" r="5.5" fill="none" stroke="#6B7FE8" stroke-width="1" opacity="0.4"/>
-          </g>
-          <!-- Logotype -->
-          <text x="86" y="42" font-family="'Sora', sans-serif"       font-weight="800" font-size="21" fill="#1A2240" letter-spacing="-0.5">SiteMeister</text>
-          <text x="86" y="66" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="17" fill="#3B4FD8" letter-spacing="2">サイトマイスター</text>
-          <text x="86" y="84" font-family="'Sora', sans-serif"       font-weight="700" font-size="9"  fill="#9CA3AF" letter-spacing="2">PRECISION · CRAFT · AI</text>
-        </svg>
-      </div>
+    <div class="logo-card" id="SX03-0422">
+      <div class="img-wrap" id="wrap-SX03"></div>
       <div class="info">
         <div class="number">SX03-0422</div>
         <div class="name">コンパス</div>
@@ -306,8 +159,7 @@
       </div>
     </div>
 
-    <!-- SM07-0422 (SM-07 改：英語テキストを目立たせる) -->
-    <div class="logo-card" id="SM07-0422" style="scroll-margin-top:56px;">
+    <div class="logo-card" id="SM07-0422">
       <div class="img-wrap" id="wrap-SM07"></div>
       <div class="info">
         <div class="number">SM07-0422 <span class="mod-badge">修正済</span></div>
@@ -319,7 +171,6 @@
   </div>
 </section>
 
-
 <!-- ===== AI ZERO ===== -->
 <section class="section">
   <div class="section-header">
@@ -328,8 +179,7 @@
   </div>
   <div class="logo-grid">
 
-    <!-- AZ28-0422 (AZ-28 改：ホームページリメイクスタジオのフォントを大きく) -->
-    <div class="logo-card" id="AZ28-0422" style="scroll-margin-top:56px;">
+    <div class="logo-card" id="AZ28-0422">
       <div class="img-wrap black" id="wrap-AZ28"></div>
       <div class="info">
         <div class="number">AZ28-0422 <span class="mod-badge">修正済</span></div>
@@ -338,11 +188,8 @@
       </div>
     </div>
 
-    <!-- ZV02-0422 (ZV-02 そのまま) -->
-    <div class="logo-card" id="ZV02-0422" style="scroll-margin-top:56px;">
-      <div class="img-wrap">
-        <img src="ホームページリメイクスタジオ AIゼロ/logo_02_pixel_build_v2.svg" alt="Pixel Build">
-      </div>
+    <div class="logo-card" id="ZV02-0422">
+      <div class="img-wrap" id="wrap-ZV02"></div>
       <div class="info">
         <div class="number">ZV02-0422</div>
         <div class="name">Pixel Build</div>
@@ -350,8 +197,7 @@
       </div>
     </div>
 
-    <!-- ZV03-0422 (ZV-03 改：AI ZEROのフォントを大きく) -->
-    <div class="logo-card" id="ZV03-0422" style="scroll-margin-top:56px;">
+    <div class="logo-card" id="ZV03-0422">
       <div class="img-wrap" id="wrap-ZV03"></div>
       <div class="info">
         <div class="number">ZV03-0422 <span class="mod-badge">修正済</span></div>
@@ -363,7 +209,6 @@
   </div>
 </section>
 
-
 <!-- ===== AIブースト ===== -->
 <section class="section">
   <div class="section-header">
@@ -372,8 +217,7 @@
   </div>
   <div class="logo-grid">
 
-    <!-- BV04-0422 (BV-04 改：フォントを大きく) -->
-    <div class="logo-card" id="BV04-0422" style="scroll-margin-top:56px;">
+    <div class="logo-card" id="BV04-0422">
       <div class="img-wrap" id="wrap-BV04"></div>
       <div class="info">
         <div class="number">BV04-0422 <span class="mod-badge">修正済</span></div>
@@ -382,8 +226,7 @@
       </div>
     </div>
 
-    <!-- BV12-0422 (BV-12 改：フォントを大きく) -->
-    <div class="logo-card" id="BV12-0422" style="scroll-margin-top:56px;">
+    <div class="logo-card" id="BV12-0422">
       <div class="img-wrap" id="wrap-BV12"></div>
       <div class="info">
         <div class="number">BV12-0422 <span class="mod-badge">修正済</span></div>
@@ -392,11 +235,8 @@
       </div>
     </div>
 
-    <!-- BV14-0422 (BV-14 そのまま) -->
-    <div class="logo-card" id="BV14-0422" style="scroll-margin-top:56px;">
-      <div class="img-wrap">
-        <img src="ホームページリメイクスタジオ AIブースト/logo_14_speedometer_max_v2.svg" alt="Speedometer Max">
-      </div>
+    <div class="logo-card" id="BV14-0422">
+      <div class="img-wrap" id="wrap-BV14"></div>
       <div class="info">
         <div class="number">BV14-0422</div>
         <div class="name">Speedometer Max</div>
@@ -411,147 +251,417 @@
   <p>ロゴ ピックアップ 0422 &nbsp;—&nbsp; 選出・修正反映版</p>
 </footer>
 
-
 <script>
 // ============================================================
-// SVG 動的読み込み＆テキスト修正
+// パレット定義（sitemyster30.htmlと同方式）
 // ============================================================
 
-/**
- * SVGファイルを fetch → DOMParser で解析 → テキスト修正 → img-wrap に注入
- * @param {string} src   SVGファイルのパス（相対）
- * @param {string} wrapId  注入先要素の id
- * @param {function} modifier  (svgDoc) => void  テキスト修正関数
- */
-async function loadAndModifySVG(src, wrapId, modifier) {
-  const wrap = document.getElementById(wrapId);
-  if (!wrap) return;
-
-  try {
-    const res  = await fetch(src);
-    const text = await res.text();
-    const parser = new DOMParser();
-    const doc  = parser.parseFromString(text, 'image/svg+xml');
-    const svg  = doc.documentElement;
-
-    // レスポンシブ対応
-    svg.setAttribute('width',  '100%');
-    svg.removeAttribute('height');
-    if (!svg.getAttribute('viewBox') && svg.getAttribute('width') && svg.getAttribute('height')) {
-      svg.setAttribute('viewBox', `0 0 ${svg.getAttribute('width')} ${svg.getAttribute('height')}`);
+// サイトマイスター系（インディゴ・バイオレット・ブルー）
+const SM_PALETTES = [
+  { label: 'ネイビーブルー', colors: null },
+  {
+    label: 'ロイヤルパープル',
+    colors: {
+      '#7c3aed':'#5b21b6','#6d28d9':'#4c1d95','#5b21b6':'#3b0764',
+      '#3b6fe0':'#7c3aed','#1d6feb':'#8b5cf6','#1565c0':'#6d28d9',
+      '#3b4fd8':'#7c3aed','#6b7fe8':'#a78bfa','#1a2240':'#2d1265',
+      '#2d3f80':'#4c1d95','#9ca3af':'#9ca3af'
     }
-    svg.style.maxWidth  = '480px';
-    svg.style.height    = 'auto';
-    svg.style.display   = 'block';
-
-    // テキスト修正を適用
-    if (modifier) modifier(svg);
-
-    wrap.innerHTML = '';
-    wrap.appendChild(svg);
-
-  } catch(e) {
-    // fetch 失敗時は img フォールバック
-    wrap.innerHTML = `<img src="${src}" alt="" style="max-width:480px;width:100%;height:auto;">`;
+  },
+  {
+    label: 'エメラルド',
+    colors: {
+      '#7c3aed':'#065f46','#6d28d9':'#047857','#5b21b6':'#059669',
+      '#3b6fe0':'#10b981','#1d6feb':'#34d399','#1565c0':'#065f46',
+      '#3b4fd8':'#059669','#6b7fe8':'#6ee7b7','#1a2240':'#022c22',
+      '#2d3f80':'#065f46','#9ca3af':'#9ca3af'
+    }
+  },
+  {
+    label: 'クリムゾン',
+    colors: {
+      '#7c3aed':'#991b1b','#6d28d9':'#b91c1c','#5b21b6':'#7f1d1d',
+      '#3b6fe0':'#dc2626','#1d6feb':'#ef4444','#1565c0':'#991b1b',
+      '#3b4fd8':'#dc2626','#6b7fe8':'#fca5a5','#1a2240':'#450a0a',
+      '#2d3f80':'#991b1b','#9ca3af':'#9ca3af'
+    }
+  },
+  {
+    label: 'サンセット',
+    colors: {
+      '#7c3aed':'#92400e','#6d28d9':'#b45309','#5b21b6':'#78350f',
+      '#3b6fe0':'#d97706','#1d6feb':'#f59e0b','#1565c0':'#92400e',
+      '#3b4fd8':'#d97706','#6b7fe8':'#fcd34d','#1a2240':'#292101',
+      '#2d3f80':'#92400e','#9ca3af':'#9ca3af'
+    }
   }
+];
+
+// AI ZERO系（シアン・ティール）
+const ZERO_PALETTES = [
+  { label: 'シアン', colors: null },
+  {
+    label: 'ネイビーブルー',
+    colors: {
+      '#06b6d4':'#1a3580','#0891b2':'#2b5ce6','#67e8f9':'#60a5fa',
+      '#22d3ee':'#3b82f6','#0e7490':'#1d4ed8','#cffafe':'#dbeafe'
+    }
+  },
+  {
+    label: 'パープル',
+    colors: {
+      '#06b6d4':'#7c3aed','#0891b2':'#6d28d9','#67e8f9':'#c4b5fd',
+      '#22d3ee':'#8b5cf6','#0e7490':'#4c1d95','#cffafe':'#ede9fe'
+    }
+  },
+  {
+    label: 'エメラルド',
+    colors: {
+      '#06b6d4':'#059669','#0891b2':'#065f46','#67e8f9':'#6ee7b7',
+      '#22d3ee':'#10b981','#0e7490':'#047857','#cffafe':'#d1fae5'
+    }
+  },
+  {
+    label: 'サンセット',
+    colors: {
+      '#06b6d4':'#d97706','#0891b2':'#92400e','#67e8f9':'#fcd34d',
+      '#22d3ee':'#f59e0b','#0e7490':'#b45309','#cffafe':'#fef3c7'
+    }
+  }
+];
+
+// AIブースト系（グリーン・ティール）
+const BOOST_PALETTES = [
+  { label: 'グリーン', colors: null },
+  {
+    label: 'ネイビーブルー',
+    colors: {
+      '#10b981':'#1a3580','#059669':'#2b5ce6','#34d399':'#60a5fa',
+      '#047857':'#0f1e4a','#6ee7b7':'#93c5fd','#d1fae5':'#dbeafe'
+    }
+  },
+  {
+    label: 'パープル',
+    colors: {
+      '#10b981':'#7c3aed','#059669':'#6d28d9','#34d399':'#c4b5fd',
+      '#047857':'#4c1d95','#6ee7b7':'#ddd6fe','#d1fae5':'#ede9fe'
+    }
+  },
+  {
+    label: 'クリムゾン',
+    colors: {
+      '#10b981':'#dc2626','#059669':'#991b1b','#34d399':'#fca5a5',
+      '#047857':'#7f1d1d','#6ee7b7':'#fecaca','#d1fae5':'#fee2e2'
+    }
+  },
+  {
+    label: 'サンセット',
+    colors: {
+      '#10b981':'#d97706','#059669':'#92400e','#34d399':'#fcd34d',
+      '#047857':'#78350f','#6ee7b7':'#fde68a','#d1fae5':'#fef3c7'
+    }
+  }
+];
+
+// AZ28専用（B&W モノカラー背景バリアント）
+const BW_PALETTES = [
+  { label: '黒背景', colors: null, bg: '#000' },
+  { label: 'ネイビー', colors: { '#000000':'#0f172a','#111827':'#0f172a' }, bg: '#0f172a' },
+  { label: 'パープル', colors: { '#000000':'#2d1265','#111827':'#2d1265' }, bg: '#2d1265' },
+  { label: 'グリーン', colors: { '#000000':'#022c22','#111827':'#022c22' }, bg: '#022c22' },
+  { label: 'クリムゾン', colors: { '#000000':'#450a0a','#111827':'#450a0a' }, bg: '#450a0a' }
+];
+
+// ============================================================
+// ユーティリティ
+// ============================================================
+const svgCache = {};
+
+async function fetchSvgText(src) {
+  if (!(src in svgCache)) {
+    try {
+      const r = await fetch(src);
+      svgCache[src] = r.ok ? await r.text() : null;
+    } catch { svgCache[src] = null; }
+  }
+  return svgCache[src];
 }
 
-/** テキスト要素を全取得 */
-function getAllTexts(svg) {
-  return Array.from(svg.querySelectorAll('text, tspan'));
+function replaceColors(svgText, map) {
+  let s = svgText;
+  for (const [f, t] of Object.entries(map)) {
+    // 大文字・小文字両方を置換
+    s = s.split(f).join(t);
+    s = s.split(f.toUpperCase()).join(t.toUpperCase());
+  }
+  return s;
 }
 
-/** font-size 属性を指定倍率でスケール */
-function scaleFontSize(el, factor) {
-  const fs = parseFloat(el.getAttribute('font-size') || el.style.fontSize || '12');
-  el.setAttribute('font-size', (fs * factor).toFixed(1));
+function svgToBlobImg(svgText, extraClass) {
+  const blob = new Blob([svgText], { type: 'image/svg+xml' });
+  const img = document.createElement('img');
+  img.src = URL.createObjectURL(blob);
+  if (extraClass) img.classList.add(extraClass);
+  return img;
 }
 
+/**
+ * variant-strip を構築してwrapに注入
+ * @param {HTMLElement} wrap
+ * @param {string|null} svgText  元SVGテキスト（nullならfallback img）
+ * @param {string}      fallbackSrc
+ * @param {Array}       palettes
+ * @param {Function}    [modifier]  (svgText)=>svgText
+ * @param {boolean}     [darkCard]  バリアントに暗背景クラスを付与するか
+ */
+function buildVariantStrip(wrap, svgText, fallbackSrc, palettes, modifier, darkCard) {
+  const strip = document.createElement('div');
+  strip.className = 'variant-strip';
 
-// ── SM07-0422：英語テキストを目立たせる ──────────────────────
-loadAndModifySVG(
-  'サイトマイスター/logo_07_diamond_precision.svg',
-  'wrap-SM07',
-  (svg) => {
-    getAllTexts(svg).forEach(el => {
-      const content = el.textContent || '';
-      // ASCII 英数字中心 → 英語テキストと判断
-      const isEnglish = /^[A-Za-z0-9 \.\-\/&|·•]+$/.test(content.trim());
-      if (isEnglish && content.trim().length > 0) {
-        scaleFontSize(el, 1.3);
-        const fw = el.getAttribute('font-weight');
-        if (!fw || parseInt(fw) < 700) el.setAttribute('font-weight', '800');
-        // 色が薄い場合は少し濃くする
-        const fill = el.getAttribute('fill') || '';
-        if (fill.match(/#[89a-f][0-9a-f]{5}/i)) {
-          el.setAttribute('fill', '#374151');
-        }
-      }
-    });
+  for (const p of palettes) {
+    const div = document.createElement('div');
+    div.className = 'variant' + (darkCard ? ' on-dark' : '');
+
+    let cur = svgText;
+    if (cur && modifier) cur = modifier(cur);
+    if (cur && p.colors) cur = replaceColors(cur, p.colors);
+
+    if (cur) {
+      div.appendChild(svgToBlobImg(cur));
+    } else {
+      const img = document.createElement('img');
+      img.src = fallbackSrc;
+      div.appendChild(img);
+    }
+
+    const lbl = document.createElement('span');
+    lbl.className = 'v-label';
+    lbl.textContent = p.label;
+    div.appendChild(lbl);
+    strip.appendChild(div);
   }
-);
 
+  wrap.innerHTML = '';
+  wrap.appendChild(strip);
+}
 
-// ── AZ28-0422：ホームページリメイクスタジオのフォントを大きく ─
-loadAndModifySVG(
-  'ホームページリメイクスタジオ AIゼロ/logo_28_minimal_bw.svg',
-  'wrap-AZ28',
-  (svg) => {
-    getAllTexts(svg).forEach(el => {
-      const content = el.textContent || '';
-      if (content.includes('ホームページリメイクスタジオ')) {
-        scaleFontSize(el, 1.4);
-        el.setAttribute('font-weight', '900');
-      }
-      // サブテキスト "ホームページリメイクスタジオ" が複数 tspan に分かれている場合も対応
-      if (el.closest && el.closest('[data-label="studio"]')) {
-        scaleFontSize(el, 1.4);
-      }
-    });
+// BW専用：背景色も切り替えるバリアント
+function buildBWVariantStrip(wrap, svgText, fallbackSrc, palettes, modifier) {
+  const strip = document.createElement('div');
+  strip.className = 'variant-strip';
+
+  for (const p of palettes) {
+    const div = document.createElement('div');
+    div.className = 'variant';
+    div.style.background = p.bg || '#000';
+    div.style.borderRadius = '6px';
+    div.style.padding = '6px';
+
+    let cur = svgText;
+    if (cur && modifier) cur = modifier(cur);
+    if (cur && p.colors) cur = replaceColors(cur, p.colors);
+
+    if (cur) {
+      div.appendChild(svgToBlobImg(cur));
+    } else {
+      const img = document.createElement('img');
+      img.src = fallbackSrc;
+      div.appendChild(img);
+    }
+
+    const lbl = document.createElement('span');
+    lbl.className = 'v-label';
+    lbl.style.color = 'rgba(255,255,255,0.6)';
+    lbl.textContent = p.label;
+    div.appendChild(lbl);
+    strip.appendChild(div);
   }
-);
 
+  wrap.innerHTML = '';
+  wrap.appendChild(strip);
+}
 
-// ── ZV03-0422：AI ZERO フォントを大きく ──────────────────────
-loadAndModifySVG(
-  'ホームページリメイクスタジオ AIゼロ/logo_03_node_network_v2.svg',
-  'wrap-ZV03',
-  (svg) => {
-    getAllTexts(svg).forEach(el => {
-      const content = (el.textContent || '').trim();
-      // "AI ZERO" / "AI Zero" / "ZERO" などにマッチ
-      if (/AI\s*ZERO/i.test(content) || content === 'ZERO' || content === 'AI ZERO') {
-        scaleFontSize(el, 1.45);
-        el.setAttribute('font-weight', '800');
-      }
-    });
+// ============================================================
+// テキスト修正ヘルパー（正規表現ベース）
+// ============================================================
+
+// SM07: 英語テキストを大きく・太く
+function modifySM07(svg) {
+  // 全text要素のうち、英語のみ（A-Za-z0-9 ·）のものをスケール
+  return svg.replace(/<text([^>]*)>([^<]*)<\/text>/g, (m, attrs, content) => {
+    if (/^[A-Za-z0-9 ·\-\.&|·•]+$/.test(content.trim()) && content.trim().length > 0) {
+      let a = attrs.replace(/font-size="(\d+(?:\.\d+)?)"/, (_, n) => `font-size="${(parseFloat(n)*1.28).toFixed(1)}"`);
+      a = a.replace(/font-weight="(\d+)"/, 'font-weight="800"');
+      return `<text${a}>${content}</text>`;
+    }
+    return m;
+  });
+}
+
+// AZ28: ホームページリメイクスタジオのfont-size拡大
+function modifyAZ28(svg) {
+  return svg.replace(/<text([^>]*)>(ホームページリメイクスタジオ)<\/text>/g, (m, attrs, content) => {
+    const a = attrs.replace(/font-size="(\d+(?:\.\d+)?)"/, (_, n) => `font-size="${(parseFloat(n)*1.4).toFixed(1)}"`);
+    return `<text${a}>${content}</text>`;
+  });
+}
+
+// ZV03: AI ZEROのfont-size拡大
+function modifyZV03(svg) {
+  return svg.replace(/<text([^>]*)>(AI\s*ZERO|ZERO)<\/text>/gi, (m, attrs, content) => {
+    let a = attrs.replace(/font-size="(\d+(?:\.\d+)?)"/, (_, n) => `font-size="${(parseFloat(n)*1.45).toFixed(1)}"`);
+    a = a.replace(/font-weight="(\d+)"/, 'font-weight="800"');
+    return `<text${a}>${content}</text>`;
+  });
+}
+
+// BV: 全テキストfont-size 1.3倍
+function modifyBV(svg) {
+  return svg.replace(/font-size="(\d+(?:\.\d+)?)"/g, (_, n) => `font-size="${(parseFloat(n)*1.3).toFixed(1)}"`);
+}
+
+// ============================================================
+// インラインSVGのシリアライズ
+// ============================================================
+function getInlineSvgText(svgEl) {
+  const s = new XMLSerializer();
+  return s.serializeToString(svgEl);
+}
+
+// ============================================================
+// SX02 / SX03 のSVGをHTML内に直接持つ（fetch不要）
+// ============================================================
+const SX02_SVG = `<svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="gridGrad0422" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#7c3aed"/>
+    <stop offset="100%" stop-color="#1d6feb"/>
+  </linearGradient>
+</defs>
+<g transform="translate(18,27)">
+  <rect x="0" y="0" width="11" height="11" rx="2" fill="#7c3aed" opacity="1"/>
+  <rect x="14" y="0" width="11" height="11" rx="2" fill="#6d28d9" opacity="0.8"/>
+  <rect x="28" y="0" width="11" height="11" rx="2" fill="#5b21b6" opacity="0.55"/>
+  <rect x="0" y="14" width="11" height="11" rx="2" fill="#6d28d9" opacity="0.8"/>
+  <rect x="14" y="14" width="11" height="11" rx="2" fill="#3b6fe0" opacity="0.65"/>
+  <rect x="28" y="14" width="11" height="11" rx="2" fill="#1d6feb" opacity="0.45"/>
+  <rect x="0" y="28" width="11" height="11" rx="2" fill="#3b6fe0" opacity="0.55"/>
+  <rect x="14" y="28" width="11" height="11" rx="2" fill="#1d6feb" opacity="0.38"/>
+  <rect x="28" y="28" width="11" height="11" rx="2" fill="#1565c0" opacity="0.22"/>
+</g>
+<text x="80" y="40" font-family="'Lexend', sans-serif" font-weight="700" font-size="20" fill="#1a2240" letter-spacing="-0.3">SiteMeister</text>
+<text x="80" y="64" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="17" fill="#6d28d9" letter-spacing="2">サイトマイスター</text>
+<line x1="80" y1="73" x2="262" y2="73" stroke="#e5e7eb" stroke-width="1"/>
+<text x="80" y="87" font-family="'Lexend', sans-serif" font-weight="700" font-size="9.5" fill="#9ca3af" letter-spacing="2.5">AI GRID BUILDER</text>
+</svg>`;
+
+const SX03_SVG = `<svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(46,55)">
+  <circle cx="0" cy="0" r="28" fill="none" stroke="#3b4fd8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+  <circle cx="0" cy="0" r="20" fill="none" stroke="#3b4fd8" stroke-width="1" stroke-dasharray="2 3" opacity="0.25"/>
+  <line x1="0" y1="-28" x2="0" y2="-12" stroke="#3b4fd8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <line x1="0" y1="12" x2="0" y2="28" stroke="#3b4fd8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <line x1="-28" y1="0" x2="-12" y2="0" stroke="#3b4fd8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <line x1="12" y1="0" x2="28" y2="0" stroke="#3b4fd8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <polygon points="0,-18 4,0 0,4 -4,0" fill="#3b4fd8"/>
+  <polygon points="0,18 4,0 0,4 -4,0" fill="#3b4fd8" opacity="0.3"/>
+  <circle cx="0" cy="0" r="4" fill="white" stroke="#3b4fd8" stroke-width="2"/>
+  <circle cx="16" cy="-16" r="3" fill="#6b7fe8"/>
+  <circle cx="16" cy="-16" r="5.5" fill="none" stroke="#6b7fe8" stroke-width="1" opacity="0.4"/>
+</g>
+<text x="86" y="42" font-family="'Sora', sans-serif" font-weight="800" font-size="21" fill="#1a2240" letter-spacing="-0.5">SiteMeister</text>
+<text x="86" y="66" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="17" fill="#3b4fd8" letter-spacing="2">サイトマイスター</text>
+<text x="86" y="84" font-family="'Sora', sans-serif" font-weight="700" font-size="9" fill="#9ca3af" letter-spacing="2">PRECISION · CRAFT · AI</text>
+</svg>`;
+
+// ============================================================
+// メイン
+// ============================================================
+document.addEventListener('DOMContentLoaded', async () => {
+
+  // SX02
+  buildVariantStrip(
+    document.getElementById('wrap-SX02'),
+    SX02_SVG, null, SM_PALETTES, null, false
+  );
+
+  // SX03
+  buildVariantStrip(
+    document.getElementById('wrap-SX03'),
+    SX03_SVG, null, SM_PALETTES, null, false
+  );
+
+  // SM07（外部SVG）
+  {
+    const src = 'サイトマイスター/logo_07_diamond_precision.svg';
+    const svg = await fetchSvgText(src);
+    buildVariantStrip(
+      document.getElementById('wrap-SM07'),
+      svg, src, SM_PALETTES, modifySM07, false
+    );
   }
-);
 
-
-// ── BV04-0422：フォントを大きく ──────────────────────────────
-loadAndModifySVG(
-  'ホームページリメイクスタジオ AIブースト/logo_04_rocket_minimal_v2.svg',
-  'wrap-BV04',
-  (svg) => {
-    getAllTexts(svg).forEach(el => {
-      scaleFontSize(el, 1.3);
-    });
+  // AZ28（外部SVG、B&W背景バリアント）
+  {
+    const src = 'ホームページリメイクスタジオ AIゼロ/logo_28_minimal_bw.svg';
+    const svg = await fetchSvgText(src);
+    buildBWVariantStrip(
+      document.getElementById('wrap-AZ28'),
+      svg, src, BW_PALETTES, modifyAZ28
+    );
   }
-);
 
-
-// ── BV12-0422：フォントを大きく ──────────────────────────────
-loadAndModifySVG(
-  'ホームページリメイクスタジオ AIブースト/logo_12_flame_burst_v2.svg',
-  'wrap-BV12',
-  (svg) => {
-    getAllTexts(svg).forEach(el => {
-      scaleFontSize(el, 1.3);
-    });
+  // ZV02（外部SVG）
+  {
+    const src = 'ホームページリメイクスタジオ AIゼロ/logo_02_pixel_build_v2.svg';
+    const svg = await fetchSvgText(src);
+    buildVariantStrip(
+      document.getElementById('wrap-ZV02'),
+      svg, src, ZERO_PALETTES, null, false
+    );
   }
-);
+
+  // ZV03（外部SVG）
+  {
+    const src = 'ホームページリメイクスタジオ AIゼロ/logo_03_node_network_v2.svg';
+    const svg = await fetchSvgText(src);
+    buildVariantStrip(
+      document.getElementById('wrap-ZV03'),
+      svg, src, ZERO_PALETTES, modifyZV03, false
+    );
+  }
+
+  // BV04（外部SVG）
+  {
+    const src = 'ホームページリメイクスタジオ AIブースト/logo_04_rocket_minimal_v2.svg';
+    const svg = await fetchSvgText(src);
+    buildVariantStrip(
+      document.getElementById('wrap-BV04'),
+      svg, src, BOOST_PALETTES, modifyBV, false
+    );
+  }
+
+  // BV12（外部SVG）
+  {
+    const src = 'ホームページリメイクスタジオ AIブースト/logo_12_flame_burst_v2.svg';
+    const svg = await fetchSvgText(src);
+    buildVariantStrip(
+      document.getElementById('wrap-BV12'),
+      svg, src, BOOST_PALETTES, modifyBV, false
+    );
+  }
+
+  // BV14（外部SVG）
+  {
+    const src = 'ホームページリメイクスタジオ AIブースト/logo_14_speedometer_max_v2.svg';
+    const svg = await fetchSvgText(src);
+    buildVariantStrip(
+      document.getElementById('wrap-BV14'),
+      svg, src, BOOST_PALETTES, null, false
+    );
+  }
+
+});
 </script>
-
 </body>
 </html>
